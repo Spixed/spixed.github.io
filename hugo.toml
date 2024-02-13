@@ -12,7 +12,7 @@ hasCJKLanguage = false
 theme = "tony"
 
 # `hugo new` text editor for automatically opening new articles
-newContentEditor = "Spixed"
+newContentEditor = ""
 
 # Summary word limit
 summaryLength = 369
@@ -90,7 +90,7 @@ paginate = 39
             xHTML = false
     [markup.highlight]
         codeFences = true
-        guessSyntax = false
+        guessSyntax = true
         lineNos = false
         lineNumbersInTable = false
         noClasses = false
@@ -140,13 +140,13 @@ paginate = 39
     siteLogo = "/images/t.jpg"
     
     # Site description
-    siteDescription = ""
+    siteDescription = "Spixed's Blog. Just be better. "
 
     #####################################
     # Copyright Protection
 
     # Whether to open
-    enableCopyright = false
+    enableCopyright = true
 
     copyrightName = "CC BY-NC 4.0"
     copyrightLink = "https://creativecommons.org/licenses/by-nc/4.0/"
@@ -189,25 +189,29 @@ paginate = 39
     # Has priority over here
 
     ## Valine
-    enableValine = false
-    valineVersion = "latest"
-    valineAppId = ""
-    valineAppKey = ""
-    valinePlaceholder = ""
-    valinePath = ""
-    valineAvatar = "mm"
-    valineMeta = ["nick", "mail", "link"]
-    valinePageSize = 15
-    valineVisitor = true
-    valineHighlight = true
-    avatarForce = true
-    valineRecordIP = true
-    valineServerURLs = ""
-    valineEmojiCDN = ""
-    valineEmojiMaps = """"""
-    valineEnableQQ = false
-    valineRequiredFields = []
+    # enableValine = false
+    # valineVersion = "latest"
+    # valineAppId = ""
+    # valineAppKey = ""
+    # valinePlaceholder = ""
+    # valinePath = ""
+    # valineAvatar = "mm"
+    # valineMeta = ["nick", "mail", "link"]
+    # valinePageSize = 15
+    # valineVisitor = true
+    # valineHighlight = true
+    # avatarForce = true
+    # valineRecordIP = true
+    # valineServerURLs = ""
+    # valineEmojiCDN = ""
+    # valineEmojiMaps = """"""
+    # valineEnableQQ = false
+    # valineRequiredFields = []
     # Description: https://valine.js.org/
+
+    ## Waline
+    enableWaline = true
+    walineServerURL = "https://waline-1-h4791915.deta.app/"
 
     #####################################
     # Google Analytics
