@@ -1,6 +1,0 @@
-[submodule "themes/tony"]
-	path = themes/tony
-	url = https://github.com/Spixed/hugo-theme-tony.git
-[submodule "themes/kagome"]
-	path = themes/kagome
-	url = https://github.com/miiiku/hugo-theme-kagome.git
