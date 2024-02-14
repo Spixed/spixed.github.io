@@ -15,7 +15,7 @@ theme = "tony"
 newContentEditor = ""
 
 # Summary word limit
-summaryLength = 369
+summaryLength = 235
 
 # Whether to enable GitHub style Emoji writing
 enableEmoji = true
@@ -58,9 +58,17 @@ paginate = 39
         name = "Home"
         weight = 1
     [[menu.main]]
+        url = "/categories"
+        name = "Categories"
+        weight = 2
+    [[menu.main]]
+        url = "/tags"
+        name = "Tags"
+        weight = 3
+    [[menu.main]]
         url = "/about/"
         name = "About"
-        weight = 2
+        weight = 4
 
 [[params.pinned]]
     title = "Spixed's Blog"
@@ -85,15 +93,16 @@ paginate = 39
             autoHeadingID = true
             autoHeadingIDType = "github"
         [markup.goldmark.renderer]
-            hardWraps = false
+            hardWraps = true
             unsafe = true
             xHTML = false
     [markup.highlight]
         codeFences = true
         guessSyntax = true
-        lineNos = false
+        lineNos = true
         lineNumbersInTable = false
-        noClasses = false
+        noClasses = true
+        style = "onedark"
     [markup.tableOfContents]
         startLevel = 2
         endLevel = 6
@@ -104,9 +113,6 @@ paginate = 39
     page = ["HTML"]
     home = ["HTML", "SectionsRSS", "SectionsAtom"]
     section = ["HTML"]
-    # Category
-    taxonomyTerm = ["HTML"]
-    # Category item
     taxonomy = ["HTML"]
     # Description: https://github.com/gohugoio/hugo/issues/4528#issuecomment-508488859
 
