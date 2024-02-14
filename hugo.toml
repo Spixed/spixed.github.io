@@ -15,7 +15,7 @@ theme = "tony"
 newContentEditor = ""
 
 # Summary word limit
-summaryLength = 235
+summaryLength = 130
 
 # Whether to enable GitHub style Emoji writing
 enableEmoji = true
