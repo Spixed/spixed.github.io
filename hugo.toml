@@ -12,7 +12,7 @@ hasCJKLanguage = false
 theme = "tony"
 
 # `hugo new` text editor for automatically opening new articles
-newContentEditor = "Spixed"
+newContentEditor = ""
 
 # Summary word limit
 summaryLength = 60
