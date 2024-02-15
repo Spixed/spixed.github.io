@@ -74,7 +74,7 @@ paginate = 39
     title = "Spixed's Blog"
     name = "Spixed"
     icon = "ri-code-box-line"
-    url = "https://spixed.github.io/about#me"
+    url = "/about#about-me"
 
 # Markdown renderer
 [markup]
