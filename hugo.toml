@@ -32,7 +32,7 @@ paginate = 39
     # Motto or introduction
     motto = "从现在起，一切归零。"
     # Avatar
-    avatar = "/images/avatar.png"
+    avatar = "/site/avatar.png"
     # Website (default: baseURL)
     website = "/"
     # GitHub
@@ -48,7 +48,7 @@ paginate = 39
 
 # The configuration instructions in the menu are as follows:
 # url link address
-# name text (leave blank ("") no
+# name text (leave blank ("") no)
 # weight
 
 [menu]
@@ -114,7 +114,6 @@ paginate = 39
     home = ["HTML", "SectionsRSS", "SectionsAtom"]
     section = ["HTML"]
     taxonomy = ["HTML"]
-    # Description: https://github.com/gohugoio/hugo/issues/4528#issuecomment-508488859
 
 # Atom file format media type
 [mediaTypes."application/atom+xml"]
@@ -143,7 +142,7 @@ paginate = 39
     # Site Information
 
     # Site LOGO
-    siteLogo = "/images/logo.png"
+    siteLogo = "/site/logo.png"
     
     # Site description
     siteDescription = "Spixed's Blog. Just be better. "

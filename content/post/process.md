@@ -13,7 +13,6 @@ draft = false
 > Preface: This update log is my second blog post, so I'll stick to writing in Chinese as much as possible from this post on.
 >
 > > （中文独有段落：本blogger的中文文风偏硬货风，一会儿装正经一会儿扯些有的没的，喜欢中英结合[具体可见正文第一句]；英文部分时间不急迫大部分会自己写，但一般情况下会开翻译，所以如果你看到的是一堆直白简单的words就是本人写的，如果出现了多种高级用法，那不用怀疑就是作者开了（bushi
->
 
 
 ## 正文开始
@@ -117,7 +116,7 @@ draft = false
       Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
    ```
 
-   命令执行完之后输入`choch -V`检查是否安装成功（可重开一个ps窗口再输入）
+   命令执行完之后输入`choco -V`检查是否安装成功（可重开一个ps窗口再输入）
 
    接下来：
    ```powershell
@@ -132,10 +131,419 @@ draft = false
 
 #### (2) 创建blog
 
-   2024.2.16 1:29 写到此处 作者累了，改日再写吧
+   > 2024.2.16 1:29 写到此处 作者累了，改日再写吧
+   > 
+   > 还有，看样子这一片会非常的长……要不我还是分成两个文件写吧，然后再改改主题，让它支持切换语言？
+   > 
+   > 真要那样的话，那可又是一堆工作量啊……
+   > 
+   > 这个凌晨就先这样吧，commit去了，886
 
-   还有，看样子这一片会非常的长……要不我还是分成两个文件写吧，然后再改改主题，让它支持切换语言？
+   > 2024.2.16 9:35 满血复活 回来再战
 
-   真要那样的话，那可又是一堆工作量啊……
+   ##### 1. 本地构建
 
-   这个凌晨就先这样吧，commit去了，886
+   在我已经将主题修改好的情况下，其实工作量没有那么的大。所以，找好一个地方放置你的blog文件夹（不用自己新建文件夹），在这里召唤ps运行：
+   ```powershell
+   hugo new site blog
+   ```
+   > hugo new site后接的网站名（官方说法）可以替换，则接下来的blog目录全都替换为你输入的名称。
+
+   随后不用去管ps里面hugo输出啥，直接cd到blog文件夹下并运行：
+
+   ```powershell
+   git init
+   git submodule add https://github.com/Spixed/hugo-theme-tony.git themes/tony
+   ```
+
+   > 这是为该文件夹初始化Git并以子模块的形式添加主题ThemeTony. 该操作涉及访问GitHub，若访问缓慢或报错请记得开代理。
+   
+   > 其实这一步已经可以在VSCode里进行了，右键文件夹选择在VSCode中打开，或打开VSCode，左上角文件-打开文件夹，或打开VSCode，按下快捷键Ctrl + K，等程序加载完毕按下Ctrl + Shift + `召唤终端（默认为powershell，或者是新版的pwsh）
+
+   <font color="#dd0000">
+   **Author's Warm Reminder: 如果要开代理，请一定先按以下内容操作！！！**（以Win10+为例，若使用Clash系列且没改过系统代理地址则可跳过步骤1）：
+
+   1. 打开设置-网络和Internet-代理，找到手动使用代理-使用代理服务器，点击右方编辑，复制IP和端口
+   
+   2. 召唤ps，运行：
+
+      ```powershell
+      git config --global http.proxy http://127.0.0.1:7890
+      git config --global https.proxy http://127.0.0.1:7890
+      ```
+
+      > 将后面的那串地址改成http://your_ip:your_port的形式，如果  是Clash系列且未做更改则直接运行。若要取消代理则运行：
+
+      ```powershell
+      git config --global --unset http.proxy
+      git config --global --unset https.proxy
+      ```
+   
+   不要问作者怎么又来红色爱心提醒，问就是别问。。。
+   </font>
+   
+   然后就正式地需要VSCode帮忙了。打开VSCode至blog文件夹，找到根目录里的hugo.toml，按如下内容配置（直接复制，修改[your_balabala]对应内容即可）：
+
+   > 若你觉得以下全英文内容看着烦，可找到themes/tony/configI18N/config.zh.toml参照下方[your_balabala]的位置进行配置。
+
+   ```toml
+########################################
+# Site configuration
+# Icon: https://RemixIcon.com/
+
+baseURL = "[your_blog_root_URL]"
+title = "[your_blog_title]"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = false
+
+# Theme selection
+theme = "tony"
+
+# `hugo new` text editor for automatically opening new articles
+newContentEditor = ""
+
+# Summary word limit
+summaryLength = 35
+
+# Whether to enable GitHub style Emoji writing
+enableEmoji = true
+
+# Number of articles per page
+paginate = 39
+
+# author information
+[author]
+    # First name
+    name = "[your_name]"
+    # Mailbox
+    email = "[your_email]"
+    # Motto or introduction
+    motto = "[your_motto]"
+    # Avatar
+    avatar = "/site/avatar.png"
+    # Website (default: baseURL)
+    website = "/"
+    # GitHub
+    github = "[your_github_homepage]"
+
+# Page category
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+########################################
+# Menu configuration
+
+# The configuration instructions in the menu are as follows:
+# url link address
+# name text (leave blank ("") no)
+# weight
+
+[menu]
+    # Menu Bar
+    [[menu.main]]
+        url = "/"
+        name = "Home"
+        weight = 1
+    [[menu.main]]
+        url = "/categories"
+        name = "Categories"
+        weight = 2
+    [[menu.main]]
+        url = "/tags"
+        name = "Tags"
+        weight = 3
+    [[menu.main]]
+        url = "/about/"
+        name = "About"
+        weight = 4
+
+[[params.pinned]]
+    title = "[your_homepage_title]"
+    name = "[your(author's)_name]"
+    icon = "ri-code-box-line"
+    url = "/about#about-me"
+
+# Markdown renderer
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = false
+        [markup.goldmark.parser]
+            attribute = true
+            autoHeadingID = true
+            autoHeadingIDType = "github"
+        [markup.goldmark.renderer]
+            hardWraps = true
+            unsafe = true
+            xHTML = false
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        lineNos = true
+        lineNumbersInTable = false
+        noClasses = true
+        style = "onedark"
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 6
+        ordered = true
+
+# Hugo output control
+[outputs]
+    page = ["HTML"]
+    home = ["HTML", "SectionsRSS", "SectionsAtom"]
+    section = ["HTML"]
+    taxonomy = ["HTML"]
+
+# Atom file format media type
+[mediaTypes."application/atom+xml"]
+    suffixes = ["xml"]
+
+# Tony theme custom Atom template from MemE
+[outputFormats.SectionsAtom]
+    mediaType = "application/atom+xml"
+    baseName = "atom"
+
+# Tony theme customized RSS template from MemE
+[outputFormats.SectionsRSS]
+    mediaType = "application/rss+xml"
+    baseName = "rss"
+
+# RSS & Atom Article limit
+[services.rss]
+    limit = -1
+
+########################################
+# Theme configuration
+
+[params]
+
+    #####################################
+    # Site Information
+
+    # Site LOGO
+    siteLogo = "/site/logo.png"
+    
+    # Site description
+    siteDescription = "[your_site_description]"
+
+    #####################################
+    # Copyright Protection
+
+    # Whether to open
+    enableCopyright = true
+
+    copyrightName = "CC BY-NC 4.0"
+    copyrightLink = "https://creativecommons.org/licenses/by-nc/4.0/"
+
+    #####################################
+    # table of Contents
+    
+    # Whether to open (global settings)
+    enableToc = true
+
+    #####################################
+    # Reading progress bar
+    
+    # Whether to open (global settings)
+    enableReadingBar = true
+
+    #####################################
+    # Article up and down page
+    
+    # Whether to open (global settings)
+    enableAdjacentPost = true
+
+    #####################################
+    # Whether to show the link between Hugo and Tony
+
+    displayPoweredBy = true
+
+    #####################################
+    # Markdown Related
+
+    # Open link in new tab page?
+    hrefTargetBlank = true
+
+    #####################################
+    # Comments
+
+    # Whether to open (global settings)
+    enableComments = false
+    # Description: "comments" in the front Matter of the article
+    # Has priority over here
+
+    # ## Valine
+    # enableValine = false
+    # valineVersion = "latest"
+    # valineAppId = ""
+    # valineAppKey = ""
+    # valinePlaceholder = ""
+    # valinePath = ""
+    # valineAvatar = "mm"
+    # valineMeta = ["nick", "mail", "link"]
+    # valinePageSize = 15
+    # valineVisitor = true
+    # valineHighlight = true
+    # avatarForce = true
+    # valineRecordIP = true
+    # valineServerURLs = ""
+    # valineEmojiCDN = ""
+    # valineEmojiMaps = """"""
+    # valineEnableQQ = false
+    # valineRequiredFields = []
+    # Description: https://valine.js.org/
+
+    ## Waline
+    enableWaline = false
+    walineServerURL = ""
+
+    #####################################
+    # Google Analytics
+
+    enableGoogleAnalytics = false
+
+    # Type of tracking code
+    trackingCodeType = ""
+    # Description: gtag or analytics
+
+    trackingID = ""
+
+    #####################################
+    # Google Site Verification
+
+    googleSiteVerification = ""
+
+
+    #####################################
+    # Baidu push
+
+    enableBaiduPush = true
+   ```
+
+   改完后Ctrl + S保存，按下Ctrl + Shift + \`召唤VSCode的终端，输入`hugo server -D`试运行。打开浏览器访问localhost:1313(or 127.0.0.1:1313)，出现正常页面（即你觉得十分美观，没有不和谐的地方），则本地构建姑且完毕。
+
+   ##### 2. 上传至GitHub
+
+   > 这一步开始可能需要持续”外出学习“，请注意“学习费用“是否充足　手动/doge
+
+   打开[GitHub](https://github.com)，有账号的登录，没账号的参考[这篇文章](https://zhuanlan.zhihu.com/p/658727572)（过于完善 我就不再重复了/doge）
+
+   新建一个仓库，若准备直接使用https://[username].github.io作为博客的baseURL则请将该仓库命名为[username].github.io，将[username]整体替换为你的GitHub用户名。然后
+   
+   然后，回到VSCode，在终端中设置用户签名：
+
+   ```powershell
+   git config --global user.name [username]
+   git config --global user.email [email]
+   ```
+
+   在这里设置的username和email虽然跟后面git push的关系不大，但是作者还是建议设置成一样的。
+
+   然后回到hugo.toml文件编辑区，将[your_blog_root_URL]和[your_github_homepage]改成[username].spixed.io和https://github.com/[username]，保存。
+
+   按照这个路径新建一个文件：./.github/workflows/hugo.yaml，打开，复制以下文本到该文件，随后保存。
+   ```yaml
+   # Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: My Blog
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.122.0
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
+   ```
+
+   然后回到终端运行：
+
+   ```powershell
+   git add .
+   git commit -m "first commit"
+   git branch -M main
+   git remote add origin https://github.com/[username]/[username].github.io.git
+   git push -u origin main
+   ```
+
+   > 第一次运行到上面最后一条指令时会提示输入账号密码，请输入注册GitHub账号时设置的**用户名**和**密码**，随后确认。以后再次运行git push时便不会再要求登陆了。
+
+   回到GitHub，打开对应仓库-Settings-Pages(https://github.com/[username]/[username].github.io/settings/pages)，找到Build and deployment-Source一项，将原本的Deploy form a branch切换为Github Actions。然后，你就什么都不需要做了。切到Actions(https://github.com/[username]/[username].github.io/actions/)，你可以看到有一个Action正在运行，待其前面的小点从黄色变成绿色，随后访问https://[username].github.io，如果出现了前面运行`hugo server -D`时出现的页面，那么恭喜你，长征已接近尾声。
+
