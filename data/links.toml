@@ -1,5 +1,17 @@
 [[links]]
     name = "Spixed's Blog"
-    image = "https://spixed.github.io/site/logo.png"
-    link = "https://spixed.github.io"
+    image = "https://spixed.is-a.dev/site/logo.png"
+    link = "https://spixed.is-a.dev"
     bio = "从现在起，一切归零。"
+
+[[links]]
+    name = "Hugo"
+    image = "https://gohugo.io/favicon-32x32.png"
+    link = "https://gohugo.io"
+    bio = "本站所用静态网页生成器"
+
+[[links]]
+    name = "ThemeTony"
+    image = "https://htony.js.org/images/t.jpg"
+    link = "https://htony.js.org"
+    bio = "本站所用主题"
