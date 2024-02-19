@@ -2,7 +2,7 @@
 # Site configuration
 # Icon: https://RemixIcon.com/
 
-baseURL = "https://spixed.github.io/"
+baseURL = "https://spixed.is-a.dev/"
 title = "Spixed's Blog"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
@@ -239,3 +239,10 @@ paginate = 39
     # Baidu push
 
     enableBaiduPush = true
+
+    #####################################
+    # is-a.dev Analytics
+
+    enableIsaAnalytics = true
+    isADomain = "spixed"
+    # e.g. If you have a [your-name].is-a.dev, then isADomain = [your-name].
