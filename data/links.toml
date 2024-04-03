@@ -11,7 +11,13 @@
     bio = "本站所用静态网页生成器"
 
 [[links]]
-    name = "ThemeTony"
+    name = "Ori Theme"
     image = "https://htony.js.org/images/t.jpg"
-    link = "https://htony.js.org"
-    bio = "本站所用主题"
+    link = "https://github.com/ThemeTony/hugo-theme-tony"
+    bio = "本站主题原版"
+
+[[links]]
+    name = "Mod Theme"
+    image = "https://htony.js.org/images/t.jpg"
+    link = "https://github.com/Spixed/hugo-theme-tony"
+    bio = "本站主题改版"

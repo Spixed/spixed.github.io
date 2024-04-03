@@ -1,11 +1,13 @@
 +++
-title = 'Test'
+title = 'Template Test'
 date = 2024-02-19T22:08:44+08:00
 draft = false
 keywords = ["test"]
 categories = ["test"]
 tags = ["test"]
 noclick = true
+status = true
+statusCate = "崩铁，启动！"
 categoryLink = "https://webstatic.mihoyo.com/payment/sr/index.html?utm_source=official_web#/"
 buy = true
 buyLink = "https://sr.mihoyo.com"
