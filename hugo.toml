@@ -38,6 +38,7 @@ paginate = 39
     # GitHub
     github = "https://github.com/Spixed"
 
+
 # Page category
 [taxonomies]
   category = "categories"
@@ -82,7 +83,7 @@ paginate = 39
     title = "Spixed's Blog"
     name = "Spixed"
     icon = "ri-code-box-line"
-    url = "/about/me"
+    url = "/about#me"
 
 # Markdown renderer
 [markup]
@@ -247,10 +248,3 @@ paginate = 39
     # Baidu push
 
     enableBaiduPush = true
-
-    #####################################
-    # is-a.dev Analytics
-
-    enableIsaAnalytics = true
-    isADomain = "spixed"
-    # e.g. If you have a [your-name].is-a.dev, then isADomain = [your-name].

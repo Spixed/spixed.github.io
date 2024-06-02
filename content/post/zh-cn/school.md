@@ -12,6 +12,8 @@ weight = 0
 
 > Brief Introduction: Introduction to the Senior High Part of Chengdu No.20 Middle School campus, daily life, teachers and other information. 
 
+<!--more-->
+
 # 中文版
 
 ## 宇宙安全申明

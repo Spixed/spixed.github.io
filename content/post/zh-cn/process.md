@@ -12,6 +12,8 @@ weight = 0
 > 
 > Brief Introduction: Construction and renovation of this blog.
 
+<!--more-->
+
 > 前言：这个更新日志是我写的第二篇blog，所以从这篇文章开始我将尽量坚持同时用中英文写。
 > 
 > Preface: This update log is my second blog post, so I'll stick to writing in Chinese as much as possible from this post on.
