@@ -15,6 +15,7 @@ buyName = "崩坏：星穹铁道"
 buyINfo = "Honkai: Star Rail"
 buyImage = "//sr.mihoyo.com/favicon-mi.ico"
 buyButtonText = "Click"
+weight = 1
 +++
 
 这片银河中有名为「星神」的存在，祂们造就现实，抹消星辰，在无数「世界」中留下祂们的痕迹。

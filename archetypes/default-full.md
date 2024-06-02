@@ -15,4 +15,5 @@ buyName = ""
 buyINfo = ""
 buyImage = ""
 buyButtonText = "" */
+weight = 0
 +++

@@ -5,6 +5,7 @@ draft = false
 keywords = ["博客建设"]
 categories = ["blog"]
 tags = ["blog", "hugo", "github", "git", "theme"]
+weight = 0
 +++
 
 > 概要：该博客的建造&装修过程。
