@@ -8,13 +8,9 @@ tags = ["school"]
 weight = 0
 +++
 
-> 概要：介绍成都二十中高中部校园，日常生活，教师等信息。
-
 > Brief Introduction: Introduction to the Senior High Part of Chengdu No.20 Middle School campus, daily life, teachers and other information. 
 
 <!--more-->
-
-# 中文版
 
 ## 宇宙安全申明
 

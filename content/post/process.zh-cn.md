@@ -9,8 +9,6 @@ weight = 0
 +++
 
 > 概要：该博客的建造&装修过程。
-> 
-> Brief Introduction: Construction and renovation of this blog.
 
 <!--more-->
 

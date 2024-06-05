@@ -41,8 +41,48 @@ paginate = 39
 
 # Page category
 [taxonomies]
-  category = "categories"
-  tag = "tags"
+    category = "categories"
+    tag = "tags"
+
+# Multiple Language Support
+# defaultContentLanguage = "zh-cn"
+# defaultContentLanguageInSubdir = true
+
+[languages]
+    [languages.zh-cn]
+        languageCode = "zh-CN"
+        languageName = "简体中文"
+        weight = 1
+    [languages.en]
+        languageCode = "en-US"
+        languageName = "English"
+        weight = 2
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                url = "/en"
+                name = "Home"
+                weight = 1
+            [[languages.en.menu.main]]
+                url = "/en/categories"
+                name = "Categories"
+                weight = 2
+            [[languages.en.menu.main]]
+                url = "/en/tags"
+                name = "Tags"
+                weight = 3
+            [[languages.en.menu.main]]
+                url = "/en/archives"
+                name = "Archives"
+                weight = 4
+            [[languages.en.menu.main]]
+                url = "/en/about/"
+                name = "About"
+                weight = 5
+            [[languages.en.menu.main]]
+                url = "/en/links/"
+                name = "Links"
+                weight = 6
+
 
 ########################################
 # Menu configuration
