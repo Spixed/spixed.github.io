@@ -1,5 +1,5 @@
 +++
-title = '生日感言'
+title = 'Birthday Reflections'
 date = 2025-01-27T20:00:00+08:00
 draft = false
 keywords = ["生日", "感言"]
