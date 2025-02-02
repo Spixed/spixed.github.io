@@ -21,7 +21,7 @@ summaryLength = 35
 enableEmoji = true
 
 # Number of articles per page
-paginate = 39
+pagination.pagerSize = 39
 
 # author information
 [author]
