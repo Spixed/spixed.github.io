@@ -5,7 +5,11 @@ draft = false
 keywords = ["生日", "感言"]
 categories = ["others"]
 tags = ["others"]
-weight = 0
+noclick = true
+status = true
+statusCate = "17岁啦！"
+categoryLink = "https://webstatic.mihoyo.com/payment/sr/index.html?utm_source=official_web#/"
+weight = 1
 +++
 
 - **存在棱镜 / Prism of Being**  
