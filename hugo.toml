@@ -265,7 +265,7 @@ pagination.pagerSize = 39
 
     ## Waline
     enableWaline = true
-    walineServerURL = "https://waline-1-h4791915.deta.app/"
+    walineServerURL = "https://c.spixed.us.kg/"
 
     #####################################
     # Google Analytics
