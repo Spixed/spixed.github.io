@@ -23,22 +23,6 @@ enableEmoji = true
 # Number of articles per page
 pagination.pagerSize = 39
 
-# author information
-[author]
-    # First name
-    name = "Spixed"
-    # Mailbox
-    email = "Space369X@163.com"
-    # Motto or introduction
-    motto = "从现在起，一切归零。"
-    # Avatar
-    avatar = "/site/avatar.png"
-    # Website (default: baseURL)
-    website = "/"
-    # GitHub
-    github = "https://github.com/Spixed"
-
-
 # Page category
 [taxonomies]
     category = "categories"
@@ -185,8 +169,21 @@ pagination.pagerSize = 39
 ########################################
 # Theme configuration
 
-[params]
+[author]
+    # First name
+    name = "Spixed"
+    # Mailbox
+    email = "Space369X@163.com"
+    # Motto or introduction
+    motto = "从现在起，一切归零。"
+    # Avatar
+    avatar = "/site/avatar.png"
+    # Website (default: baseURL)
+    website = "/"
+    # GitHub
+    github = "https://github.com/Spixed"
 
+[params]
     #####################################
     # Site Information
 
@@ -197,94 +194,55 @@ pagination.pagerSize = 39
     siteDescription = "Spixed's Blog. Just be better. "
 
     #####################################
+    # Author information for theme display
+    author = "Spixed"
+    avatar = "/site/avatar.png"
+    email = "Space369X@163.com"
+    github = "https://github.com/Spixed"
+    motto = "从现在起，一切归零。"
+
+    #####################################
     # Copyright Protection
-
-    # Whether to open
     enableCopyright = true
-
     copyrightName = "CC BY-NC 4.0"
     copyrightLink = "https://creativecommons.org/licenses/by-nc/4.0/"
 
     #####################################
-    # table of Contents
-    
-    # Whether to open (global settings)
+    # Table of Contents
     enableToc = true
 
     #####################################
     # Reading progress bar
-    
-    # Whether to open (global settings)
     enableReadingBar = true
 
     #####################################
     # Article up and down page
-    
-    # Whether to open (global settings)
     enableAdjacentPost = true
 
     #####################################
     # Whether to show the link between Hugo and Tony
-
     displayPoweredBy = true
 
     #####################################
     # Markdown Related
-
-    # Open link in new tab page?
     hrefTargetBlank = true
 
     #####################################
     # Comments
-
-    # Whether to open (global settings)
     enableComments = true
-    # Description: "comments" in the front Matter of the article
-    # Has priority over here
-
-    # ## Valine
-    # enableValine = false
-    # valineVersion = "latest"
-    # valineAppId = ""
-    # valineAppKey = ""
-    # valinePlaceholder = ""
-    # valinePath = ""
-    # valineAvatar = "mm"
-    # valineMeta = ["nick", "mail", "link"]
-    # valinePageSize = 15
-    # valineVisitor = true
-    # valineHighlight = true
-    # avatarForce = true
-    # valineRecordIP = true
-    # valineServerURLs = ""
-    # valineEmojiCDN = ""
-    # valineEmojiMaps = """"""
-    # valineEnableQQ = false
-    # valineRequiredFields = []
-    # Description: https://valine.js.org/
-
-    ## Waline
     enableWaline = true
     walineServerURL = "https://c.spixed.us.kg/"
 
     #####################################
     # Google Analytics
-
     enableGoogleAnalytics = false
-
-    # Type of tracking code
     trackingCodeType = ""
-    # Description: gtag or analytics
-
     trackingID = ""
 
     #####################################
     # Google Site Verification
-
     googleSiteVerification = ""
-
 
     #####################################
     # Baidu push
-
-    enableBaiduPush = true
+    enableBaiduPush = false
