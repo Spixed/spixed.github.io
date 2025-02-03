@@ -99,10 +99,10 @@ Pro tip: Correctly spelling my ID ≈ Making AI understand dad jokes
 ### **About...Games & Literature**  
 🎮 **Digital Snack Guide**  
 - Genshin Impact: Nope (_"there's this game I can't uninstall on my phone..."_)  
-- Honkai Star Rail: Casual Tingyun enjoyer (_failed 50/50 on Sparkle & Jiaoqiu but hey, Tingyun's umbrella still slays_)  
-  > _"All that's past returns to nothingness, like tears lost in rain."_ — Tingyun  
+- Honkai Star Rail: Acheron simp (_lost 50/50 on Sparkle & Jiaoqiu but hey, her blade still slays_)  
+  > _"All that was shall sink into nihility, like tears swallowed by the rain."_ — Acheron
 - Zenless Zone Zero: Supreme Non-Believer (_pre-pull: "I'll get early 5★!" post-pull: "Hello soft pity my old friend"_)  
-- Identity V: Anti-Addiction Warrior (_main account: "Underage Protection MVP"; alt: "Carry me plz"_)  
+- Escape Alive!: Anti-Addiction Warrior (_main account: "Underage Protection MVP"; alt: "Plz carry my noob ass"_)
 - PUBG: Human Silhouette Artist (_teammates: "You're totally the enemy spy!"_)  
 - Minecraft: Schrödinger's Player (_won't launch unless buddies beg_)  
 
@@ -114,12 +114,12 @@ Pro tip: Correctly spelling my ID ≈ Making AI understand dad jokes
 ---
 
 ### **About...My Playlist**  
-🎵 **Music Time Capsule**  
-- Jay Chou: From *Common Jasmine Orange* to *Greatest Work*, my DNA's BGM (_but concert tickets are rarer than unicorns_)  
-- HSR OPs:  
-  - 2.x *Never Sleep Again* (_looped until roommate threatened to call cops_)  
-  - 3.x *Who We Are* (_Tingyun mains rise up!_)  
-- Robin: Penacony's ASMR queen (_voice sweeter than cotton candy – insulin recommended_)  
+🎵 **Music Time Capsule**
+- Jay Chou: From _Common Jasmine Orange_ to _Greatest Work_, my DNA's BGM (_but concert tickets are rarer than unicorns_)
+- HSR OPs:
+  - 2.x _WHITE NIGHT_ (_"Take me away~" looped till roommate filed noise complaint_)
+  - 3.x _Nameless Faces_ (_made me cry, looped till my ears grew calluses_)
+- Robin: Penacony's ASMR queen (_voice sweeter than cotton candy – insulin recommended_)
 
 ---
 
