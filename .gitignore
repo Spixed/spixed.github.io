@@ -1,1 +1,20 @@
-content/.obsidian
+# Hugo output
+public/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# Obsidian configuration
+content/.obsidian/
