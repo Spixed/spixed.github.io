@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "fe450704a4d5d532",
+    "type": "split",
+    "children": [
+      {
+        "id": "a3419476445e0790",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5cefb4ac46aeecd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "post/process.zh-cn.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "process.zh-cn"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b5aa150f6c141a65",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b27e6efecb0a7e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c34808f8bde97a47",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "cf71fc7a8c76cdfc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "0f1e0a9577bd6065",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 250.5
+  },
+  "right": {
+    "id": "ecce5c3e9a7c631e",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff2698c1eeb3a067",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19070de116ef86e9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "3cf06a9a52d1fdfc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Birthday Reflections.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Birthday Reflections 的出链列表"
+            }
+          },
+          {
+            "id": "dcd10dbca58b2fc4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "471bd604618b1360",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Birthday Reflections.md"
+              },
+              "icon": "lucide-list",
+              "title": "Birthday Reflections 的大纲"
+            }
+          },
+          {
+            "id": "7d48e1bf9d621d6e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "4ae581d7a6059178",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "b52c1853947ea83a",
+            "type": "leaf",
+            "state": {
+              "type": "smtcmp-chat-view",
+              "state": {},
+              "icon": "wand-sparkles",
+              "title": "Smart composer chat"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 347.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "publish:发布更改": false,
+      "workspaces:管理工作区布局": false,
+      "audio-recorder:开始/结束录音": false,
+      "random-note:开始漫游笔记": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "obsidian-git:Open Git source control": false,
+      "smart-composer:Open smart composer": false,
+      "zk-prefixer:创建时间戳笔记": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian42-brat:BRAT": false,
+      "media-extended:Open media": false
+    }
+  },
+  "active": "d5cefb4ac46aeecd",
+  "lastOpenFiles": [
+    "post/process.en.md",
+    "post/process.zh-cn.md",
+    "post/school.en.md",
+    "post/school.zh-cn.md",
+    "post/test.zh-cn.md",
+    "post/birthday_reflection.zh-cn.md",
+    "post/birthday_reflection.en.md",
+    "post/1.en.md",
+    "process/img-5.png.md",
+    "process",
+    "archives/_index.md",
+    "about/index.zh-cn.md",
+    "about/index.en.md",
+    "test",
+    "content.lnk",
+    "新快捷方式.lnk",
+    "Birthday Reflections.md"
+  ]
+}

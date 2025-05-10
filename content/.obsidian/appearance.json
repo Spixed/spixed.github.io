@@ -1,0 +1,9 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Blue Topaz",
+  "interfaceFontFamily": "霞鹜文楷",
+  "textFontFamily": "霞鹜文楷",
+  "monospaceFontFamily": "JetBrains Mono",
+  "baseFontSizeAction": true,
+  "nativeMenus": false
+}

@@ -1,0 +1,13 @@
+{
+  "livePreview": false,
+  "alwaysUpdateLinks": false,
+  "uriCallbacks": true,
+  "showLineNumber": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A3",
+    "landscape": false,
+    "margin": "1",
+    "downscalePercent": 100
+  }
+}
