@@ -103,6 +103,15 @@ pagination.pagerSize = 39
         name = "Links"
         weight = 6
 
+# Author information (new standard format for Hugo >= 0.141.0)
+[author]
+    name = "Spixed"
+    email = "Space369X@163.com"
+    motto = "从现在起，一切归零。"
+    avatar = "/site/avatar.png"
+    website = "/"
+    github = "https://github.com/Spixed"
+
 [[params.pinned]]
     title = "Spixed's Blog"
     name = "Spixed"
@@ -112,23 +121,23 @@ pagination.pagerSize = 39
 # Markdown renderer
 [markup]
     defaultMarkdownHandler = "goldmark"
-    [markup.goldmark]
-        [markup.goldmark.extensions]
-            definitionList = true
-            footnote = true
-            linkify = true
-            strikethrough = true
-            table = true
-            taskList = true
-            typographer = false
-        [markup.goldmark.parser]
-            attribute = true
-            autoHeadingID = true
-            autoHeadingIDType = "github"
-        [markup.goldmark.renderer]
-            hardWraps = true
-            unsafe = true
-            xHTML = false
+    [markup.goldmark.extensions]
+        definitionList = true
+        footnote = true
+        linkify = true
+        strikethrough = true
+        table = true
+        taskList = true
+        typographer = false
+    [markup.goldmark.parser]
+        autoHeadingID = true
+        autoHeadingIDType = "github"
+        [markup.goldmark.parser.attribute]
+            block = true
+            title = true
+    [markup.goldmark.renderer]
+        hardWraps = true
+        unsafe = true
     [markup.highlight]
         codeFences = true
         guessSyntax = true
@@ -144,21 +153,15 @@ pagination.pagerSize = 39
 # Hugo output control
 [outputs]
     page = ["HTML"]
-    home = ["HTML", "SectionsRSS", "SectionsAtom"]
+    home = ["HTML", "SectionsRSS"]
     section = ["HTML"]
     taxonomy = ["HTML"]
 
-# Atom file format media type
-[mediaTypes."application/atom+xml"]
-    suffixes = ["xml"]
+[mediaTypes]
+  "application/rss+xml" = { suffixes = ["xml"] }
 
-# Tony theme custom Atom template from MemE
-[outputFormats.SectionsAtom]
-    mediaType = "application/atom+xml"
-    baseName = "atom"
-
-# Tony theme customized RSS template from MemE
-[outputFormats.SectionsRSS]
+[outputFormats]
+  [outputFormats.SectionsRSS]
     mediaType = "application/rss+xml"
     baseName = "rss"
 
@@ -169,37 +172,21 @@ pagination.pagerSize = 39
 ########################################
 # Theme configuration
 
-[author]
-    # First name
-    name = "Spixed"
-    # Mailbox
-    email = "Space369X@163.com"
-    # Motto or introduction
-    motto = "从现在起，一切归零。"
-    # Avatar
-    avatar = "/site/avatar.png"
-    # Website (default: baseURL)
-    website = "/"
-    # GitHub
-    github = "https://github.com/Spixed"
-
 [params]
     #####################################
     # Site Information
-
     # Site LOGO
     siteLogo = "/site/logo.png"
     
     # Site description
     siteDescription = "Spixed's Blog. Just be better. "
 
-    #####################################
-    # Author information for theme display
+    # Author information for theme display (legacy/compatibility)
     author = "Spixed"
-    avatar = "/site/avatar.png"
-    email = "Space369X@163.com"
-    github = "https://github.com/Spixed"
-    motto = "从现在起，一切归零。"
+    avatar = "/site/avatar.png" # Legacy avatar, templates might use this
+    email = "Space369X@163.com" # Legacy email
+    github = "https://github.com/Spixed" # Legacy github
+    motto = "从现在起，一切归零。" # Legacy motto
 
     #####################################
     # Copyright Protection
@@ -246,3 +233,9 @@ pagination.pagerSize = 39
     #####################################
     # Baidu push
     enableBaiduPush = false
+
+    # Ignore logs
+    ignoreLogs = ['warning-goldmark-raw-html']
+    
+    # 设置主要显示的文章部分
+    mainSections = ["post"]
