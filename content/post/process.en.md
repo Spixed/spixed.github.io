@@ -38,8 +38,6 @@ Initially, considering that Vercel and Netlify-built sites are currently inacces
 
 > 2024.2.18 22:14 update: Probably won't make it today. Try again tomorrow.
 
-> 2025.5.3 17:02 update: Should've added this earlier – already have a domain now, and didn't deploy on Netlify after all.
-
 ## (1.1) Installation - Traditional Method
 
 ### 1. VSCode
@@ -108,9 +106,9 @@ When installation completes, remember to uncheck both "Launch Git Bash" and "Vie
 
 GitHub Releases: https://github.com/gohugoio/hugo/releases/
 
-0.141.0 https://github.com/gohugoio/hugo/releases/download/v0.141.0/hugo_extended_0.141.0_windows-amd64.zip
+0.147.0 https://github.com/gohugoio/hugo/releases/download/v0.147.0/hugo_extended_0.147.0_windows-amd64.zip
 
-> Due to limited time/energy, my modified theme (as of 25.5.3) only guarantees compatibility with Hugo Extended 0.141.0. For issues, wait for my random free time/post-college-entrance-exam availability.
+> Due to limited time/energy, my modified theme (as of 25.5.18) only guarantees compatibility with Hugo Extended 0.147.0. For issues, wait for my random free time/post-college-entrance-exam availability.
 
 After downloading, unzip to a comfortable location. Add this path to system PATH, reboot or restart Explorer to refresh PATH. Open PowerShell (abbreviated as PS later) and run `hugo help`. If help content displays normally, installation succeeds.
 
@@ -505,7 +503,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.122.0
+      HUGO_VERSION: 0.147.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -614,12 +612,62 @@ During js.org domain application, I accidentally wiped source code using `git rm
 
 Now about the theme itself...
 
-## 1. About Posts
+## 1. About Articles
 
-Posts can be created in any directory under `content/`, not just `content/post/`. The theme creator recommended `content/about/index.md`.
+In reality, articles can be generated not only in the `content/post` directory, but also in other locations in the `content/`. For instance, the original theme author recommends creating `content/about/index.md` during local testing.
 
-Tip: `index.md` files can be accessed via directory path (e.g., `/about/` instead of `/about/index.html`), similar to web server behavior.
+Speaking of `index.md`, those familiar with web development know that placing `index.html`/`index.php` in a directory allows direct access via the path without specifying the filename. Hugo adopts the same approach (essentially converting MD to HTML with matching names, so as the same above). Creating `index.md` in any folder makes the article accessible through the folder path directly.
 
-<!-- ... rest of section remains ... -->
+You might have noticed that `.md` files generated via `hugo new content` start with five lines - three `+` symbols enclosing Front Matter parameters. Beyond the basic three parameters (title, date, draft), several others exist:
+
+| Item | Function | Example |
+| :--- | :--- | :--- |
+| title | Article title | `title = "Hugo Theme Tony Documentation"` |
+| date | Publish date | `date = 2020-05-07T09:51:27+08:00` |
+| draft | Draft status | `draft = false` |
+| keywords | SEO keywords | `keywords = ["theme migration"]` |
+| categories | Categories | `categories = ["blog"]` |
+| tags | Tags | `tags = ["blog"]` |
+| noclick | Disable clicking (mini-notes) | `notclick = false` |
+| categoryLink | Category link | `categoryLink = "/"` |
+| toc | Table of Contents | `toc = true` |
+| buy<br/>buyLink<br/>buyName<br/>buyInfo<br/>buyImage<br/>buyButtonText | Purchase links | `buyLink = "https://htony.js.org"<br/>buyName = "hugo-theme-tony"<br/>buyInfo = "The Hugo version of WP-Theme-Tony"<br/>buyImage = "/images/t.jpg"<br/>buyButtonText = " Official Site "` |
+| thumbnail | Thumbnail | `thumbnail = "https://cdn.jsdelivr.net/img.jpg"` |
+| weight | Sorting weight | `weight = 2` |
+| adjacentPost | Previous/Next navigation | `adjacentPost = true` |
+
+You can customize Front Matter per article, or modify the template in `/archetypes/default.md` for global settings.
+
+> Author's Warm Reminder without marking in red: Use TOML syntax (`key = value`) instead of YAML (`key: value`) in Front Matter.
+
+## 2. Theme Modifications
+
+The original theme was archived on 2022.07.14, remaining unmaintained for 1.5 years. On 2024.2.13, I forked the original repo and quickly made some initial modifications. After accidentally deleting the repository, I re-forked one and made more modifications, gradually changing to what it is now.
+
+I rebuilt it with key modifications:
+
+- Added dark mode manual toggle
+
+- Updated Waline integration with latest version support and fixed emoji scaling in Waline via layout adjustments
+
+- Externalized logo/avatar paths for easier customization
+
+- Optimized the ToC on the left area of article pages
+
+Feel free to contribute via Issues/PRs! As a GitHub newbie, I welcome suggestions on maintaining contributors list and community standards.
+
+## 3. Waline Comment System
+
+The theme supports three comment systems:
+
+1. **Utterances**: GitHub Discussions-based (limited in China)
+2. **Valine**: No backend needed (LeanCloud storage only)
+3. **Waline** (chosen): Feature-rich successor supporting multiple databases
+
+I originally deployed on Deta.space (with built-in storage). But later I migrated to Vercel + LeanCloud International + Custom Domain after Deta.space's `sunset` in 2024.
+
+## 4. Epilogue
+
+I never anticipated spending so many days writing this post! Finalized at 22:19 on 2024.02.18. Special thanks to readers making it this far - feel free to comment below (account registration appreciated!).
 
 > 2024.2.19 8:37 update: Successfully registered is-a.dev domain last night at 23:34. Surprisingly bypassed China Mobile's GitHub Pages blocking via custom domain, likely resolving DNS pollution issues. Probably won't deploy on Netlify after all.

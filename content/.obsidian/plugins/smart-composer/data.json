@@ -51,8 +51,8 @@
     {
       "type": "openai-compatible",
       "id": "SiliconFlow",
-      "apiKey": "sk-kulcgpwbnwdymnuumaduoylcuicprticyaibbbaulpxmrlyx",
-      "baseUrl": "https://api.siliconflow.cn/v1"
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKey": "sk-kulcgpwbnwdymnuumaduoylcuicprticyaibbbaulpxmrlyx"
     }
   ],
   "chatModels": [
@@ -68,10 +68,10 @@
       "providerId": "anthropic",
       "id": "claude-3.7-sonnet-thinking",
       "model": "claude-3-7-sonnet-latest",
+      "enable": false,
       "thinking": {
         "budget_tokens": 8192
-      },
-      "enable": false
+      }
     },
     {
       "providerType": "anthropic",
@@ -127,16 +127,16 @@
       "providerId": "openai",
       "id": "o4-mini",
       "model": "o4-mini",
-      "reasoning_effort": "medium",
-      "enable": false
+      "enable": false,
+      "reasoning_effort": "medium"
     },
     {
       "providerType": "openai",
       "providerId": "openai",
       "id": "o3",
       "model": "o3",
-      "reasoning_effort": "medium",
-      "enable": false
+      "enable": false,
+      "reasoning_effort": "medium"
     },
     {
       "providerType": "gemini",
@@ -191,50 +191,50 @@
       "providerId": "perplexity",
       "id": "sonar",
       "model": "sonar",
+      "enable": false,
       "web_search_options": {
         "search_context_size": "low"
-      },
-      "enable": false
+      }
     },
     {
       "providerType": "perplexity",
       "providerId": "perplexity",
       "id": "sonar-pro",
       "model": "sonar",
+      "enable": false,
       "web_search_options": {
         "search_context_size": "low"
-      },
-      "enable": false
+      }
     },
     {
       "providerType": "perplexity",
       "providerId": "perplexity",
       "id": "sonar-deep-research",
       "model": "sonar-deep-research",
+      "enable": false,
       "web_search_options": {
         "search_context_size": "low"
-      },
-      "enable": false
+      }
     },
     {
       "providerType": "perplexity",
       "providerId": "perplexity",
       "id": "sonar-reasoning",
       "model": "sonar",
+      "enable": false,
       "web_search_options": {
         "search_context_size": "low"
-      },
-      "enable": false
+      }
     },
     {
       "providerType": "perplexity",
       "providerId": "perplexity",
       "id": "sonar-reasoning-pro",
       "model": "sonar",
+      "enable": false,
       "web_search_options": {
         "search_context_size": "low"
-      },
-      "enable": false
+      }
     },
     {
       "providerType": "morph",
@@ -243,85 +243,85 @@
       "model": "morph-v0"
     },
     {
-      "providerId": "SiliconFlow",
       "providerType": "openai-compatible",
+      "providerId": "SiliconFlow",
       "id": "SiliconFlow: Qwen3-235B-A22B",
       "model": "Qwen/Qwen3-235B-A22B",
       "promptLevel": 1
     },
     {
-      "providerId": "SiliconFlow",
       "providerType": "openai-compatible",
+      "providerId": "SiliconFlow",
       "id": "SiliconFlow: DeepSeek-R1",
       "model": "deepseek-ai/DeepSeek-R1",
       "promptLevel": 1
     },
     {
-      "providerId": "SiliconFlow",
       "providerType": "openai-compatible",
+      "providerId": "SiliconFlow",
       "id": "SiliconFlow: GLM-Z1-32B-0414",
       "model": "THUDM/GLM-Z1-32B-0414",
       "promptLevel": 1
     },
     {
-      "providerId": "SiliconFlow",
       "providerType": "openai-compatible",
+      "providerId": "SiliconFlow",
       "id": "SiliconFlow: GLM-4-32B-0414",
       "model": "THUDM/GLM-4-32B-0414",
       "promptLevel": 1
     },
     {
-      "providerId": "SiliconFlow",
       "providerType": "openai-compatible",
+      "providerId": "SiliconFlow",
       "id": "SiliconFlow: DeepSeek-V3",
       "model": "deepseek-ai/DeepSeek-V3",
       "promptLevel": 1
     },
     {
-      "providerId": "openrouter",
       "providerType": "openrouter",
+      "providerId": "openrouter",
       "id": "OpenRouter: DeepSeek V3",
       "model": "deepseek/deepseek-chat-v3-0324:free",
       "promptLevel": 1
     },
     {
-      "providerId": "openrouter",
       "providerType": "openrouter",
+      "providerId": "openrouter",
       "id": "OpenRouter: DeepSeek R1",
       "model": "deepseek/deepseek-r1:free",
       "promptLevel": 1
     },
     {
-      "providerId": "openrouter",
       "providerType": "openrouter",
+      "providerId": "openrouter",
       "id": "OpenRouter: Gemini 2.0 Flash-exp",
       "model": "google/gemini-2.0-flash-exp:free",
       "promptLevel": 1
     },
     {
-      "providerId": "openrouter",
       "providerType": "openrouter",
+      "providerId": "openrouter",
       "id": "OpenRouter: Qwen3 235b-a22b",
       "model": "qwen/qwen3-235b-a22b:free",
       "promptLevel": 1
     },
     {
-      "providerId": "openrouter",
       "providerType": "openrouter",
+      "providerId": "openrouter",
       "id": "OpenRouter: MAI DS R1",
       "model": "microsoft/mai-ds-r1:free",
       "promptLevel": 1
     },
     {
-      "providerId": "openrouter",
       "providerType": "openrouter",
+      "providerId": "openrouter",
       "id": "OpenRouter: DeepSeek R1T Chimera",
       "model": "tngtech/deepseek-r1t-chimera:free",
       "promptLevel": 1
     },
     {
-      "providerId": "openrouter",
       "providerType": "openrouter",
+      "providerId": "openrouter",
       "id": "OpenRouter: GLM Z1 32B",
       "model": "thudm/glm-z1-32b:free",
       "promptLevel": 1
@@ -371,8 +371,8 @@
       "dimension": 1024
     },
     {
-      "providerId": "SiliconFlow",
       "providerType": "openai-compatible",
+      "providerId": "SiliconFlow",
       "id": "SiliconFlow: bge-m3",
       "model": "BAAI/bge-m3",
       "dimension": 1024

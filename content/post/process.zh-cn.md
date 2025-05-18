@@ -20,7 +20,7 @@ weight = 0
 > >
 > > 2024.2.18 22.13 补充：由于本文文字实在太多，作者决定本文不再编写英文版本，有兴趣者自行打开翻译。
 > >
-> > 25.5.3 16:45 补充：现在又想尝试一下了 争取不用 DeepSeek /doge（好吧还是用了）
+> > 2025.5.3 16:45 补充：现在又想尝试一下了 争取不用 DeepSeek /doge（好吧还是用了）
 
 # 一、背景
 
@@ -41,8 +41,6 @@ weight = 0
 > 2024.2.18 16:34 补充：才发现 Netlify 现在能非常流畅地访问。。。不过因为作者手上没有域名，所以作者准备今天在 Netlify 上构建一个备用的访问地址。
 
 > 2024.2.18 22:14 补充：今天应该是来不及了，明天再来吧。
-
-> 2025.5.3 17:02 补充：其实早该补充的，已经有域名了，也没在 Netlify 上部署。
 
 ## (1.1) 安装 - 传统方法
 
@@ -111,9 +109,9 @@ weight = 0
 
    GitHub Releases: https://github.com/gohugoio/hugo/releases/
 
-   0.141.0 https://github.com/gohugoio/hugo/releases/download/v0.141.0/hugo_extended_0.141.0_windows-amd64.zip
+   0.147.0 https://github.com/gohugoio/hugo/releases/download/v0.147.0/hugo_extended_0.147.0_windows-amd64.zip
 
-   > 由于作者时间精力有限，目前的修改版主题（截止 25.5.3）仅能确保 Hugo Extended 0.141.0 能正常使用，若有问题请等待作者随缘/高考完有空再处理。
+   > 由于作者时间精力有限，目前的修改版主题（截止 2025.5.18）仅能确保 Hugo Extended 0.147.0 能正常使用，若有问题请等待作者随缘/高考完有空再处理。
 
    下载下来之后解压到一个你觉得很舒服的位置，随后将这个位置添加进 path 里，重启电脑或重启资源管理器刷新 path，召唤 PowerShell（后文简写为 ps）运行 `hugo help`，若正常输出帮助内容则安装完毕。
 
@@ -508,7 +506,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.122.0
+      HUGO_VERSION: 0.147.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -616,31 +614,31 @@ jobs:
 
 ## 1. 有关文章
 
-其实文章不只是可以在 content/post 文件夹里生成，还可以在 content 路径下生成其他文章，例如该主题的原作者在本地试运行阶段就推荐我们创建 content/about/index.md。
+其实文章不只是可以在 `content/post` 文件夹里生成，还可以在 `content` 路径下生成其他文章，例如该主题的原作者在本地试运行阶段就推荐我们创建 `content/about/index.md`。
 
-说到 index.md，其实各位接触过网页前端的都知道某个目录下放置 index.html/index.php 文件，web 服务打开后可以直接输入路径名访问该网页，而不用输入 index.html/index.php 文件名。Hugo 也采用了相同的方案（本质是将 md 转成相同名称的 html 嘛，所以肯定也符合上述现象），任何文件夹下新建 index.md 文件，那么可以直接通过文件夹的路径访问到该文章，而不用多输入 index。
+说到 `index.md`，其实各位接触过网页前端的都知道某个目录下放置 `index.html`/`index.php` 文件，web 服务打开后可以直接输入路径名访问该网页，而不用输入 index.html/index.php 文件名。Hugo 也采用了相同的方案（本质是将 md 转成相同名称的 html 嘛，所以肯定也符合上述现象），任何文件夹下新建 index.md 文件，那么可以直接通过文件夹的路径访问到该文章，而不用多输入 index。
 
 话说各位注意到没有，每次通过 hugo new content 生成的.md 文件开头默认有 5 行文本，第一行和第五行各三个 `+` 包裹了 2 ~ 4 行的三行参数。其实，这里的文章参数 (又叫 Front Matter) 不只这三个，还有以下部分 (来源于主题文档)：
 
 |项 | 作用 | 示例|
 | :---: | :---: | :---: |
-|title|文章标题|title: "Hugo Theme Tony 主题文档 "|
-|date|文章发布日期|date: 2020-05-07T09:51:27+08:00|
-|draft|是否草稿|draft: false|
-|keywords|文章关键词，用于 HTML 头部|keywords: [" 移植主题 "]|
-|categories|分类|categories: [" 博客 "]|
-|tags|标签|tags: [" 博客 "]|
-|noclick|不允许点击（类似碎碎念），仅在主页展示|notclick: false|
-|categoryLink|分类按钮点击时的链接|categoryLink: "/"|
-|toc|是否开启目录|toc: true|
-|buy: false<br/>buyLink: ""<br/>buyName: ""<br/>buyInfo: ""<br/>buyImage: ""<br/>buyButtonText: ""|购物链接|buyLink: "https://htony.js.org"<br/>buyName: "hugo-theme-tony"<br/>buyInfo: "WP-Theme-Tony 的 hugo 移植版 "<br/>buyImage: "/images/t.jpg"<br/>buyButtonText: " 官网 "|
-|thumbnail|缩略图|thumbnail: "https://cdn.jsdelivr.net/gh/FFRaycoder/cdn/imgs/20200507094721.png"|
-|weight|文章权重|weight: 2|
-|adjacentPost|是否显示上下页|adjacentPost: true|
+|title|文章标题|`title = "Hugo Theme Tony 主题文档 "`|
+|date|文章发布日期|`date = 2020-05-07T09:51:27+08:00`|
+|draft|是否草稿|`draft = false`|
+|keywords|文章关键词，用于 HTML 头部|`keywords = [" 移植主题 "]`|
+|categories|分类|`categories = [" 博客 "]`|
+|tags|标签|`tags = [" 博客 "]`|
+|noclick|不允许点击（类似碎碎念），仅在主页展示|`notclick = false`|
+|categoryLink|分类按钮点击时的链接|`categoryLink = "/"`|
+|toc|是否开启目录|`toc = true`|
+|buy<br/>buyLink<br/>buyName<br/>buyInfo<br/>buyImage<br/>buyButtonText|购物链接|`buyLink = "https://htony.js.org"<br/>buyName = "hugo-theme-tony"<br/>buyInfo = "WP-Theme-Tony 的 hugo 移植版 "<br/>buyImage = "/images/t.jpg"<br/>buyButtonText = " 官网 "`|
+|thumbnail|缩略图|`thumbnail = "https://cdn.jsdelivr.net/gh/FFRaycoder/cdn/imgs/20200507094721.png"`|
+|weight|文章权重|`weight = 2`|
+|adjacentPost|是否显示上下页|`adjacentPost = true`|
 
 你可以每篇文章生成后定制 Front Matters，也可以找到一些大部分文章都需要的部分写进生成.md 文件的模板里。找到/archetypes/default.md，对其进行修改即可。
 
-> 不标红的 Author's Warm Reminder: 不要用上述表格中实例的格式，参照 default.md 中的格式修改。(即不要用 `key: value`，用 `key = value` 的形式)
+> 不标红的 Author's Warm Reminder: 不要用 YAML 格式 (`key: value`)，用TOML 格式 (`key = value`) 。
 
 ## 2. 有关主题
 
@@ -654,6 +652,8 @@ jobs:
 
 · 除此之外，我将网站的 logo 和 blogger 的头像文件移到了主题外部，以方便更改。
 
+· 文章页面左侧 ToC 的优化与完善
+
 大概就这么多了。以后有更新我尽量写在某篇文章里。
 
 欢迎屏幕面前的各位前来 Issue & PR 这个仓库，我严格来说也算是 GitHub 新人，不太懂这个圈子的规矩，像什么 Contributors 之类的我可能需要各位大佬们的建议，对于大部分人来说，支持作者以及未来的贡献者继续更新这个主题的动力就是帮点小忙，如帮忙修改文档，issue 里面提建议，有能力者可自愿当 Contributor。
@@ -662,9 +662,9 @@ jobs:
 
 ## 3. 有关评论区 Waline
 
-说实话这个我没什么想写的，官方文档已经做的十分详尽了，我也没什么想说的。该主题中同时支持了 utterances, valine, 以及 waline。第一个是通过 GitHub Discussions 实现评论功能的。考虑到国内 GitHub 实际访问情况以及作者个人主观意见来说，我不太喜欢这个方案。接下来，我在 valine 与 waline 中选择了 waline，二者最大的区别在于实现方式与配置项目上。前者无需后端，但只允许使用 LeanCloud 做存储端；后者可看作为 Valine 的衍化升级版，需要部署后端，但是可用多种程序存储 (如 LeanCloud, MongoDB, MySQL, etc.)。我比较推荐将 Waline 部署到 Deta.space 上，因为 Deta.space 不需要多配置一次存储段，其本身自带存储且部署在此的 Waline 不需要对存储进行配置即可直接使用。最最重要的是，Deta.space 的存储空间目前看来没有明写，暂时认为是无限大吧。要知道 LeanCloud 免费版也只有 1GB(虽然对于评论区而言已经完全够用了，但是多多益善嘛)
+说实话这个我没什么想写的，官方文档已经做的十分详尽了，我也没什么想说的。该主题中同时支持了 utterances, valine, 以及 waline。第一个是通过 GitHub Discussions 实现评论功能的。考虑到国内 GitHub 实际访问情况以及作者个人主观意见来说，我不太喜欢这个方案。接下来，我在 valine 与 waline 中选择了 waline，二者最大的区别在于实现方式与配置项目上。前者无需后端，但只允许使用 LeanCloud 做存储端；后者可看作为 Valine 的衍化升级版，需要部署后端，但是可用多种程序存储 (如 LeanCloud, MongoDB, MySQL, etc.)。我比较推荐将 Waline 部署到 Deta.space 上，因为 Deta.space 不需要多配置一次存储端，其本身自带存储且部署在此的 Waline 不需要对存储进行配置即可直接使用。最最重要的是，Deta.space 的存储空间目前看来没有明写，暂时认为是无限大吧。要知道 LeanCloud 免费版也只有 1GB(虽然对于评论区而言已经完全够用了，但是多多益善嘛)
 
-> 25.5.3 补充：很可惜 Deta.space 2024 年就寄了，而且我到现在还没有修复我的评论区……
+>  2025.5.18 补充：很可惜 Deta.space 2024 年就寄了，目前用的是 Vercel + LeanCloud(国际版) + Custom Domain 的方式实现 Waline 评论区的……
 
 # 四、结尾
 
