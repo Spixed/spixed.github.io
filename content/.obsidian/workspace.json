@@ -201,11 +201,10 @@
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian42-brat:BRAT": false,
-      "media-extended:Open media": false,
-      "copilot:Open Copilot Chat": false
+      "media-extended:Open media": false
     }
   },
-  "active": "3fbe1f99b5d26945",
+  "active": "c34808f8bde97a47",
   "lastOpenFiles": [
     "post/process.en.md",
     "post/process.zh-cn.md",
