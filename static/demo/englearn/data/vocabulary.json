@@ -1,0 +1,371 @@
+{
+  "title": "高中英语写作指南",
+  "subtitle": "精选易被忽略的实用义项，助你在应用文和读后续写中展现词汇的灵活性与地道表达",
+  "layout": {
+    "wideScreen": {
+      "columns": 3,
+      "asymmetric": true
+    }
+  },
+  "sections": [
+    {
+      "id": "core-verbs",
+      "title": "核心动词熟词生义",
+      "icon": "fas fa-star",
+      "color": "amber",
+      "type": "table",
+      "layout": {
+        "wideScreen": {
+          "columns": 2,
+          "position": "top"
+        }
+      },
+      "headers": ["常见词", "熟词新义", "例句与应用场景"],
+      "data": [
+        {
+          "word": "address",
+          "meaning": "v. 处理；应对（问题）",
+          "example": "建议信/议论文: We must address the issue of pollution.",
+          "highlightWords": ["address", "issue"]
+        },
+        {
+          "word": "develop",
+          "meaning": "v. 患上（疾病）；冲洗（照片）",
+          "example": "续写生病情节: She developed a fever after the rain.",
+          "highlightWords": ["developed", "fever"]
+        },
+        {
+          "word": "reflect",
+          "meaning": "v. 深思；体现（特质）",
+          "example": "人物描写: His actions reflect his kindness.",
+          "highlightWords": ["reflect", "kindness"]
+        },
+        {
+          "word": "project",
+          "meaning": "v. 投射；展现（情感/形象）",
+          "example": "演讲/续写: She projected confidence on stage.",
+          "highlightWords": ["projected", "confidence"]
+        },
+        {
+          "word": "engage",
+          "meaning": "v. 吸引；使参与",
+          "example": "活动报告: The activity engaged students' curiosity.",
+          "highlightWords": ["engaged", "curiosity"]
+        },
+        {
+          "word": "harvest",
+          "meaning": "v. 收获（知识/成果）",
+          "example": "总结类应用文: We harvested valuable experience.",
+          "highlightWords": ["harvested", "experience"]
+        },
+        {
+          "word": "fuel",
+          "meaning": "v. 刺激；助长（情绪）",
+          "example": "续写心理描写: Rumors fueled her anxiety.",
+          "highlightWords": ["fueled", "anxiety"]
+        },
+        {
+          "word": "mirror",
+          "meaning": "v. 反映；映照",
+          "example": "调查报告: The data mirrors social trends.",
+          "highlightWords": ["mirrors", "trends"]
+        },
+        {
+          "word": "voice",
+          "meaning": "v. 表达（诉求）",
+          "example": "建议信: We voice concerns about campus safety.",
+          "highlightWords": ["voice", "concerns", "safety"]
+        },
+        {
+          "word": "bridge",
+          "meaning": "v. 弥合（分歧）",
+          "example": "议论文: Education can bridge social gaps.",
+          "highlightWords": ["bridge", "gaps"]
+        },
+        {
+          "word": "seed",
+          "meaning": "v. 播种（思想）",
+          "example": "励志结尾: The speech seeded hope in their hearts.",
+          "highlightWords": ["seeded", "hearts"]
+        }
+      ]
+    },
+    {
+      "id": "advanced-verbs",
+      "title": "高级动词替换",
+      "icon": "fas fa-exchange-alt",
+      "color": "blue",
+      "type": "table",
+      "layout": {
+        "wideScreen": {
+          "columns": 1,
+          "position": "left"
+        }
+      },
+      "headers": ["基础词", "高级替换", "适用场景"],
+      "data": [
+        {
+          "word": "say",
+          "meaning": "remark / mutter / declare",
+          "example": "续写对话多样化（轻声说/正式宣布）",
+          "highlightWords": ["remark", "mutter", "declare"]
+        },
+        {
+          "word": "look",
+          "meaning": "gaze（凝视）/ scan（扫视）",
+          "example": "续写神态描写: He gazed into the distance.",
+          "highlightWords": ["gazed", "distance"]
+        },
+        {
+          "word": "walk",
+          "meaning": "stroll（漫步）/ trudge（跋涉）",
+          "example": "环境描写: They trudged through the snow.",
+          "highlightWords": ["trudged", "snow"]
+        },
+        {
+          "word": "cry",
+          "meaning": "sob（啜泣）/ burst into tears",
+          "example": "情感描写: She sobbed silently.",
+          "highlightWords": ["sobbed", "silently"]
+        },
+        {
+          "word": "think",
+          "meaning": "ponder（深思）/ contemplate（沉思）",
+          "example": "心理描写: He pondered his choices.",
+          "highlightWords": ["pondered", "choices"]
+        },
+        {
+          "word": "show",
+          "meaning": "demonstrate / reveal",
+          "example": "议论文论证: The experiment reveals a truth.",
+          "highlightWords": ["reveals", "truth"]
+        },
+        {
+          "word": "dance",
+          "meaning": "v. 闪烁；跳动",
+          "example": "光影/火焰: Sunlight danced on the waves.",
+          "highlightWords": ["danced", "waves"]
+        },
+        {
+          "word": "paint",
+          "meaning": "v. 描绘（抽象）",
+          "example": "情感渲染: Her words painted a bleak future.",
+          "highlightWords": ["painted", "bleak"]
+        },
+        {
+          "word": "kiss",
+          "meaning": "v. 轻拂",
+          "example": "自然接触: Breeze kissed her cheeks.",
+          "highlightWords": ["kissed", "cheeks"]
+        },
+        {
+          "word": "devour",
+          "meaning": "v. 如饥似渴阅读",
+          "example": "人物特质: She devoured every book in the library.",
+          "highlightWords": ["devoured", "library"]
+        },
+        {
+          "word": "knife",
+          "meaning": "v. （风）刺骨",
+          "example": "环境烘托: The cold wind knifed through his coat.",
+          "highlightWords": ["knifed", "coat"]
+        },
+        {
+          "word": "anchor",
+          "meaning": "v. 使稳固",
+          "example": "心理依靠: Her presence anchored him in chaos.",
+          "highlightWords": ["anchored", "chaos"]
+        }
+      ]
+    },
+    {
+      "id": "advanced-adjectives",
+      "title": "高级形容词/副词",
+      "icon": "fas fa-palette",
+      "color": "green",
+      "type": "table",
+      "layout": {
+        "wideScreen": {
+          "columns": 1,
+          "position": "right"
+        }
+      },
+      "headers": ["表达", "高级替换", "例句"],
+      "data": [
+        {
+          "word": "very happy",
+          "meaning": "overjoyed（狂喜的）",
+          "example": "She was overjoyed at the news.",
+          "highlightWords": ["overjoyed", "news"]
+        },
+        {
+          "word": "very sad",
+          "meaning": "heartbroken（心碎的）",
+          "example": "His heartbroken expression moved us.",
+          "highlightWords": ["heartbroken", "expression"]
+        },
+        {
+          "word": "carefully",
+          "meaning": "meticulously（一丝不苟地）",
+          "example": "She meticulously arranged the flowers.",
+          "highlightWords": ["meticulously", "arranged"]
+        },
+        {
+          "word": "beautiful",
+          "meaning": "picturesque（如画的）",
+          "example": "景物描写: a picturesque village",
+          "highlightWords": ["picturesque", "village"]
+        },
+        {
+          "word": "important",
+          "meaning": "crucial / pivotal（关键的）",
+          "example": "演讲稿: a pivotal moment in history",
+          "highlightWords": ["pivotal", "moment"]
+        },
+        {
+          "word": "tired",
+          "meaning": "exhausted / weary（精疲力尽的）",
+          "example": "续写: The weary traveler collapsed.",
+          "highlightWords": ["weary", "traveler"]
+        }
+      ]
+    },
+    {
+      "id": "abstract-nouns",
+      "title": "抽象名词",
+      "icon": "fas fa-brain",
+      "color": "purple",
+      "type": "grid",
+      "layout": {
+        "wideScreen": {
+          "columns": 1,
+          "position": "bottom-left"
+        }
+      },
+      "data": [
+        {
+          "word": "dilemma",
+          "meaning": "n. 困境（续写矛盾冲突）",
+          "example": "face a moral dilemma",
+          "highlightWords": ["moral", "dilemma"]
+        },
+        {
+          "word": "perseverance",
+          "meaning": "n. 毅力（励志类结尾）",
+          "example": "show unwavering perseverance",
+          "highlightWords": ["unwavering", "perseverance"]
+        },
+        {
+          "word": "harmony",
+          "meaning": "n. 和谐（环保/社会类主题）",
+          "example": "live in harmony with nature",
+          "highlightWords": ["harmony", "nature"]
+        },
+        {
+          "word": "insight",
+          "meaning": "n. 洞察力（总结启示）",
+          "example": "gain valuable insight",
+          "highlightWords": ["valuable", "insight"]
+        },
+        {
+          "word": "resilience",
+          "meaning": "n. 韧性（克服困难类）",
+          "example": "the resilience of the human spirit",
+          "highlightWords": ["resilience", "spirit"]
+        }
+      ]
+    },
+    {
+      "id": "useful-phrases",
+      "title": "万能短语",
+      "icon": "fas fa-link",
+      "color": "indigo",
+      "type": "grid",
+      "layout": {
+        "wideScreen": {
+          "columns": 1,
+          "position": "bottom-right"
+        }
+      },
+      "data": [
+        {
+          "word": "in light of...",
+          "meaning": "（鉴于...）",
+          "example": "应用文开头: In light of recent events, we propose...",
+          "highlightWords": ["In light of", "recent", "propose"]
+        },
+        {
+          "word": "not only... but also...",
+          "meaning": "（递进关系）",
+          "example": "演讲稿: This policy not only saves energy but also reduces costs.",
+          "highlightWords": ["not only", "but also", "saves", "reduces"]
+        },
+        {
+          "word": "against all odds",
+          "meaning": "（克服万难）",
+          "example": "续写励志结局: They succeeded against all odds.",
+          "highlightWords": ["against all odds", "succeeded"]
+        },
+        {
+          "word": "a wave of...",
+          "meaning": "（一阵...）",
+          "example": "情绪描写: A wave of nostalgia swept over her.",
+          "highlightWords": ["A wave of", "nostalgia", "swept"]
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "title": "读后续写片段",
+      "content": "Exhausted and weary, Emily trudged through the storm. Suddenly, a faint light glimmered in the distance. Against all odds, hope flickered in her heart as she staggered toward it.",
+      "highlightWords": ["Exhausted", "weary", "trudged", "glimmered", "Against all odds", "flickered", "staggered"]
+    },
+    {
+      "title": "应用文建议信结尾",
+      "content": "We urge the council to address this issue promptly. Your action will not only demonstrate responsibility but also foster community harmony.",
+      "highlightWords": ["address", "issue", "not only", "but also", "demonstrate", "foster", "harmony"]
+    },
+    {
+      "title": "演讲稿开头",
+      "content": "In light of recent environmental challenges, we must contemplate our role in protecting this picturesque planet. This is a pivotal moment that demands our perseverance.",
+      "highlightWords": ["In light of", "contemplate", "picturesque", "pivotal", "perseverance"]
+    }
+  ],
+  "warnings": [
+    {
+      "title": "避免堆砌",
+      "content": "高级词汇需贴合语境（如续写口语化场景少用书面词）。",
+      "correct": "根据场景选择合适的词汇层次",
+      "incorrect": "在日常对话中过度使用 \"contemplate\"、\"meticulously\" 等词",
+      "highlightWords": ["contemplate", "meticulously"]
+    },
+    {
+      "title": "熟词生义确保准确",
+      "content": "确保新义符合上下文（如 develop 表\"患病\"需接疾病名词）。",
+      "correct": "She developed a fever/cold/headache",
+      "incorrect": "She developed happiness（错误搭配）",
+      "highlightWords": ["developed", "fever", "happiness"]
+    },
+    {
+      "title": "搭配准确",
+      "content": "如 demonstrate 常接抽象名词（ability, courage）。",
+      "correct": "demonstrate ability/courage/skill",
+      "incorrect": "demonstrate a book（搭配不当）",
+      "highlightWords": ["demonstrate", "ability", "courage", "skill"]
+    },
+    {
+      "title": "情感一致",
+      "content": "heartbroken 程度 > sad，用于重大打击场景。",
+      "correct": "失去亲人时用 \"heartbroken\"",
+      "incorrect": "考试失利用 \"heartbroken\"（程度过重）",
+      "highlightWords": ["heartbroken"]
+    }
+  ],
+  "learning-tips": [
+    "建立个人词汇库并按场景分类记忆",
+    "在\"语言地道性\"维度展现你的英语水平",
+    "避免堆砌，注重语境适配",
+    "多练习，在实际写作中灵活运用"
+  ]
+} 

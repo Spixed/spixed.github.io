@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高中英语写作熟词生义与高级词汇指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            position: relative;
+            z-index: 1;
+        }
+        .highlight:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background-color: rgba(255, 228, 132, 0.5);
+            z-index: -1;
+            transform: rotate(-1deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <!-- 标题区 -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">高中英语写作<span class="highlight">深度版熟词生义</span>指南</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">精选易被忽略的实用义项，助你在应用文和读后续写中展现词汇的灵活性与地道表达</p>
+            <div class="mt-6 flex justify-center">
+                <div class="w-24 h-1 bg-amber-400 rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- 熟词生义核心表 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10 card">
+            <div class="bg-amber-500 px-6 py-4">
+                <h2 class="text-xl font-bold text-white"><i class="fas fa-star mr-2"></i>熟词生义核心表（灵活运用更地道）</h2>
+            </div>
+            <div class="p-6">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="text-left border-b border-gray-200">
+                                <th class="pb-3 font-bold text-gray-700">常见词</th>
+                                <th class="pb-3 font-bold text-gray-700">熟词新义</th>
+                                <th class="pb-3 font-bold text-gray-700">例句与应用场景</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">address</td>
+                                <td class="py-4 text-gray-700">v. 处理；应对（问题）</td>
+                                <td class="py-4 text-gray-600 italic">建议信/议论文: <span class="font-medium">We must <span class="text-amber-600">address</span> the issue of pollution.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">develop</td>
+                                <td class="py-4 text-gray-700">v. 患上（疾病）；冲洗（照片）</td>
+                                <td class="py-4 text-gray-600 italic">续写生病情节: <span class="font-medium">She <span class="text-amber-600">developed</span> a fever after the rain.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">reflect</td>
+                                <td class="py-4 text-gray-700">v. 深思；体现（特质）</td>
+                                <td class="py-4 text-gray-600 italic">人物描写: <span class="font-medium">His actions <span class="text-amber-600">reflect</span> his kindness.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">project</td>
+                                <td class="py-4 text-gray-700">v. 投射；展现（情感/形象）</td>
+                                <td class="py-4 text-gray-600 italic">演讲/续写: <span class="font-medium">She <span class="text-amber-600">projected</span> confidence on stage.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">engage</td>
+                                <td class="py-4 text-gray-700">v. 吸引；使参与</td>
+                                <td class="py-4 text-gray-600 italic">活动报告: <span class="font-medium">The activity <span class="text-amber-600">engaged</span> students' curiosity.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">harvest</td>
+                                <td class="py-4 text-gray-700">v. 收获（知识/成果）</td>
+                                <td class="py-4 text-gray-600 italic">总结类应用文: <span class="font-medium">We <span class="text-amber-600">harvested</span> valuable experience.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">fuel</td>
+                                <td class="py-4 text-gray-700">v. 刺激；助长（情绪）</td>
+                                <td class="py-4 text-gray-600 italic">续写心理描写: <span class="font-medium">Rumors <span class="text-amber-600">fueled</span> her anxiety.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">mirror</td>
+                                <td class="py-4 text-gray-700">v. 反映；映照</td>
+                                <td class="py-4 text-gray-600 italic">调查报告: <span class="font-medium">The data <span class="text-amber-600">mirrors</span> social trends.</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 高级动词替换表 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10 card">
+            <div class="bg-blue-500 px-6 py-4">
+                <h2 class="text-xl font-bold text-white"><i class="fas fa-exchange-alt mr-2"></i>高级动词替换（精准表达动作）</h2>
+            </div>
+            <div class="p-6">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="text-left border-b border-gray-200">
+                                <th class="pb-3 font-bold text-gray-700">基础词</th>
+                                <th class="pb-3 font-bold text-gray-700">高级替换</th>
+                                <th class="pb-3 font-bold text-gray-700">适用场景</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">say</td>
+                                <td class="py-4 text-gray-700">remark / mutter / declare</td>
+                                <td class="py-4 text-gray-600 italic">续写对话多样化（轻声说/正式宣布）</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">look</td>
+                                <td class="py-4 text-gray-700">gaze（凝视）/ scan（扫视）</td>
+                                <td class="py-4 text-gray-600 italic">续写神态描写: <span class="font-medium">He <span class="text-blue-600">gazed</span> into the distance.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">walk</td>
+                                <td class="py-4 text-gray-700">stroll（漫步）/ trudge（跋涉）</td>
+                                <td class="py-4 text-gray-600 italic">环境描写: <span class="font-medium">They <span class="text-blue-600">trudged</span> through the snow.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">cry</td>
+                                <td class="py-4 text-gray-700">sob（啜泣）/ burst into tears</td>
+                                <td class="py-4 text-gray-600 italic">情感描写: <span class="font-medium">She <span class="text-blue-600">sobbed</span> silently.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">think</td>
+                                <td class="py-4 text-gray-700">ponder（深思）/ contemplate（沉思）</td>
+                                <td class="py-4 text-gray-600 italic">心理描写: <span class="font-medium">He <span class="text-blue-600">pondered</span> his choices.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">show</td>
+                                <td class="py-4 text-gray-700">demonstrate / reveal</td>
+                                <td class="py-4 text-gray-600 italic">议论文论证: <span class="font-medium">The experiment <span class="text-blue-600">reveals</span> a truth.</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 高级形容词/副词表 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10 card">
+            <div class="bg-green-500 px-6 py-4">
+                <h2 class="text-xl font-bold text-white"><i class="fas fa-palette mr-2"></i>高级形容词/副词（增强细节感染力）</h2>
+            </div>
+            <div class="p-6">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="text-left border-b border-gray-200">
+                                <th class="pb-3 font-bold text-gray-700">表达</th>
+                                <th class="pb-3 font-bold text-gray-700">高级替换</th>
+                                <th class="pb-3 font-bold text-gray-700">例句</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">very happy</td>
+                                <td class="py-4 text-gray-700">overjoyed（狂喜的）</td>
+                                <td class="py-4 text-gray-600 italic"><span class="font-medium">She was <span class="text-green-600">overjoyed</span> at the news.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">very sad</td>
+                                <td class="py-4 text-gray-700">heartbroken（心碎的）</td>
+                                <td class="py-4 text-gray-600 italic"><span class="font-medium">His <span class="text-green-600">heartbroken</span> expression moved us.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">carefully</td>
+                                <td class="py-4 text-gray-700">meticulously（一丝不苟地）</td>
+                                <td class="py-4 text-gray-600 italic"><span class="font-medium">She <span class="text-green-600">meticulously</span> arranged the flowers.</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">beautiful</td>
+                                <td class="py-4 text-gray-700">picturesque（如画的）</td>
+                                <td class="py-4 text-gray-600 italic">景物描写: <span class="font-medium">a <span class="text-green-600">picturesque</span> village</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">important</td>
+                                <td class="py-4 text-gray-700">crucial / pivotal（关键的）</td>
+                                <td class="py-4 text-gray-600 italic">演讲稿: <span class="font-medium">a <span class="text-green-600">pivotal</span> moment in history</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-bold text-gray-800">tired</td>
+                                <td class="py-4 text-gray-700">exhausted / weary（精疲力尽的）</td>
+                                <td class="py-4 text-gray-600 italic">续写: <span class="font-medium">The <span class="text-green-600">weary</span> traveler collapsed.</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 抽象名词表 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10 card">
+            <div class="bg-purple-500 px-6 py-4">
+                <h2 class="text-xl font-bold text-white"><i class="fas fa-brain mr-2"></i>抽象名词（提升思想深度）</h2>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-gray-800">dilemma</h3>
+                            <p class="text-gray-700">n. 困境（续写矛盾冲突）</p>
+                            <p class="text-gray-600 italic"><span class="font-medium">face a moral <span class="text-purple-600">dilemma</span></span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">perseverance</h3>
+                            <p class="text-gray-700">n. 毅力（励志类结尾）</p>
+                            <p class="text-gray-600 italic"><span class="font-medium">show unwavering <span class="text-purple-600">perseverance</span></span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">harmony</h3>
+                            <p class="text-gray-700">n. 和谐（环保/社会类主题）</p>
+                            <p class="text-gray-600 italic"><span class="font-medium">live in <span class="text-purple-600">harmony</span> with nature</span></p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-gray-800">insight</h3>
+                            <p class="text-gray-700">n. 洞察力（总结启示）</p>
+                            <p class="text-gray-600 italic"><span class="font-medium">gain valuable <span class="text-purple-600">insight</span></span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">resilience</h3>
+                            <p class="text-gray-700">n. 韧性（克服困难类）</p>
+                            <p class="text-gray-600 italic"><span class="font-medium">the <span class="text-purple-600">resilience</span> of the human spirit</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 万能短语表 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10 card">
+            <div class="bg-indigo-500 px-6 py-4">
+                <h2 class="text-xl font-bold text-white"><i class="fas fa-link mr-2"></i>万能短语（衔接自然，逻辑清晰）</h2>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-gray-800">In light of...</h3>
+                            <p class="text-gray-700">（鉴于...）</p>
+                            <p class="text-gray-600 italic">应用文开头: <span class="font-medium"><span class="text-indigo-600">In light of</span> recent events, we propose...</span></p>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-gray-800">Not only... but also...</h3>
+                            <p class="text-gray-700">（递进关系）</p>
+                            <p class="text-gray-600 italic">演讲稿: <span class="font-medium">This policy <span class="text-indigo-600">not only</span> saves energy <span class="text-indigo-600">but also</span> reduces costs.</span></p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-gray-800">Against all odds</h3>
+                            <p class="text-gray-700">（克服万难）</p>
+                            <p class="text-gray-600 italic">续写励志结局: <span class="font-medium">They succeeded <span class="text-indigo-600">against all odds</span>.</span></p>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-gray-800">A wave of...</h3>
+                            <p class="text-gray-700">（一阵...）</p>
+                            <p class="text-gray-600 italic">情绪描写: <span class="font-medium"><span class="text-indigo-600">A wave of</span> nostalgia swept over her.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 续写专用动作词"熟词生义" -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card">
+                <div class="bg-green-500 px-6 py-4">
+                    <h2 class="text-xl font-bold text-white"><i class="fas fa-running mr-2"></i>续写专用动作词"熟词生义"</h2>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-gray-800">dance</h3>
+                            <p class="text-gray-700">v. 闪烁；跳动</p>
+                            <p class="text-gray-600 italic">光影/火焰: <span class="font-medium">Sunlight <span class="text-green-600">danced</span> on the waves.</span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">paint</h3>
+                            <p class="text-gray-700">v. 描绘（抽象）</p>
+                            <p class="text-gray-600 italic">情感渲染: <span class="font-medium">Her words <span class="text-green-600">painted</span> a bleak future.</span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">kiss</h3>
+                            <p class="text-gray-700">v. 轻拂</p>
+                            <p class="text-gray-600 italic">自然接触: <span class="font-medium">Breeze <span class="text-green-600">kissed</span> her cheeks.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card">
+                <div class="bg-green-500 px-6 py-4">
+                    <h2 class="text-xl font-bold text-white"><i class="fas fa-book-open mr-2"></i>更多续写词汇</h2>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-gray-800">devour</h3>
+                            <p class="text-gray-700">v. 如饥似渴阅读</p>
+                            <p class="text-gray-600 italic">人物特质: <span class="font-medium">She <span class="text-green-600">devoured</span> every book in the library.</span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">knife</h3>
+                            <p class="text-gray-700">v. （风）刺骨</p>
+                            <p class="text-gray-600 italic">环境烘托: <span class="font-medium">The cold wind <span class="text-green-600">knifed</span> through his coat.</span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">anchor</h3>
+                            <p class="text-gray-700">v. 使稳固</p>
+                            <p class="text-gray-600 italic">心理依靠: <span class="font-medium">Her presence <span class="text-green-600">anchored</span> him in chaos.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 抽象概念"小词大用" -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10 card">
+            <div class="bg-purple-500 px-6 py-4">
+                <h2 class="text-xl font-bold text-white"><i class="fas fa-brain mr-2"></i>抽象概念"小词大用"</h2>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-gray-800">voice</h3>
+                            <p class="text-gray-700">v. 表达（诉求）</p>
+                            <p class="text-gray-600 italic">建议信: <span class="font-medium">We <span class="text-purple-600">voice</span> concerns about campus safety.</span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">bridge</h3>
+                            <p class="text-gray-700">v. 弥合（分歧）</p>
+                            <p class="text-gray-600 italic">议论文: <span class="font-medium">Education can <span class="text-purple-600">bridge</span> social gaps.</span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">mirror</h3>
+                            <p class="text-gray-700">v. 反映（现象）</p>
+                            <p class="text-gray-600 italic">数据分析: <span class="font-medium">The survey <span class="text-purple-600">mirrors</span> public opinion.</span></p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-gray-800">fuel</h3>
+                            <p class="text-gray-700">v. 加剧（矛盾）</p>
+                            <p class="text-gray-600 italic">社会问题: <span class="font-medium">Poverty <span class="text-purple-600">fuels</span> crime rates.</span></p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">seed</h3>
+                            <p class="text-gray-700">v. 播种（思想）</p>
+                            <p class="text-gray-600 italic">励志结尾: <span class="font-medium">The speech <span class="text-purple-600">seeded</span> hope in their hearts.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 使用注意事项 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10 card">
+            <div class="bg-red-500 px-6 py-4">
+                <h2 class="text-xl font-bold text-white"><i class="fas fa-exclamation-triangle mr-2"></i>使用注意事项</h2>
+            </div>
+            <div class="p-6">
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">1. 避免堆砌</h3>
+                        <p class="text-gray-700">高级词汇需贴合语境（如续写口语化场景少用书面词）。</p>
+                        <div class="bg-red-50 p-3 rounded-lg mt-2">
+                            <p class="text-gray-600 italic">❌ 在日常对话中过度使用 "contemplate"、"meticulously" 等词</p>
+                            <p class="text-gray-600 italic">✅ 根据场景选择合适的词汇层次</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">2. 熟词生义确保准确</h3>
+                        <p class="text-gray-700">确保新义符合上下文（如 develop 表"患病"需接疾病名词）。</p>
+                        <div class="bg-red-50 p-3 rounded-lg mt-2">
+                            <p class="text-gray-600 italic">✅ She <span class="text-red-600">developed</span> a fever/cold/headache</p>
+                            <p class="text-gray-600 italic">❌ She <span class="text-red-600">developed</span> happiness（错误搭配）</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">3. 搭配准确</h3>
+                        <p class="text-gray-700">如 demonstrate 常接抽象名词（ability, courage）。</p>
+                        <div class="bg-red-50 p-3 rounded-lg mt-2">
+                            <p class="text-gray-600 italic">✅ <span class="text-red-600">demonstrate</span> ability/courage/skill</p>
+                            <p class="text-gray-600 italic">❌ <span class="text-red-600">demonstrate</span> a book（搭配不当）</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">4. 情感一致</h3>
+                        <p class="text-gray-700">heartbroken 程度 > sad，用于重大打击场景。</p>
+                        <div class="bg-red-50 p-3 rounded-lg mt-2">
+                            <p class="text-gray-600 italic">✅ 失去亲人时用 "heartbroken"</p>
+                            <p class="text-gray-600 italic">❌ 考试失利用 "heartbroken"（程度过重）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 实战例句整合 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10 card">
+            <div class="bg-indigo-500 px-6 py-4">
+                <h2 class="text-xl font-bold text-white"><i class="fas fa-lightbulb mr-2"></i>灵活运用示例</h2>
+            </div>
+            <div class="p-6">
+                <div class="space-y-6">
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-gray-800 mb-2">读后续写片段</h3>
+                        <p class="text-gray-700 italic"><span class="text-indigo-600 font-medium">Exhausted</span> and <span class="text-indigo-600 font-medium">weary</span>, Emily <span class="text-indigo-600 font-medium">trudged</span> through the storm. Suddenly, a faint light <span class="text-indigo-600 font-medium">glimmered</span> in the distance. <span class="text-indigo-600 font-medium">Against all odds</span>, hope <span class="text-indigo-600 font-medium">flickered</span> in her heart as she <span class="text-indigo-600 font-medium">staggered</span> toward it.</p>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-gray-800 mb-2">应用文建议信结尾</h3>
+                        <p class="text-gray-700 italic">We urge the council to <span class="text-indigo-600 font-medium">address</span> this issue promptly. Your action will <span class="text-indigo-600 font-medium">not only</span> <span class="text-indigo-600 font-medium">demonstrate</span> responsibility <span class="text-indigo-600 font-medium">but also foster</span> community <span class="text-indigo-600 font-medium">harmony</span>.</p>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-gray-800 mb-2">演讲稿开头</h3>
+                        <p class="text-gray-700 italic"><span class="text-indigo-600 font-medium">In light of</span> recent environmental challenges, we must <span class="text-indigo-600 font-medium">contemplate</span> our role in protecting this <span class="text-indigo-600 font-medium">picturesque</span> planet. This is a <span class="text-indigo-600 font-medium">pivotal</span> moment that demands our <span class="text-indigo-600 font-medium">perseverance</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 总结 -->
+        <div class="bg-amber-50 rounded-xl p-6 mb-10">
+            <div class="flex items-start">
+                <div class="flex-shrink-0 bg-amber-400 rounded-full p-3 mr-4">
+                    <i class="fas fa-graduation-cap text-white text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">掌握这些熟词生义与高级词汇，让你的写作脱颖而出</h2>
+                    <p class="text-gray-700 mb-3">掌握这些词汇，结合具体场景灵活使用，能让你的文章在语言丰富性和准确性上脱颖而出！</p>
+                    <div class="bg-white p-4 rounded-lg border-l-4 border-amber-400">
+                        <h3 class="font-bold text-gray-800 mb-2">学习建议：</h3>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>建立个人词汇库并按场景分类记忆</li>
+                            <li>在"语言地道性"维度展现你的英语水平</li>
+                            <li>避免堆砌，注重语境适配</li>
+                            <li>多练习，在实际写作中灵活运用</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 卡片悬停效果
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.boxShadow = '';
+            });
+        });
+    </script>
+</body>
+</html>
