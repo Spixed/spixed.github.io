@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "67f217cc382678f2",
+        "id": "68e264270836d9fe",
         "type": "tabs",
         "children": [
           {
-            "id": "3fbe1f99b5d26945",
+            "id": "67b44d8f25034013",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "post/hetx/2.zh-cn.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2.zh-cn"
             }
           }
         ]
@@ -204,16 +208,21 @@
       "media-extended:Open media": false
     }
   },
-  "active": "c34808f8bde97a47",
+  "active": "67b44d8f25034013",
   "lastOpenFiles": [
-    "post/process.en.md",
-    "post/process.zh-cn.md",
+    "post/hetx/2.en.md",
+    "post/hetx/1.zh-cn.md",
+    "post/hetx/1.en.md",
     "post/school.en.md",
     "post/school.zh-cn.md",
-    "post/test.zh-cn.md",
+    "post/recommendation.zh-cn.md",
+    "post/process.en.md",
+    "post/process.zh-cn.md",
     "post/birthday_reflection.zh-cn.md",
     "post/birthday_reflection.en.md",
     "post/1.en.md",
+    "post/hetx/2.zh-cn.md",
+    "post/hetx",
     "process/img-5.png.md",
     "process",
     "archives/_index.md",

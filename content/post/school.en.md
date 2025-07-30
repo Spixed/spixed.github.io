@@ -10,11 +10,11 @@ weight = 0
 
 > Brief Introduction: Introduction to the Senior High Part of Chengdu No.20 Middle School campus, daily life, teachers and other information.
 
-<!--more-->
-
 # 宇宙安全申明
 
 > 事先声明：本人将尽量以客观公正的言辞描写本人在成都二十中的校园生活，若有情绪的偏向属于人之常情，请不要过度解读，认识我的人也不要大肆宣传从而直接让我进德育处喝茶。若你不能接受以上内容，请赶紧关闭该网页，谢谢屏幕前的各位支持。
+
+<!--more-->
 
 # 自我介绍（简略版）
 

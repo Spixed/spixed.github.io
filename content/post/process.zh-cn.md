@@ -8,7 +8,7 @@ tags = ["blog", "hugo", "github", "git", "theme"]
 weight = 0
 +++
 
-> 概要：该博客的建造&装修过程。
+> 概要：该博客的建造&装修过程以及一些经验。
 
 <!--more-->
 

@@ -8,7 +8,7 @@ tags = ["blog", "hugo", "github", "git", "theme"]
 weight = 0
 +++
 
-> Brief Introduction: Construction and renovation of this blog.
+> Brief Introduction: Construction, renovation and some pieces of experience of this blog.
 
 <!--more-->
 

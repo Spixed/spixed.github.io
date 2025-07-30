@@ -1,5 +1,5 @@
 +++
-title = 'Template Test'
+title = ' 崩铁，启动！'
 date = 2024-02-19T22:08:44+08:00
 draft = false
 keywords = ["test"]
@@ -12,7 +12,7 @@ categoryLink = "https://webstatic.mihoyo.com/payment/sr/index.html?utm_source=of
 buy = true
 buyLink = "https://sr.mihoyo.com"
 buyName = "崩坏：星穹铁道"
-buyINfo = "Honkai: Star Rail"
+buyInfo = "Honkai: Star Rail"
 buyImage = "//sr.mihoyo.com/favicon-mi.ico"
 buyButtonText = "Click"
 weight = 1
