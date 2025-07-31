@@ -17,8 +17,9 @@ Thumbs.db
 node_modules/
 
 # Obsidian configuration
-# content/.obsidian/
+content/.obsidian/
 # Now I wanna use GitHub to make a copy of my Ob configs
+# Do a test to see if it'll delete the existing files on GitHub. 
 
 # Ob plugin indexing temp files
 content/.smtcmp_json_db
