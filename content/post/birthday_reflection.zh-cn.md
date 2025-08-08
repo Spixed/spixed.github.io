@@ -2,6 +2,8 @@
 title = '生日'
 date = 2025-01-27T20:00:00+08:00
 draft = false
+author = "spixed"
+featured = true
 keywords = ["生日", "感言"]
 categories = ["others"]
 tags = ["others"]

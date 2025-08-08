@@ -9,17 +9,24 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Tools
+tools/
+
 # Temporary files
 *.tmp
 *.log
+*.pyc
 
 # Node.js dependencies
 node_modules/
 
+# AI Agent files
+.augment/
+.roo/
+
 # Obsidian configuration
 content/.obsidian/
 # Now I wanna use GitHub to make a copy of my Ob configs
-# Do a test to see if it'll delete the existing files on GitHub. 
 
 # Ob plugin indexing temp files
 content/.smtcmp_json_db

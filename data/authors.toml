@@ -1,0 +1,39 @@
+# 作者信息配置文件
+# 每个作者一个section，包含头像、昵称、社交、签名等
+
+[spixed]
+name = "Spixed"
+nickname = "Spixed"
+avatar = "/site/spixed.png"
+bio = "从现在起，一切归零。"
+github = "https://github.com/Spixed"
+email = "Space369X@163.com"
+website = "https://spixed.is-a.dev/"
+weight = 1
+
+# 精选文章的虚拟作者（用于显示站点LOGO）
+[featured]
+name = "精选文章"
+nickname = "精选"
+avatar = "/site/logo.png"
+bio = "站点精选优质内容"
+website = "/"
+weight = 0
+
+[hetx]
+name = "δ-me13"
+nickname = "δ-me13"
+avatar = "/site/hetx.jpg"
+bio = "唯有痛苦不会说谎。"
+weight = 2
+
+# 示例：第二个作者（可根据需要添加更多作者）
+# [author2]
+# name = "Author 2"
+# nickname = "作者2"
+# avatar = "/site/author2-avatar.png"
+# bio = "作者2的个性签名"
+# github = "https://github.com/author2"
+# email = "author2@example.com"
+# website = "https://author2.example.com"
+# weight = 2

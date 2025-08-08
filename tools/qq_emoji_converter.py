@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 QQ表情数据转换工具
-将 qq_emoji_mapping.json 转换为直接嵌入到 Hugo shortcode 中的格式
+将 Qmoji mapping.json 转换为直接嵌入到 Hugo shortcode 中的格式
 支持从 GitHub 爬取最新数据
 """
 
@@ -11,7 +11,7 @@ import sys
 import urllib.request
 import urllib.error
 
-def download_emoji_data_from_github(url="https://raw.githubusercontent.com/koishijs/QFace/refs/heads/master/public/assets/qq_emoji/_index.json"):
+def download_emoji_data_from_github(url="https://cdn.jsdelivr.net/gh/Spixed/Qmoji@main/mapping.json"):
     """从 GitHub 下载最新的QQ表情数据"""
     try:
         print(f"正在从 GitHub 下载最新数据: {url}")
@@ -46,7 +46,6 @@ def generate_hugo_map(emoji_data):
         describe = emoji.get('describe', '')
         emoji_id = emoji.get('emojiId', '')
         emoji_type = emoji.get('emojiType', 0)
-        assets = emoji.get('assets', [])
 
         # 生成Hugo模板条件
         if describe:
@@ -58,33 +57,16 @@ def generate_hugo_map(emoji_data):
                 continue
             processed_names.add(key_name)
 
-            # 查找APNG资源 (type 2)
-            apng_asset = ""
-            for asset in assets:
-                if asset.get('type') == 2:
-                    apng_asset = asset.get('path', '')
-                    break
-
-            # 查找Lottie资源 (type 3)
-            lottie_asset = ""
-            for asset in assets:
-                if asset.get('type') == 3:
-                    lottie_asset = asset.get('path', '')
-                    break
-
             hugo_map_lines.append(f'        {{{{- else if eq $emojiName "{key_name}" -}}}}')
 
-            if emoji_type == 1 and lottie_asset:
-                # 超级表情，使用Lottie动画
+            if emoji_type == 2:  # 超级表情，使用Lottie动画
                 unique_id = f"lottie-emoji-{emoji_id}-{{{{ now.UnixNano }}}}"
                 hugo_map_lines.append(f'            {{{{- $uniqueId := "{unique_id}" -}}}}')
-                hugo_map_lines.append(f'            <div id="{{{{ $uniqueId }}}}" class="super-qmoji" data-lottie-path="https://koishi.js.org/QFace/{lottie_asset}" title="{describe}"></div>')
-            elif apng_asset:
-                # 普通表情，使用APNG
-                hugo_map_lines.append(f'            <img src="https://koishi.js.org/QFace/{apng_asset}" class="qmoji" alt="{describe}" title="{describe}" />')
-            else:
-                # 没有可用资源，显示fallback
-                hugo_map_lines.append(f'            <span class="qq-emoji-fallback">{describe}</span>')
+                hugo_map_lines.append(f'            <div id="{{{{ $uniqueId }}}}" class="super-qmoji" data-lottie-path="https://cdn.jsdelivr.net/gh/Spixed/Qmoji@main/res/{emoji_id}/lottie.json" title="{describe}"></div>')
+            elif emoji_type == 1:  # 普通表情，使用APNG
+                hugo_map_lines.append(f'            <img src="https://cdn.jsdelivr.net/gh/Spixed/Qmoji@main/res/{emoji_id}/apng.png" class="qmoji" alt="{describe}" title="{describe}" />')
+            else:  # emoji_type == 0，使用静态图片
+                hugo_map_lines.append(f'            <img src="https://cdn.jsdelivr.net/gh/Spixed/Qmoji@main/res/{emoji_id}/thumb.png" class="qmoji" alt="{describe}" title="{describe}" />')
 
     return hugo_map_lines
 
@@ -124,31 +106,16 @@ def generate_text_shortcode_template(emoji_data):
     replace_lines = []
     for key_name, emoji in emoji_map.items():
         emoji_type = emoji.get('emojiType', 0)
-        assets = emoji.get('assets', [])
         describe = emoji.get('describe', '')
         emoji_id = emoji.get('emojiId', '')
         
-        # 查找资源
-        apng_asset = ""
-        lottie_asset = ""
-        for asset in assets:
-            if asset.get('type') == 2:
-                apng_asset = asset.get('path', '')
-            elif asset.get('type') == 3:
-                lottie_asset = asset.get('path', '')
-        
-
-        
-        if emoji_type == 1 and lottie_asset:
-            # 超级表情
+        if emoji_type == 2:  # 超级表情，使用Lottie动画
             unique_id = f"lottie-emoji-{emoji_id}-{{{{ now.UnixNano }}}}"
-            replacement = f'<div id="{unique_id}" class="super-qmoji" data-lottie-path="https://koishi.js.org/QFace/{lottie_asset}" title="{describe}"></div>'
-        elif apng_asset:
-            # 普通表情
-            replacement = f'<img src="https://koishi.js.org/QFace/{apng_asset}" class="qmoji" alt="{describe}" title="{describe}" />'
-        else:
-            # fallback
-            replacement = f'<span class="qq-emoji-fallback">{describe}</span>'
+            replacement = f'<div id="{unique_id}" class="super-qmoji" data-lottie-path="https://cdn.jsdelivr.net/gh/Spixed/Qmoji@main/res/{emoji_id}/lottie.json" title="{describe}"></div>'
+        elif emoji_type == 1:  # 普通表情，使用APNG
+            replacement = f'<img src="https://cdn.jsdelivr.net/gh/Spixed/Qmoji@main/res/{emoji_id}/apng.png" class="qmoji" alt="{describe}" title="{describe}" />'
+        else:  # emoji_type == 0，使用静态图片
+            replacement = f'<img src="https://cdn.jsdelivr.net/gh/Spixed/Qmoji@main/res/{emoji_id}/thumb.png" class="qmoji" alt="{describe}" title="{describe}" />'
         
         replace_lines.append(f'    {{{{- $processedContent = replace $processedContent ":/{key_name}:" `{replacement}` -}}}}')
     
@@ -190,10 +157,9 @@ def main():
         else:
             print(f"从 GitHub 加载了 {len(emoji_data)} 个表情")
             # 保存到本地作为备份
-            backup_path = os.path.join(project_root, 'themes', 'tony', 'data', 'qq_emoji_mapping_backup.json')
-            with open(backup_path, 'w', encoding='utf-8') as f:
+            with open(json_path, 'w', encoding='utf-8') as f:
                 json.dump(emoji_data, f, ensure_ascii=False, indent=2)
-            print(f"已备份到: {backup_path}")
+            print(f"已保存到: {json_path}")
     else:
         print(f"读取本地QQ表情数据: {json_path}")
         emoji_data = load_emoji_data(json_path)

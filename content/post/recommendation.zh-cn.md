@@ -2,6 +2,8 @@
 title = ' 崩铁，启动！'
 date = 2024-02-19T22:08:44+08:00
 draft = false
+author = "spixed"
+featured = false
 keywords = ["test"]
 categories = ["test"]
 tags = ["test"]

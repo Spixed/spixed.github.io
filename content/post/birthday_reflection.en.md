@@ -2,6 +2,8 @@
 title = 'Birthday'
 date = 2025-01-27T20:00:00+08:00
 draft = false
+author = "spixed"
+featured = true
 keywords = ["birthday", "reflection"]
 categories = ["others"]
 tags = ["others"]

@@ -2,6 +2,8 @@
 title = 'Blog Detail Log'
 date = 2024-02-15T22:50:11+08:00
 draft = false
+author = "spixed"
+featured = true
 keywords = [" 博客建设 "]
 categories = ["blog"]
 tags = ["blog", "hugo", "github", "git", "theme"]
@@ -179,7 +181,7 @@ git submodule add https://github.com/Spixed/hugo-theme-tony.git themes/tony
 **Author's Warm Reminder: If enabling proxy, MUST follow these steps first!!!** (Win10+ example, can skip step 1 if using Clash series without changing system proxy address):
 
 1. Open Settings > Network & Internet > Proxy, find "Use a proxy server" under Manual proxy, click Edit on the right, copy IP and port
-    
+
 2. Summon PS, run:
 
     ```powershell
@@ -348,7 +350,7 @@ paginate = 39
 
     # Site LOGO
     siteLogo = "/site/logo.png"
-    
+
     # Site description
     siteDescription = "[your_site_description]"
 
@@ -363,19 +365,19 @@ paginate = 39
 
     #####################################
     # table of Contents
-    
+
     # Whether to open (global settings)
     enableToc = true
 
     #####################################
     # Reading progress bar
-    
+
     # Whether to open (global settings)
     enableReadingBar = true
 
     #####################################
     # Article up and down page
-    
+
     # Whether to open (global settings)
     enableAdjacentPost = true
 
@@ -508,7 +510,7 @@ jobs:
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
@@ -530,7 +532,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

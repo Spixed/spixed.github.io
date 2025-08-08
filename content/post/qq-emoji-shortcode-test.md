@@ -2,6 +2,8 @@
 title = "QQ表情测试"
 date = 2024-01-15T10:00:00+08:00
 draft = false
+author = "spixed"
+featured = false
 tags = ["测试", "QQ表情", "Hugo", "Shortcode"]
 categories = ["技术"]
 keywords = ["QQ表情", "Hugo", "Shortcode"]
@@ -14,11 +16,9 @@ weight = 0
 
 这个页面用于测试新实现的QQ表情Shortcode功能。
 
-## 测试
+## 测试 普通表情 vs 超级表情
 
-### 单个表情使用方法
-
-使用 `{{</* qq-emoji "表情名" */>}}` 来插入单个表情：
+使用 `{{</* qq-emoji "表情名" */>}}` 来插入表情：
 
 - 微笑：{{< qq-emoji "微笑" >}}
 - 惊讶：{{< qq-emoji "惊讶" >}}
@@ -27,45 +27,16 @@ weight = 0
 - 比心：{{< qq-emoji "比心" >}} (超级表情，Lottie动画)
 - 打call：{{< qq-emoji "打call" >}} (超级表情，Lottie动画)
 
-## 批量文本处理方法
-
-使用 `{{</* qq-emoji-text */>}}文本内容{{</* /qq-emoji-text */>}}` 来处理包含多个表情的文本：
-
-{{< qq-emoji-text >}}
-今天天气真好:/微笑:，心情也很不错:/得意:！
-看到这个消息我要:/大哭:了，太感动了:/流泪:！
-给你一个大大的:/比心:，为你:/打call:！
-{{< /qq-emoji-text >}}
-
-## 普通表情 vs 超级表情
-
-### 普通表情 (APNG格式)
-{{< qq-emoji-text >}}
-:/微笑: :/大哭: :/得意: :/害羞: :/发怒: :/调皮:
-{{< /qq-emoji-text >}}
-
-### 超级表情 (Lottie动画)
-{{< qq-emoji-text >}}
-:/流泪: :/比心: :/打call: :/庆祝: :/崇拜: :/变形:
-{{< /qq-emoji-text >}}
-
 ## 错误处理测试
 
 不存在的表情会显示为fallback：
 
 {{< qq-emoji "不存在的表情" >}}
 
-{{< qq-emoji-text >}}
-这是一个不存在的表情：:/不存在的表情:
-{{< /qq-emoji-text >}}
-
 ## 在段落中的使用
 
 这是一段普通的文字，{{< qq-emoji "微笑" >}} 中间插入了一个表情，{{< qq-emoji "得意" >}} 然后继续文字内容。
 
-{{< qq-emoji-text >}}
-或者你可以这样使用：这是一段包含:/微笑:表情的文字，还有:/得意:表情，非常方便！
-{{< /qq-emoji-text >}}
 
 # {{< qq-emoji "惊讶" >}} 这是一个标题 {{< qq-emoji "惊讶" >}}
 ## {{< qq-emoji "菜汪" >}} 这是一个二级标题 {{< qq-emoji "菜汪" >}}

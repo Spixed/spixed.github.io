@@ -94,10 +94,7 @@ pagination.pagerSize = 39
         url = "/archives"
         name = "Archives"
         weight = 4
-    [[menu.main]]
-        url = "/about/"
-        name = "About"
-        weight = 5
+
     [[menu.main]]
         url = "/links/"
         name = "Links"

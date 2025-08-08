@@ -2,7 +2,9 @@
 title = 'Blog Detail Log'
 date = 2024-02-15T22:50:11+08:00
 draft = false
-keywords = [" 博客建设 "]
+author = "spixed"
+featured = true
+keywords = ["博客建设"]
 categories = ["blog"]
 tags = ["blog", "hugo", "github", "git", "theme"]
 weight = 0
@@ -182,7 +184,7 @@ weight = 0
    **Author's Warm Reminder: 如果要开代理，请一定先按以下内容操作！！！**（以 Win10+ 为例，若使用 Clash 系列且没改过系统代理地址则可跳过步骤 1）：
 
    1. 打开设置 -网络和 Internet-代理，找到手动使用代理 -使用代理服务器，点击右方编辑，复制 IP 和端口
-   
+
    2. 召唤 ps，运行：
 
       ```powershell
@@ -351,7 +353,7 @@ paginate = 39
 
     # Site LOGO
     siteLogo = "/site/logo.png"
-    
+
     # Site description
     siteDescription = "[your_site_description]"
 
@@ -366,19 +368,19 @@ paginate = 39
 
     #####################################
     # table of Contents
-    
+
     # Whether to open (global settings)
     enableToc = true
 
     #####################################
     # Reading progress bar
-    
+
     # Whether to open (global settings)
     enableReadingBar = true
 
     #####################################
     # Article up and down page
-    
+
     # Whether to open (global settings)
     enableAdjacentPost = true
 
@@ -511,7 +513,7 @@ jobs:
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
@@ -533,7 +535,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
