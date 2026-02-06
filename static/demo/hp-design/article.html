@@ -1,0 +1,257 @@
+<!-- article.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Return of Tactile Design | Polymer Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fdf6e3;
+            --ink: #121212;
+            --red: #FF3D00;
+            --yellow: #FFD600;
+            --blue: #2979FF;
+            --border: 4px solid var(--ink);
+            --shadow: 10px 10px 0px var(--ink);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--ink);
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .grain-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* Nav */
+        header {
+            padding: 1rem 2rem;
+            border-bottom: var(--border);
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .back-btn {
+            text-decoration: none;
+            color: var(--ink);
+            font-family: 'Space Mono';
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .back-btn:hover { text-decoration: underline; }
+
+        /* Layout */
+        .wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        aside {
+            border-right: var(--border);
+            padding: 2rem;
+            background: var(--yellow);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar-title { font-family: 'Space Mono'; text-transform: uppercase; margin-bottom: 2rem; font-weight: 700; opacity: 0.6; }
+        .related-link {
+            display: block;
+            margin-bottom: 1.5rem;
+            text-decoration: none;
+            color: var(--ink);
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-bottom: 2px solid transparent;
+        }
+        .related-link:hover { border-bottom: 2px solid var(--ink); }
+
+        /* Main Content */
+        main {
+            padding: 4rem 6rem;
+            background: white;
+            position: relative;
+        }
+
+        /* Hero */
+        .hero {
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .blob-deco {
+            position: absolute;
+            top: -60px; left: -60px;
+            width: 150px; height: 150px;
+            background: var(--red);
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            z-index: 0;
+            mix-blend-mode: multiply;
+            animation: blobFloat 6s ease-in-out infinite;
+        }
+
+        @keyframes blobFloat {
+            0%, 100% { transform: translate(0,0) rotate(0deg); }
+            50% { transform: translate(10px, -10px) rotate(5deg); }
+        }
+
+        h1 {
+            font-size: 5rem;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .meta-bar {
+            display: flex;
+            gap: 20px;
+            margin-top: 2rem;
+            font-family: 'Space Mono';
+            font-size: 0.9rem;
+            border-top: 2px solid var(--ink);
+            border-bottom: 2px solid var(--ink);
+            padding: 1rem 0;
+        }
+
+        /* Typography */
+        .content {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        .content p { margin-bottom: 2rem; }
+        
+        .content p::first-letter {
+            font-size: 4rem;
+            float: left;
+            margin-right: 1rem;
+            line-height: 0.8;
+            font-weight: 900;
+        }
+
+        .content blockquote {
+            border-left: 8px solid var(--blue);
+            background: rgba(41, 121, 255, 0.1);
+            padding: 2rem;
+            margin: 3rem 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk';
+            position: relative;
+        }
+
+        .highlight {
+            background: var(--yellow);
+            padding: 0 5px;
+            box-decoration-break: clone;
+        }
+
+        /* CTA */
+        .next-article {
+            margin-top: 6rem;
+            padding: 3rem;
+            border: var(--border);
+            background: var(--ink);
+            color: white;
+            text-align: center;
+            transition: 0.3s;
+            display: block;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+        }
+
+        .next-article:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 15px 15px 0px var(--red);
+        }
+
+        @media (max-width: 900px) {
+            .wrapper { grid-template-columns: 1fr; }
+            aside { display: none; } /* Hide sidebar on mobile for focus */
+            main { padding: 2rem; }
+            h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="grain-overlay"></div>
+
+    <header>
+        <a href="index.html" class="back-btn">← INDEX</a>
+        <div style="font-weight: 900; text-transform: uppercase;">Polymer Blog</div>
+    </header>
+
+    <div class="wrapper">
+        <aside>
+            <div class="sidebar-title">Trending Topics</div>
+            <a href="#" class="related-link">01. Tectonic Layouts</a>
+            <a href="#" class="related-link">02. The Death of Flat</a>
+            <a href="#" class="related-link">03. Brutalist Color</a>
+            <div style="margin-top: 50px; width: 100px; height: 100px; background: var(--blue); border-radius: 50%; border: var(--border);"></div>
+        </aside>
+
+        <main>
+            <article>
+                <div class="hero">
+                    <div class="blob-deco"></div>
+                    <h1>The Return<br>of Tactile<br><span class="highlight">Web Design</span></h1>
+                    
+                    <div class="meta-bar">
+                        <span>By Alex Bold</span>
+                        <span>//</span>
+                        <span>February 2024</span>
+                        <span>//</span>
+                        <span>6 min read</span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>We spent a decade removing the "computer" from the screen. We flattened buttons, removed borders, and floated elements in a sea of white space. But the pendulum is swinging back. Hard.</p>
+                    
+                    <p>The new wave of "Polymer Pop" isn't about simulating reality (like skeuomorphism did), but about <strong>celebrating the digital container</strong>. It's about acknowledging that a button is a button, a card is a card, and a grid is a cage for information.</p>
+
+                    <blockquote>"The screen is not paper. It has depth, it has light, and it demands to be touched."</blockquote>
+
+                    <h3>1. The Heavy Border</h3>
+                    <p>Thin gray lines are out. We are seeing a resurgence of 4px to 8px solid black borders. This draws clear boundaries between content. It feels architectural. It feels distinct.</p>
+
+                    <h3>2. High Saturation</h3>
+                    <p>Pastels had their moment. Now, we are seeing pure CMYK values hitting the screen. <span style="color: var(--blue); font-weight: bold;">Electric Blue</span>, <span style="color: var(--red); font-weight: bold;">Safety Orange</span>, and <span style="color: #00E676; font-weight: bold;">Signal Green</span> are used not just for accents, but for entire backgrounds.</p>
+                </div>
+
+                <a href="index.html" class="next-article">
+                    <span style="font-family: 'Space Mono'; text-transform: uppercase; font-size: 0.9rem;">Read Next</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 10px;">Why Grey is Dead.</h2>
+                </a>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
