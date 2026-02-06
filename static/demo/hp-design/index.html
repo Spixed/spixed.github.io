@@ -1,27 +1,45 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polymer Blog | Index</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>POLYMER | Index</title>
+    <link rel="preconnect" href="https://fonts.loli.net">
+    <link href="https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@400;700;900&family=ZCOOL+XiaoWei&family=Space+Grotesk:wght@300;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            /* Palette from HP-2 */
+            /* Light Theme Defaults */
             --bg: #fdf6e3;
+            --surface: #ffffff;
             --ink: #121212;
-            --red: #FF3D00;
-            --yellow: #FFD600;
-            --blue: #2979FF;
-            --green: #00E676;
+            --border-color: #121212;
+            --shadow-color: #121212;
+            --blob-opacity: 0.1;
             
-            /* Structural vars */
-            --border: 4px solid var(--ink);
-            --shadow: 8px 8px 0px var(--ink);
-            --card-padding: 1.5rem;
+            /* Cartoon Palette (Constant) */
+            --red: #FF3D00;
+            --blue: #2979FF;
+            --yellow: #FFD600;
+            --green: #00E676;
+            --grey: #E0E0E0;
+            --dark-grey: #333333;
+            
+            --border: 4px solid var(--border-color);
+            --shadow: 8px 8px 0px var(--shadow-color);
+        }
+
+        /* Dark Theme Overrides */
+        [data-theme="dark"] {
+            --bg: #121212;
+            --surface: #1e1e1e;
+            --ink: #fdf6e3; /* Off-white text */
+            --border-color: #fdf6e3;
+            --shadow-color: #000000;
+            --blob-opacity: 0.2; /* Slightly more visible in dark */
+            
+            /* In dark mode, Grey card becomes dark grey */
+            --grey: #2d2d2d;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,282 +47,519 @@
         body {
             background-color: var(--bg);
             color: var(--ink);
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
             overflow-x: hidden;
+            transition: background 0.3s, color 0.3s;
         }
 
-        /* Grain Overlay (HP-2) */
-        .grain-overlay {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0.05;
+        /* 强制加粗标题，增加视觉分量 */
+        h1, h2, h3, .brand-font {
+            font-family: 'Space Grotesk', 'ZCOOL XiaoWei', sans-serif;
+            font-weight: bold; 
+        }
+
+        /* 噪点层 */
+        .grain {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 9999; opacity: 0.04;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
         }
 
         /* Header */
         header {
-            border-bottom: var(--border);
-            padding: 2rem;
-            background: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            border-bottom: var(--border); padding: 1.5rem 2rem;
+            background: var(--surface); display: flex; justify-content: space-between;
+            align-items: center; position: sticky; top: 0; z-index: 100;
+            transition: background 0.3s;
         }
 
-        .logo {
-            font-size: 2.5rem;
-            font-weight: 900;
-            line-height: 0.9;
-            letter-spacing: -2px;
-            text-transform: uppercase;
+        .logo { font-size: 2rem; font-weight: 900; line-height: 0.9; text-transform: uppercase; }
+
+        .header-controls { display: flex; gap: 10px; }
+
+        .btn-toggle {
+            font-family: 'Space Mono'; font-weight: 700; cursor: pointer;
+            border: 2px solid var(--ink); padding: 8px 16px;
+            background: var(--surface); color: var(--ink);
+            box-shadow: 4px 4px 0 var(--border-color);
+            transition: 0.2s;
+        }
+        .btn-toggle:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--border-color); }
+        .btn-toggle:active { transform: translate(0, 0); box-shadow: 2px 2px 0 var(--border-color); }
+
+        /* Filter Tab Bar */
+        .filter-bar {
+            padding: 2rem 2rem 0 2rem; max-width: 1600px; margin: 0 auto;
+            display: flex; gap: 10px; flex-wrap: wrap;
         }
 
-        .nav-links a {
-            font-family: 'Space Mono', monospace;
-            text-decoration: none;
-            color: var(--ink);
-            font-weight: 700;
-            margin-left: 1.5rem;
-            text-transform: uppercase;
+        .filter-btn {
+            background: var(--surface); border: var(--border); border-bottom: none;
+            padding: 12px 24px; font-size: 1.2rem; color: var(--ink);
+            font-family: 'Space Mono', 'ZCOOL XiaoWei'; 
+            font-weight: 700; cursor: pointer;
+            transform: translateY(4px); transition: 0.2s;
+        }
+        .filter-btn:hover { transform: translateY(0); }
+        .filter-btn.active {
+            background: var(--yellow); color: #121212; /* Active text always dark */
+            transform: translateY(0);
+            box-shadow: 0 -4px 0 rgba(0,0,0,0.1) inset;
+            border-color: var(--border-color);
         }
 
-        /* Waterfall Grid */
+        /* Author Profile */
+        .author-profile-container {
+            max-width: 1600px; margin: 0 auto; padding: 0 2rem;
+            overflow: hidden; max-height: 0; opacity: 0;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .author-profile-container.visible {
+            max-height: 500px; opacity: 1; padding-top: 20px; padding-bottom: 20px;
+        }
+
+        .profile-card {
+            background: var(--surface); border: var(--border);
+            padding: 2rem; display: flex; align-items: center; gap: 40px;
+            box-shadow: var(--shadow); position: relative;
+        }
+
+        .profile-avatar {
+            width: 120px; height: 120px; border: var(--border);
+            border-radius: 50%; flex-shrink: 0; position: relative;
+        }
+
+        .profile-info h1 { font-size: 3rem; line-height: 1; margin-bottom: 0.5rem; text-transform: uppercase; }
+        .profile-motto { font-family: 'Space Mono', 'Noto Sans SC'; font-style: italic; opacity: 0.7; margin-bottom: 1.5rem; font-size: 1.1rem; }
+        
+        .contact-btn {
+            text-decoration: none; color: var(--ink); font-weight: 700;
+            border: 2px solid var(--ink); padding: 8px 16px;
+            font-family: 'Space Mono'; text-transform: uppercase;
+            display: flex; align-items: center; gap: 8px; transition: 0.2s;
+        }
+        .contact-btn:hover { background: var(--ink); color: var(--bg); }
+
+        /* Grid */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-auto-rows: 250px; /* Base height units */
-            grid-auto-flow: dense;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(220px, auto);
             gap: 20px;
-            padding: 40px;
-            max-width: 1600px;
-            margin: 0 auto;
+            padding: 20px 2rem 4rem 2rem;
+            max-width: 1600px; margin: 0 auto;
+            border-top: var(--border);
+            background: var(--surface);
+            transition: background 0.3s;
         }
 
-        /* Card Base (HP-1 Logic + HP-3 Borders) */
-        .card {
-            background: white;
-            border: var(--border);
-            position: relative;
-            transition: all 0.1s ease; /* Fast transition for tilt */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            overflow: hidden;
-            text-decoration: none;
-            color: var(--ink);
+        .card-wrapper { position: relative; perspective: 1000px; z-index: 1; }
+        .card-wrapper.hidden { display: none; }
+        
+        .card-inner {
+            width: 100%; height: 100%;
+            background: var(--surface); border: var(--border);
+            display: flex; flex-direction: column; justify-content: space-between;
+            position: relative; overflow: hidden;
+            text-decoration: none; color: var(--ink);
             transform-style: preserve-3d;
-            perspective: 1000px;
+            transition: transform 0.1s ease, box-shadow 0.2s ease;
+            cursor: pointer;
         }
+        .card-inner:hover { box-shadow: var(--shadow); }
 
-        /* Polymer Sheen (HP-1) */
-        .card::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 60%);
-            pointer-events: none;
-            z-index: 5;
-        }
-
-        .card:hover {
-            z-index: 10;
-            box-shadow: var(--shadow);
-        }
-
-        /* Ink Blobs (HP-2) */
-        .ink-blob {
-            position: absolute;
-            background: var(--ink);
-            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-            z-index: 1;
-            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            opacity: 0.1;
-        }
-
-        .card:hover .ink-blob {
-            transform: scale(1.2) rotate(15deg);
-            opacity: 0.2;
-        }
-
-        /* Card Content */
         .card-content {
-            padding: var(--card-padding);
-            z-index: 2;
-            position: relative;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
+            padding: 1.5rem; position: relative; z-index: 2;
+            height: 100%; display: flex; flex-direction: column;
+            pointer-events: none;
+        }
+
+        .ink-blob {
+            position: absolute; background: var(--ink);
+            z-index: 0; opacity: var(--blob-opacity); transition: 0.5s; pointer-events: none;
         }
 
         .meta {
-            font-family: 'Space Mono', monospace;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-            background: var(--ink);
-            color: white;
-            padding: 2px 6px;
-            align-self: flex-start;
+            font-family: 'Space Mono'; font-size: 0.8rem; font-weight: bold;
+            background: var(--ink); color: var(--bg); display: inline-block;
+            padding: 4px 8px; align-self: flex-start; margin-bottom: 1rem;
         }
 
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            line-height: 1;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
+        h2 { font-size: 2.2rem; line-height: 1.1; text-transform: uppercase; text-shadow: 1px 1px 0 rgba(0,0,0,0.1); }
+        
+        /* Color Styles - Cartoon Palette */
+        /* Red */
+        .style-red .card-inner { background: var(--red); color: white; }
+        .style-red .meta { background: white; color: var(--red); }
+        .style-red .ink-blob { background: white; opacity: 0.2; }
+        
+        /* Blue */
+        .style-blue .card-inner { background: var(--blue); color: white; }
+        .style-blue .meta { background: white; color: var(--blue); }
+        .style-blue .ink-blob { background: white; opacity: 0.2; }
 
-        p {
-            font-family: 'Space Mono', monospace;
-            font-size: 0.9rem;
-            line-height: 1.4;
-            opacity: 0.8;
-        }
+        /* Green */
+        .style-green .card-inner { background: var(--green); color: #121212; }
+        .style-green .meta { background: #121212; color: var(--green); }
+        
+        /* Yellow */
+        .style-yellow .card-inner { background: var(--yellow); color: #121212; }
+        .style-yellow .meta { background: #121212; color: var(--yellow); }
+
+        /* Grey */
+        .style-grey .card-inner { background: var(--grey); color: var(--ink); }
+
+        /* Black (Inverse) */
+        .style-black .card-inner { background: #121212; color: white; }
+        .style-black .meta { background: white; color: #121212; }
+        .style-black .ink-blob { background: white; opacity: 0.15; }
 
         /* Grid Spans */
-        .card.featured {
-            grid-column: span 2;
-            grid-row: span 2;
-            background: var(--red);
-            color: white;
-        }
-        .card.featured .meta { background: white; color: var(--ink); }
-        .card.featured .ink-blob { background: white; opacity: 0.2; }
-        
-        .card.tall { grid-row: span 2; background: var(--yellow); }
-        .card.wide { grid-column: span 2; }
-        .card.accent { background: var(--blue); color: white; }
-        .card.accent .meta { background: white; color: var(--blue); }
+        .span-8 { grid-column: span 8; }
+        .span-6 { grid-column: span 6; }
+        .span-4 { grid-column: span 4; }
+        .span-3 { grid-column: span 3; }
+        .row-2 { grid-row: span 2; }
 
-        /* Mobile */
-        @media (max-width: 768px) {
-            .grid-container { grid-template-columns: 1fr; padding: 10px; }
-            .card.featured, .card.wide { grid-column: auto; }
-        }
+        /* Hero Logic */
+        .hero-slide { display: none; height: 100%; flex-direction: column; justify-content: space-between; }
+        .hero-slide.active { display: flex; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-        /* Entry Animation */
-        @keyframes popUp {
-            from { opacity: 0; transform: translateY(50px) scale(0.9); }
-            to { opacity: 1; transform: translateY(0) scale(1); }
+        .hero-nav {
+            position: absolute; bottom: 20px; right: 20px; z-index: 10;
+            display: flex; gap: 10px;
         }
-        .card { animation: popUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards; }
+        .hero-dot {
+            width: 16px; height: 16px; border: 2px solid var(--ink); background: var(--ink);
+            cursor: pointer; transition: 0.2s;
+        }
+        .hero-dot.active { background: var(--surface); transform: scale(1.2); border-color: var(--surface); }
+
+        [lang="cn"] { display: none; }
+        body.show-cn [lang="en"] { display: none; }
+        body.show-cn [lang="cn"] { display: block; }
+
+        @media (max-width: 900px) {
+            .grid-container { grid-template-columns: 1fr; padding: 1rem; }
+            .span-8, .span-6, .span-4, .span-3, .row-2 { grid-column: span 1; grid-row: auto; }
+            .hero-slide h2 { font-size: 2rem !important; }
+            .profile-card { flex-direction: column; text-align: center; }
+            .profile-links { justify-content: center; }
+        }
     </style>
 </head>
-<body>
-    <div class="grain-overlay"></div>
+<body class="show-en">
+    <div class="grain"></div>
 
     <header>
-        <div class="logo">Polymer<br>Flow.</div>
-        <nav class="nav-links">
-            <a href="#">Work</a>
-            <a href="#">Labs</a>
-            <a href="#">About</a>
-        </nav>
+        <div class="logo">
+            <span lang="en">POLYMER<br>GRID.</span>
+            <span lang="cn">聚合物<br>网格。</span>
+        </div>
+        <div class="header-controls">
+            <!-- Theme Toggle -->
+            <button class="btn-toggle" onclick="toggleTheme()" id="theme-btn">AUTO</button>
+            <!-- Lang Toggle -->
+            <button class="btn-toggle" onclick="toggleLang()">EN / 中</button>
+        </div>
     </header>
+
+    <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterGrid('all')">
+            <span lang="en">ALL STORIES</span><span lang="cn">全部文章</span>
+        </button>
+        <button class="filter-btn" onclick="filterGrid('alex')">
+            <span lang="en">ALEX (Design)</span><span lang="cn">ALEX (设计)</span>
+        </button>
+        <button class="filter-btn" onclick="filterGrid('sarah')">
+            <span lang="en">SARAH (Culture)</span><span lang="cn">SARAH (文化)</span>
+        </button>
+    </div>
+
+    <!-- Author Profile -->
+    <section id="author-profile" class="author-profile-container">
+        <div class="profile-card">
+            <div class="ink-blob" style="top: -30px; right: -30px; width: 150px; height: 150px; border-radius: 40%; opacity: 0.05;"></div>
+            <div class="profile-avatar" id="p-avatar" style="background-color: #ddd;"></div>
+            <div class="profile-info">
+                <h1 id="p-name">Author</h1>
+                <p id="p-motto" class="profile-motto">"Motto"</p>
+                <div class="profile-links">
+                    <a href="#" class="contact-btn">GITHUB</a>
+                    <a href="#" class="contact-btn">EMAIL</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <main class="grid-container">
 
-        <!-- Article 1: Featured -->
-        <a href="article.html" class="card featured" style="animation-delay: 0s;">
-            <div class="ink-blob" style="width: 300px; height: 300px; top: -50px; right: -50px;"></div>
-            <div class="card-content">
-                <span class="meta">Featured // 2024</span>
-                <h2 style="font-size: 3rem;">The Return of Tactile Web Design</h2>
-                <div style="margin-top: auto;">
-                    <p>Why we are abandoning flat design for heavy borders, deep shadows, and digital textures.</p>
-                    <div style="margin-top: 20px; font-weight: 900; font-size: 1.2rem;">READ STORY &rarr;</div>
+        <!-- 1. HERO (Red) - 8x2 -->
+        <div class="card-wrapper span-8 row-2 style-red" data-author="all">
+            <a href="article.html" class="card-inner">
+                <div class="ink-blob" style="width: 400px; height: 400px; top: -100px; right: -50px;"></div>
+                <div class="card-content">
+                    <div class="hero-slide active" id="slide-1">
+                        <span class="meta">FEATURED // ALEX</span>
+                        <h2 style="font-size: 3.5rem;">
+                            <span lang="en">THE TECTONIC SHIFT<br>IN WEB INTERFACES</span>
+                            <span lang="cn">WEB 界面的<br>构造运动</span>
+                        </h2>
+                        <p style="font-size: 1.2rem; max-width: 600px; margin-top: auto;">
+                            <span lang="en">Why borders are back, shadows are hard, and gradients are dead.</span>
+                            <span lang="cn">为什么边框回归了，阴影变硬了，而渐变色正在消亡。</span>
+                        </p>
+                    </div>
+                    <div class="hero-slide" id="slide-2">
+                        <span class="meta" style="background: var(--yellow); color: #121212;">FEATURED // SARAH</span>
+                        <h2 style="font-size: 3.5rem;">
+                            <span lang="en">DIGITAL BRUTALISM<br>IS NOT UGLY</span>
+                            <span lang="cn">数字野兽派<br>并不丑陋</span>
+                        </h2>
+                        <p style="font-size: 1.2rem; max-width: 600px; margin-top: auto;">
+                            <span lang="en">It's about honesty in raw materials.</span>
+                            <span lang="cn">这关乎原材料的诚实表达。</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </a>
+                <div class="hero-nav">
+                    <div class="hero-dot active" onclick="switchHero(1, event)"></div>
+                    <div class="hero-dot" onclick="switchHero(2, event)"></div>
+                </div>
+            </a>
+        </div>
 
-        <!-- Article 2 -->
-        <a href="article.html" class="card tall" style="animation-delay: 0.1s;">
-            <div class="ink-blob" style="width: 150px; height: 150px; bottom: -20px; left: -20px;"></div>
-            <div class="card-content">
-                <span class="meta">Coding</span>
-                <h2>CSS Grid vs Flexbox</h2>
-                <p style="margin-top: auto;">Understanding the tectonic shifts in layout engines.</p>
-            </div>
-        </a>
+        <!-- 2. TALL LIST (Surface Color) - 4x2 -->
+        <div class="card-wrapper span-4 row-2" data-author="sarah">
+            <a href="article.html?id=sarah" class="card-inner">
+                <div class="ink-blob" style="bottom: -20px; left: -20px; width: 220px; height: 220px;"></div>
+                <div class="card-content">
+                    <span class="meta">ESSAY</span>
+                    <h2>
+                        <span lang="en">THE DEATH OF GREY</span>
+                        <span lang="cn">灰色的消亡</span>
+                    </h2>
+                    <p style="margin-top: 20px;">
+                        <span lang="en">Color theory in 2026.</span>
+                        <span lang="cn">2026年的色彩理论。</span>
+                    </p>
+                </div>
+            </a>
+        </div>
 
-        <!-- Article 3 -->
-        <a href="article.html" class="card" style="animation-delay: 0.2s;">
-            <div class="card-content">
-                <span class="meta">Opinion</span>
-                <h2>Death of Grey</h2>
-                <p>Why saturation is king.</p>
-            </div>
-        </a>
+        <!-- 3. DATA (Blue) - 4x1 -->
+        <div class="card-wrapper span-4 style-blue" data-author="alex">
+            <a href="article.html?id=alex" class="card-inner">
+                <div class="ink-blob" style="top: 50%; left: 50%; width: 150px; height: 150px;"></div>
+                <div class="card-content">
+                    <span class="meta">DATA</span>
+                    <h2 style="font-size: 4rem;">88%</h2>
+                    <p><span lang="en">Saturation</span><span lang="cn">饱和度</span></p>
+                </div>
+            </a>
+        </div>
 
-        <!-- Article 4 -->
-        <a href="article.html" class="card accent" style="animation-delay: 0.3s;">
-            <div class="ink-blob" style="width: 200px; height: 200px; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 50%;"></div>
-            <div class="card-content">
-                <span class="meta">Data</span>
-                <h2 style="font-size: 4rem; line-height: 0.8;">88%</h2>
-                <p>Users prefer bold interfaces.</p>
-            </div>
-        </a>
+        <!-- 4. REVIEW (Yellow) - 4x1 -->
+        <div class="card-wrapper span-4 style-yellow" data-author="sarah">
+             <a href="article.html?id=sarah" class="card-inner">
+                <div class="card-content">
+                    <span class="meta">REVIEW</span>
+                    <h2>
+                        <span lang="en">TOUCH SCREENS</span>
+                        <span lang="cn">触摸屏美学</span>
+                    </h2>
+                </div>
+            </a>
+        </div>
 
-        <!-- Article 5 -->
-        <a href="article.html" class="card wide" style="animation-delay: 0.4s; background: var(--green);">
-            <div class="card-content">
-                <span class="meta">Tutorial</span>
-                <h2>Implementing the "Ink Blob" Effect</h2>
-                <p>A quick guide to SVG filters and CSS border-radius hacks.</p>
-            </div>
-        </a>
+        <!-- 5. FILLER (Green) - 4x1 -->
+        <div class="card-wrapper span-4 style-green" data-author="alex">
+            <a href="article.html?id=alex" class="card-inner">
+                <div class="ink-blob" style="top: -20px; right: -20px; width: 100px; height: 100px;"></div>
+                <div class="card-content">
+                    <span class="meta">TREND</span>
+                    <h2>
+                        <span lang="en">NEON VIBES</span>
+                        <span lang="cn">霓虹氛围</span>
+                    </h2>
+                </div>
+            </a>
+        </div>
 
-        <!-- Article 6 -->
-        <a href="article.html" class="card" style="animation-delay: 0.5s;">
-            <div class="card-content">
-                <span class="meta">Archive</span>
-                <h2>2023 Recap</h2>
-            </div>
-        </a>
+        <!-- 6. QUOTE (Grey) - 6x1 -->
+        <div class="card-wrapper span-6 style-grey" data-author="sarah">
+            <a href="article.html?id=sarah" class="card-inner">
+                <div class="card-content">
+                    <span class="meta">QUOTE</span>
+                    <h2 style="font-size: 1.5rem; font-family: 'Noto Sans SC';">
+                        <span lang="en">"Form follows function, but fun follows form."</span>
+                        <span lang="cn">"形式追随功能，但乐趣追随形式。"</span>
+                    </h2>
+                </div>
+            </a>
+        </div>
 
-         <!-- Article 7 -->
-         <a href="article.html" class="card tall" style="animation-delay: 0.6s; background: var(--ink); color: white;">
-            <div class="ink-blob" style="background: var(--red); width: 100px; height: 100px; top: 10px; right: 10px; opacity: 1;"></div>
-            <div class="card-content">
-                <span class="meta" style="background: white; color: black;">Update</span>
-                <h2>Dark Mode Theory</h2>
-                <p style="margin-top: auto;">It's not just inverting colors.</p>
-            </div>
-        </a>
+        <!-- 7. DARK (Black) - 6x1 -->
+        <div class="card-wrapper span-6 style-black" data-author="alex">
+            <a href="article.html?id=alex" class="card-inner">
+                <div class="ink-blob" style="bottom: 10px; right: 10px; width: 120px; height: 120px;"></div>
+                <div class="card-content">
+                    <span class="meta">CODE</span>
+                    <h2>CSS GRID V3</h2>
+                </div>
+            </a>
+        </div>
 
     </main>
 
     <script>
-        // HP-1 Style Tilt Effect Logic
-        const cards = document.querySelectorAll('.card');
+        // --- 1. THEME LOGIC (Consistent across pages) ---
+        function initTheme() {
+            const saved = localStorage.getItem('theme');
+            const sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const btn = document.getElementById('theme-btn');
+            
+            if (saved === 'dark' || (!saved && sysDark)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                btn.textContent = 'DARK';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                btn.textContent = 'LIGHT';
+            }
+        }
 
-        cards.forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                // Calculate percentage from center
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = ((y - centerY) / centerY) * -5; // Max 5deg tilt
-                const rotateY = ((x - centerX) / centerX) * 5;
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('theme', target);
+            document.getElementById('theme-btn').textContent = target.toUpperCase();
+        }
 
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+        // --- 2. AUTHOR DATA & FILTER ---
+        const authorData = {
+            alex: {
+                name: "ALEX BOLD",
+                motto: { en: "Grid is Law. Padding is Religion.", cn: "网格即法律，内边距即信仰。" },
+                color: "var(--red)",
+                avatarColor: "#FF3D00"
+            },
+            sarah: {
+                name: "SARAH INK",
+                motto: { en: "Raw structure is the ultimate honesty.", cn: "原始结构是终极的诚实。" },
+                color: "var(--yellow)",
+                avatarColor: "#FFD600"
+            }
+        };
+
+        function filterGrid(author) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            
+            const profileContainer = document.getElementById('author-profile');
+            const data = authorData[author];
+
+            if (author === 'all' || !data) {
+                profileContainer.classList.remove('visible');
+            } else {
+                document.getElementById('p-name').textContent = data.name;
+                const isEn = document.body.className.includes('show-en');
+                document.getElementById('p-motto').textContent = `"${isEn ? data.motto.en : data.motto.cn}"`;
+                document.getElementById('p-avatar').style.backgroundColor = data.avatarColor;
+                profileContainer.classList.add('visible');
+            }
+            
+            document.querySelectorAll('.card-wrapper').forEach(card => {
+                const cardAuthor = card.dataset.author;
+                if (author === 'all' || cardAuthor === 'all' || cardAuthor === author) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // --- 3. LANG LOGIC ---
+        function toggleLang() {
+            const isEn = document.body.className.includes('show-en');
+            document.body.className = isEn ? 'show-cn' : 'show-en';
+            
+            // Update motto if visible
+            const profile = document.getElementById('author-profile');
+            if (profile.classList.contains('visible')) {
+                const currentAuthor = document.querySelector('.filter-btn.active').getAttribute('onclick').match(/'([^']+)'/)[1];
+                if (authorData[currentAuthor]) {
+                    const motto = authorData[currentAuthor].motto;
+                    document.getElementById('p-motto').textContent = `"${isEn ? motto.cn : motto.en}"`; 
+                }
+            }
+        }
+
+        // --- 4. HERO LOGIC ---
+        function switchHero(idx, e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.hero-slide').forEach(s => s.classList.remove('active'));
+            document.getElementById('slide-' + idx).classList.add('active');
+            document.querySelectorAll('.hero-dot').forEach(d => d.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+        }
+
+        // --- 5. EFFECTS & INIT ---
+        function generateRandomBlob() {
+            const r = () => Math.floor(Math.random() * 40 + 30); 
+            return `${r()}% ${r()}% ${r()}% ${r()}% / ${r()}% ${r()}% ${r()}% ${r()}%`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme(); // Init theme
+
+            // Blobs
+            document.querySelectorAll('.ink-blob').forEach(blob => {
+                blob.style.borderRadius = generateRandomBlob();
             });
 
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-            });
+            // Random Interactions
+            const isDesktop = window.matchMedia("(hover: hover)").matches;
+            if (isDesktop) {
+                document.querySelectorAll('.card-wrapper').forEach(wrapper => {
+                    const inner = wrapper.querySelector('.card-inner');
+                    const blob = wrapper.querySelector('.ink-blob');
+                    const type = Math.random() > 0.5 ? 'tilt' : 'parallax';
+
+                    if (type === 'tilt') {
+                        wrapper.addEventListener('mousemove', (e) => {
+                            const rect = wrapper.getBoundingClientRect();
+                            const x = e.clientX - rect.left;
+                            const y = e.clientY - rect.top;
+                            const cx = rect.width / 2;
+                            const cy = rect.height / 2;
+                            const rotateX = ((y - cy) / cy) * -15; 
+                            const rotateY = ((x - cx) / cx) * 15;
+                            inner.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+                            if(blob) blob.style.transform = `translate(${x/20}px, ${y/20}px)`;
+                        });
+                        wrapper.addEventListener('mouseleave', () => {
+                            inner.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+                            if(blob) blob.style.transform = 'translate(0,0)';
+                        });
+                    } else {
+                        const content = wrapper.querySelector('.card-content');
+                        wrapper.addEventListener('mousemove', (e) => {
+                            const rect = wrapper.getBoundingClientRect();
+                            const x = (e.clientX - rect.left) - (rect.width / 2);
+                            const y = (e.clientY - rect.top) - (rect.height / 2);
+                            content.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+                            if(blob) blob.style.transform = `scale(1.2) translate(${x * -0.05}px, ${y * -0.05}px)`;
+                        });
+                        wrapper.addEventListener('mouseleave', () => {
+                            content.style.transform = 'translate(0, 0)';
+                            if(blob) blob.style.transform = 'scale(1) translate(0,0)';
+                        });
+                    }
+                });
+            }
         });
     </script>
 </body>
