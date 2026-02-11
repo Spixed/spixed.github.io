@@ -1,14 +1,14 @@
-+++
-title = 'Blog Detail Log'
-date = 2024-02-15T22:50:11+08:00
-draft = false
-author = "spixed"
-featured = true
-keywords = [" 博客建设 "]
-categories = ["blog"]
-tags = ["blog", "hugo", "github", "git", "theme"]
-weight = 0
-+++
+---
+title: "Blog Detail Log"
+date: 2024-02-15T22:50:11+08:00
+draft: false
+author: "spixed"
+featured: true
+keywords: [" 博客建设 "]
+categories: ["blog"]
+tags: ["blog", "hugo", "github", "git", "theme"]
+weight: 0
+---
 
 > Brief Introduction: Construction, renovation and some pieces of experience of this blog.
 

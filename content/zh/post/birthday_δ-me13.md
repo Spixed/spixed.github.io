@@ -1,16 +1,16 @@
-+++
-title = '蜉蝣客'
-date = 2025-09-28T00:00:00+08:00
-draft = false
-author = "hetx"
-featured = true
-keywords = ["生日", "感言"]
-categories = ["birthday"]
-tags = ["birthday"]
-status = true
-statusCate = "十八岁咯"
-weight = 0
-+++
+---
+title: "蜉蝣客"
+date: 2025-09-28T00:00:00+08:00
+draft: false
+author: "hetx"
+featured: true
+keywords: ["生日", "感言"]
+categories: ["birthday"]
+tags: ["birthday"]
+status: true
+statusCate: "十八岁咯"
+weight: 0
+---
 
 # 浪淘尽----沙海金粒
 

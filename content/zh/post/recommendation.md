@@ -1,24 +1,24 @@
-+++
-title = ' 崩铁，启动！'
-date = 2024-02-19T22:08:44+08:00
-draft = false
-author = "spixed"
-featured = false
-keywords = ["test"]
-categories = ["test"]
-tags = ["test"]
-noclick = true
-status = true
-statusCate = "崩铁，启动！"
-categoryLink = "https://webstatic.mihoyo.com/payment/sr/index.html?utm_source=official_web#/"
-buy = true
-buyLink = "https://sr.mihoyo.com"
-buyName = "崩坏：星穹铁道"
-buyInfo = "Honkai: Star Rail"
-buyImage = "//sr.mihoyo.com/favicon-mi.ico"
-buyButtonText = "Click"
-weight = 1
-+++
+---
+title: " 崩铁，启动！"
+date: 2024-02-19T22:08:44+08:00
+draft: false
+author: "spixed"
+featured: false
+keywords: ["test"]
+categories: ["test"]
+tags: ["test"]
+noclick: true
+status: true
+statusCate: "崩铁，启动！"
+categoryLink: "https://webstatic.mihoyo.com/payment/sr/index.html?utm_source=official_web#/"
+buy: true
+buyLink: "https://sr.mihoyo.com"
+buyName: "崩坏：星穹铁道"
+buyInfo: "Honkai: Star Rail"
+buyImage: "//sr.mihoyo.com/favicon-mi.ico"
+buyButtonText: "Click"
+weight: 1
+---
 
 这片银河中有名为「星神」的存在，祂们造就现实，抹消星辰，在无数「世界」中留下祂们的痕迹。
 

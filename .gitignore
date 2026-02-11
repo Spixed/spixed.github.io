@@ -1,5 +1,6 @@
 # Hugo output
 public/
+backup/
 
 # System files
 .DS_Store

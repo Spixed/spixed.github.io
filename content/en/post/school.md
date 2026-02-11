@@ -1,14 +1,14 @@
-+++
-title = 'Chengdu No.20 Middle School'
-date = 2024-04-03T21:49:06+08:00
-draft = false
-author = "spixed"
-featured = false
-keywords = ["学校", "成都二十中", "校园", "教师"]
-categories = ["school"]
-tags = ["school"]
-weight = 0
-+++
+---
+title: "Chengdu No.20 Middle School"
+date: 2024-04-03T21:49:06+08:00
+draft: false
+author: "spixed"
+featured: false
+keywords: ["学校", "成都二十中", "校园", "教师"]
+categories: ["school"]
+tags: ["school"]
+weight: 0
+---
 
 > Brief Introduction: Introduction to the Senior High Part of Chengdu No.20 Middle School campus, daily life, teachers and other information.
 

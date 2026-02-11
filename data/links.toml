@@ -1,23 +1,17 @@
-[[links]]
+[[friends]]
     name = "Spixed's Blog"
-    image = "https://spixed.is-a.dev/site/logo.png"
-    link = "https://spixed.is-a.dev"
-    bio = "从现在起，一切归零。"
+    avatar = "https://spixed.is-a.dev/site/logo.png"
+    url = "https://spixed.is-a.dev"
+    description = "从现在起，一切归零。"
 
-[[links]]
+[[friends]]
     name = "Hugo"
-    image = "https://gohugo.io/favicon-32x32.png"
-    link = "https://gohugo.io"
+    avatar = "https://gohugo.io/favicon-32x32.png"
+    url = "https://gohugo.io"
     bio = "本站所用静态网页生成器"
 
-[[links]]
-    name = "Ori Theme"
-    image = "https://htony.js.org/images/t.jpg"
-    link = "https://github.com/ThemeTony/hugo-theme-tony"
-    bio = "本站主题原版"
-
-[[links]]
-    name = "Mod Theme"
-    image = "https://htony.js.org/images/t.jpg"
-    link = "https://github.com/Spixed/hugo-theme-tony"
-    bio = "本站主题改版"
+[[friends]]
+    name = "Theme"
+    avatar = "https://htony.js.org/images/t.jpg"
+    url = "https://github.com/Spixed/polymer"
+    description = "本站主题"

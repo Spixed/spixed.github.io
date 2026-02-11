@@ -1,238 +1,60 @@
-########################################
-# Site configuration
-# Icon: https://RemixIcon.com/
-
 baseURL = "https://spixed.is-a.dev/"
 title = "Spixed's Blog"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"
-hasCJKLanguage = false
-
-# Theme selection
-theme = "tony"
-
-# `hugo new` text editor for automatically opening new articles
-newContentEditor = ""
-
-# Summary word limit
-summaryLength = 35
-
-# Whether to enable GitHub style Emoji writing
+theme = "polymer"
+defaultContentLanguage = "zh"
+hasCJKLanguage = true
 enableEmoji = true
 
-# Number of articles per page
-pagination.pagerSize = 39
+[params]
+  description = "A Digital Brutalism Theme"
+  math = true
+  mathEngine = "mathjax"
+  favicon = "/logo.png"
 
-# Page category
+  [params.waline]
+    serverURL = "https://c.spixed.us.kg/"
+
 [taxonomies]
-    category = "categories"
-    tag = "tags"
-
-# Multiple Language Support
-# defaultContentLanguage = "zh-cn"
-# defaultContentLanguageInSubdir = true
+  category = "categories"
+  tag = "tags"
 
 [languages]
-    [languages.zh-cn]
-        languageCode = "zh-CN"
-        languageName = "简体中文"
-        weight = 1
-    [languages.en]
-        languageCode = "en-US"
-        languageName = "English"
-        weight = 2
-        [languages.en.menu]
-            [[languages.en.menu.main]]
-                url = "/en"
-                name = "Home"
-                weight = 1
-            [[languages.en.menu.main]]
-                url = "/en/categories"
-                name = "Categories"
-                weight = 2
-            [[languages.en.menu.main]]
-                url = "/en/tags"
-                name = "Tags"
-                weight = 3
-            [[languages.en.menu.main]]
-                url = "/en/archives"
-                name = "Archives"
-                weight = 4
-            [[languages.en.menu.main]]
-                url = "/en/about/"
-                name = "About"
-                weight = 5
-            [[languages.en.menu.main]]
-                url = "/en/links/"
-                name = "Links"
-                weight = 6
-
-
-########################################
-# Menu configuration
-
-# The configuration instructions in the menu are as follows:
-# url link address
-# name text (leave blank ("") no)
-# weight
+  [languages.zh]
+    languageName = '简体中文'
+    contentDir = 'content/zh'
+    weight = 1
+    languageCode = "zh-CN"
+  
+  [languages.en]
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 2
+    languageCode = "en-US"
 
 [menu]
-    # Menu Bar
-    [[menu.main]]
-        url = "/"
-        name = "Home"
-        weight = 1
-    [[menu.main]]
-        url = "/categories"
-        name = "Categories"
-        weight = 2
-    [[menu.main]]
-        url = "/tags"
-        name = "Tags"
-        weight = 3
-    [[menu.main]]
-        url = "/archives"
-        name = "Archives"
-        weight = 4
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+  [[menu.main]]
+    identifier = "links"
+    name = "Links"
+    url = "/links/"
+    weight = 20
 
-    [[menu.main]]
-        url = "/links/"
-        name = "Links"
-        weight = 6
-
-# Author information (new standard format for Hugo >= 0.141.0)
-[author]
-    name = "Spixed"
-    email = "Space369X@163.com"
-    motto = "从现在起，一切归零。"
-    avatar = "/site/avatar.png"
-    website = "/"
-    github = "https://github.com/Spixed"
-
-[[params.pinned]]
-    title = "Spixed's Blog"
-    name = "Spixed"
-    icon = "ri-code-box-line"
-    url = "/about#me"
-
-# Markdown renderer
 [markup]
-    defaultMarkdownHandler = "goldmark"
-    [markup.goldmark.extensions]
-        definitionList = true
-        footnote = true
-        linkify = true
-        strikethrough = true
-        table = true
-        taskList = true
-        typographer = false
-    [markup.goldmark.parser]
-        autoHeadingID = true
-        autoHeadingIDType = "github"
-        [markup.goldmark.parser.attribute]
-            block = true
-            title = true
+  [markup.goldmark]
     [markup.goldmark.renderer]
-        hardWraps = true
-        unsafe = true
-    [markup.highlight]
-        codeFences = true
-        guessSyntax = true
-        lineNos = true
-        lineNumbersInTable = false
-        noClasses = true
-        style = "onedark"
-    [markup.tableOfContents]
-        startLevel = 2
-        endLevel = 6
-        ordered = true
-
-# Hugo output control
-[outputs]
-    page = ["HTML"]
-    home = ["HTML", "SectionsRSS"]
-    section = ["HTML"]
-    taxonomy = ["HTML"]
-
-[mediaTypes]
-  "application/rss+xml" = { suffixes = ["xml"] }
-
-[outputFormats]
-  [outputFormats.SectionsRSS]
-    mediaType = "application/rss+xml"
-    baseName = "rss"
-
-# RSS & Atom Article limit
-[services.rss]
-    limit = -1
-
-########################################
-# Theme configuration
-
-[params]
-    #####################################
-    # Site Information
-    # Site LOGO
-    siteLogo = "/site/logo.png"
-    
-    # Site description
-    siteDescription = "Spixed's Blog. Just be better. "
-
-    # Author information for theme display (legacy/compatibility)
-    author = "Spixed"
-    avatar = "/site/avatar.png" # Legacy avatar, templates might use this
-    email = "Space369X@163.com" # Legacy email
-    github = "https://github.com/Spixed" # Legacy github
-    motto = "从现在起，一切归零。" # Legacy motto
-
-    #####################################
-    # Copyright Protection
-    enableCopyright = true
-    copyrightName = "CC BY-NC 4.0"
-    copyrightLink = "https://creativecommons.org/licenses/by-nc/4.0/"
-
-    #####################################
-    # Table of Contents
-    enableToc = true
-
-    #####################################
-    # Reading progress bar
-    enableReadingBar = true
-
-    #####################################
-    # Article up and down page
-    enableAdjacentPost = true
-
-    #####################################
-    # Whether to show the link between Hugo and Tony
-    displayPoweredBy = true
-
-    #####################################
-    # Markdown Related
-    hrefTargetBlank = true
-
-    #####################################
-    # Comments
-    enableComments = true
-    enableWaline = true
-    walineServerURL = "https://c.spixed.us.kg/"
-
-    #####################################
-    # Google Analytics
-    enableGoogleAnalytics = false
-    trackingCodeType = ""
-    trackingID = ""
-
-    #####################################
-    # Google Site Verification
-    googleSiteVerification = ""
-
-    #####################################
-    # Baidu push
-    enableBaiduPush = false
-
-    # Ignore logs
-    ignoreLogs = ['warning-goldmark-raw-html']
-    
-    # 设置主要显示的文章部分
-    mainSections = ["post"]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\\[', '\\]']]
+          inline = [['$', '$'], ['\\(', '\\)']]
