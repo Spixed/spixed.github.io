@@ -1,11 +1,9 @@
 ---
-title: "About"
-date: 2024-02-19T22:18:54+08:00
-draft: false
-keywords: ["About"]
-categories: ["about"]
-tags: ["about"]
+title: "About Me"
+layout: "about"
 ---
+
+
 
 # About Me
 
@@ -124,4 +122,4 @@ Want to track this wild Spixed? QQ: 1208823098, but not welcoming new friends
 ## My Projects  
 [Spixed's Blog](https://github.com/Spixed/Spixed.github.io): This site's repo (_click for quantum superposition pages_)  
 
-[hugo-theme-tony(mod)](https://github.com/Spixed/hugo-theme-tony): This blog's theme. Modified from original. (_just added dark mode & i18n toggles – docs untouched like museum relics_)  
+[Polymer](https://github.com/Spixed/polymer): This blog's theme.

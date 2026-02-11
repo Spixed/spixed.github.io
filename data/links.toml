@@ -8,10 +8,10 @@
     name = "Hugo"
     avatar = "https://gohugo.io/favicon-32x32.png"
     url = "https://gohugo.io"
-    bio = "本站所用静态网页生成器"
+    description = "本站所用静态网页生成器"
 
 [[friends]]
     name = "Theme"
-    avatar = "https://htony.js.org/images/t.jpg"
+    avatar = "https://cdn.jsdelivr.net/gh/Spixed/polymer@main/theme_logo.png"
     url = "https://github.com/Spixed/polymer"
     description = "本站主题"

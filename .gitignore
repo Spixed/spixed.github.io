@@ -12,11 +12,14 @@ Thumbs.db
 
 # Tools
 tools/
+scripts/
+githooks/
 
 # Temporary files
 *.tmp
 *.log
 *.pyc
+.venv/
 
 # Node.js dependencies
 node_modules/

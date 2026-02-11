@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer's Gate | Spixed's Blog</title>
+    <style>
+        /* Digital Brutalism Style - Polymer Inspired */
+        :root {
+            --bg-color: #f0f0f0;
+            --card-bg: #ffffff;
+            --text-color: #000000;
+            --border-width: 3px;
+            --shadow-offset: 6px;
+            --link-color: #0056b3;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Space Grotesk', 'Courier New', monospace;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            border: var(--border-width) solid var(--text-color);
+            padding: 40px;
+            box-shadow: var(--shadow-offset) var(--shadow-offset) 0px 0px var(--text-color);
+            transition: transform 0.2s ease;
+        }
+
+        .container:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: calc(var(--shadow-offset) + 2px) calc(var(--shadow-offset) + 2px) 0px 0px var(--text-color);
+        }
+
+        h1 {
+            text-transform: uppercase;
+            border-bottom: var(--border-width) solid var(--text-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+        }
+
+        .riddle-box {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid var(--text-color);
+            background: #fafafa;
+        }
+
+        .riddle-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--text-color);
+            background: white;
+            font-family: inherit;
+            font-size: 1rem;
+            box-sizing: border-box;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        input:focus {
+            background: #000;
+            color: #fff;
+        }
+
+        button {
+            background: var(--text-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            width: 100%;
+            border: 2px solid transparent;
+        }
+
+        button:hover {
+            background: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        #status-msg {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            height: 24px;
+        }
+
+        #tree-view {
+            display: none;
+            margin-top: 40px;
+            border-top: var(--border-width) solid var(--text-color);
+            padding-top: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Tree View Styles */
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+            border-left: 1px dashed #999;
+        }
+
+        li {
+            margin: 5px 0;
+            position: relative;
+        }
+
+        li::before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: -20px;
+            width: 15px;
+            height: 1px;
+            background: #999;
+        }
+
+        .folder {
+            font-weight: 800;
+            color: #333;
+            cursor: pointer;
+            user-select: none;
+            display: inline-block;
+        }
+
+        .folder:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .file {
+            color: #666;
+        }
+        
+        a.file-link {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a.file-link:hover {
+            text-decoration: underline;
+            background-color: #e0e0e0;
+        }
+        
+        .hint {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        /* Folding Styles */
+        .caret {
+            cursor: pointer;
+            user-select: none;
+            display: inline-block;
+            margin-right: 6px;
+            transition: transform 0.2s;
+            font-size: 0.8em;
+        }
+
+        .caret-down {
+            transform: rotate(90deg);
+        }
+
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Explorer's Gate</h1>
+        <p>Welcome, traveler. To access the internal archives (Static Files), you must prove your wit.</p>
+        
+        <div class="riddle-box">
+            <div class="riddle-text">1. I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?</div>
+            <input type="text" id="a1" placeholder="Type your answer...">
+        </div>
+
+        <div class="riddle-box">
+            <div class="riddle-text">2. I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?</div>
+            <input type="text" id="a2" placeholder="Type your answer...">
+        </div>
+
+        <div class="riddle-box">
+            <div class="riddle-text">3. I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?</div>
+            <input type="text" id="a3" placeholder="Type your answer...">
+        </div>
+
+        <button onclick="checkAnswers()">Unlock Archives</button>
+        <div id="status-msg"></div>
+
+        <div id="tree-view">
+            <h2>📂 /static/</h2>
+            <p class="hint">Click folders to expand/collapse. Click files to view.</p>
+            <div id="tree-content"></div>
+        </div>
+    </div>
+
+    <script>
+        async function checkAnswers() {
+            const a1 = document.getElementById('a1').value.trim().toLowerCase();
+            const a2 = document.getElementById('a2').value.trim().toLowerCase();
+            const a3 = document.getElementById('a3').value.trim().toLowerCase();
+            
+            const valid1 = ['map', '地图'];
+            const valid2 = ['echo', '回声'];
+            const valid3 = ['fire', '火', '火焰'];
+
+            const msg = document.getElementById('status-msg');
+
+            if (valid1.includes(a1) && valid2.includes(a2) && valid3.includes(a3)) {
+                msg.innerText = "ACCESS GRANTED. DECRYPTING...";
+                msg.style.color = "green";
+                await new Promise(r => setTimeout(r, 800)); // Dramatic pause
+                loadTree();
+            } else {
+                msg.innerText = "ACCESS DENIED. INCORRECT CREDENTIALS.";
+                msg.style.color = "red";
+                shakeContainer();
+            }
+        }
+
+        function shakeContainer() {
+            const container = document.querySelector('.container');
+            container.style.transform = "translate(5px, 0)";
+            setTimeout(() => container.style.transform = "translate(-5px, 0)", 50);
+            setTimeout(() => container.style.transform = "translate(5px, 0)", 100);
+            setTimeout(() => container.style.transform = "translate(0, 0)", 150);
+        }
+
+        async function loadTree() {
+            try {
+                // Fetch the JSON file generated by python script
+                // Using relative path to ensure it works on site root or subpath
+                const response = await fetch('./file_tree.json');
+                if (!response.ok) throw new Error("Network response was not ok");
+                
+                const data = await response.json();
+                const container = document.getElementById('tree-content');
+                // Render tree starting at depth 0
+                container.innerHTML = renderTree(data, 0);
+                document.getElementById('tree-view').style.display = 'block';
+                document.getElementById('status-msg').innerText = "ARCHIVES LOADED.";
+            } catch (e) {
+                console.error(e);
+                document.getElementById('status-msg').innerText = "SYSTEM ERROR: UNABLE TO FETCH FILE INDEX.";
+            }
+        }
+
+        function renderTree(node, depth) {
+            // Default expand to level 2 (Depth 0 and 1 expanded, showing Depth 2 contents)
+            const isExpanded = depth < 2;
+            const ulClass = isExpanded ? 'nested active' : 'nested';
+            
+            let html = `<ul class="${ulClass}">`;
+            const keys = Object.keys(node).sort((a, b) => {
+                // Sort: Folders first, then files
+                // If value is string, it's a file (web path). If object, it's a folder.
+                const isFileA = typeof node[a] === "string";
+                const isFileB = typeof node[b] === "string";
+                
+                if (isFileA === isFileB) return a.localeCompare(b);
+                return isFileA ? 1 : -1;
+            });
+
+            for (const key of keys) {
+                const value = node[key];
+                if (typeof value === "string") {
+                    // It's a file
+                    html += `<li><span class="file">📄 <a href="./${value}" class="file-link" target="_blank">${key}</a></span></li>`;
+                } else {
+                    // It's a folder
+                    // If this folder is expanded (depth < 2), arrow should be down
+                    const caretClass = isExpanded ? 'caret caret-down' : 'caret';
+                    // Pass depth + 1 to children
+                    html += `<li>
+                        <span class="folder" onclick="toggleFolder(this)">
+                            <span class="${caretClass}">▶</span> 📁 ${key}/
+                        </span>
+                        ${renderTree(value, depth + 1)}
+                    </li>`;
+                }
+            }
+            html += '</ul>';
+            return html;
+        }
+
+        function toggleFolder(element) {
+            // The UL is the next sibling of the folder span's parent li? 
+            // No, in my HTML structure: 
+            // <li>
+            //    <span class="folder" ...>...</span>
+            //    <ul class="nested">...</ul>
+            // </li>
+            // So the UL is the next sibling of the clicked span.
+            
+            const nestedUl = element.nextElementSibling;
+            const caret = element.querySelector('.caret');
+            
+            if (nestedUl) {
+                nestedUl.classList.toggle('active');
+                caret.classList.toggle('caret-down');
+            }
+        }
+    </script>
+</body>
+</html>

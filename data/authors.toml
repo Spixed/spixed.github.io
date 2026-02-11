@@ -1,7 +1,7 @@
 [spixed]
 name = "Spixed"
 nickname = "Spixed"
-avatar = "/spixed.png"
+avatar = "/site/spixed.png"
 github = "https://github.com/Spixed"
 email = "Space369X@163.com"
 website = "https://spixed.is-a.dev/"
@@ -14,7 +14,7 @@ zh = "从现在起，一切归零。"
 [hetx]
 name = "δ-me13"
 nickname = "δ-me13"
-avatar = "/hetx.jpg"
+avatar = "/site/hetx.jpg"
 weight = 2
 
 [hetx.bio]

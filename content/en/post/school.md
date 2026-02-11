@@ -1,230 +1,230 @@
 ---
-title: "Chengdu No.20 Middle School"
-date: 2024-04-03T21:49:06+08:00
+title: Chengdu No.20 Middle School
+date: 2024-04-03 21:49:06+08:00
 draft: false
-author: "spixed"
+author: spixed
 featured: false
-keywords: ["学校", "成都二十中", "校园", "教师"]
-categories: ["school"]
-tags: ["school"]
-weight: 0
+categories: [school]
+tags: [school]
+description: ''
 ---
+
 
 > Brief Introduction: Introduction to the Senior High Part of Chengdu No.20 Middle School campus, daily life, teachers and other information.
 
-# 宇宙安全申明
+# Universal Safety Declaration
 
-> 事先声明：本人将尽量以客观公正的言辞描写本人在成都二十中的校园生活，若有情绪的偏向属于人之常情，请不要过度解读，认识我的人也不要大肆宣传从而直接让我进德育处喝茶。若你不能接受以上内容，请赶紧关闭该网页，谢谢屏幕前的各位支持。
+> Disclaimer: I will try my best to describe my campus life at Chengdu No. 20 Middle School in objective and fair words. If there is emotional bias, it is human nature. Please do not over-interpret it. People who know me should not publicize it, causing me to be invited to the Moral Education Office for tea. If you cannot accept the above content, please close this page quickly. Thank you for your support.
 
 <!--more-->
 
-# 自我介绍（简略版）
+# Self Introduction (Brief Version)
 
-姓名：XXX
+Name: XXX
 
-性别：♂
+Gender: ♂
 
-网名：Spixed (/spaɪksɪd/)
+Online Name: Spixed (/spaɪksɪd/)
 
-> 你不用了解这个名字具体的意义(因为没有)，我也不期望有谁能按照我的想法读对这个单词，毕竟这个网名是本人某一天闲得没事从Spider这一单词获得灵感，然后随便改了几个字母得来的，不是任何现有单词。
+> You don't need to understand the specific meaning of this name (because there isn't one), and I don't expect anyone to pronounce this word according to my idea. After all, this online name was inspired by the word "Spider" when I was bored one day, and then I randomly changed a few letters to get it. It is not any existing word.
 
-出生年份：2008
+Year of Birth: 2008
 
-进入成都20中时间：2023
+Year of Entry into Chengdu No. 20 Middle School: 2023
 
-住址：肯定在成都啦~
+Address: Definitely in Chengdu~
 
-家乡：四川内江资中
+Hometown: Zizhong, Neijiang, Sichuan
 
-身份：高2026届的一员，住校生（不具体到班，写了班怕某些人找上我~~虽然好像目前这样也很容易猜出我是谁了~~）
+Identity: A member of the Class of 2026, a boarding student (not specifying the class, writing the class is afraid that some people will find me ~~although it seems easy to guess who I am now~~)
 
-> Ps: 2026届=2023级，同理2023届=2020级，望周知
+> Ps: Class of 2026 = Grade 2023, similarly Class of 2023 = Grade 2020, please be aware.
 
-爱好等就不在此赘述了，有兴趣的可以进我博客关于我的界面自行查看。
+I won't elaborate on hobbies here. If you are interested, you can check the About Me page on my blog.
 
-# 环境介绍
+# Environment Introduction
 
-省流（似乎文字也省不了多少流）：外观翻新后确实挺不错的，内部绝大部分地方都很干净，**EXCEPT** 男寝&教师寝那一栋楼。
+TL;DR (It seems that words can't save much data): The appearance after renovation is indeed quite good. Most of the interior is very clean, **EXCEPT** the boys' dormitory & teachers' dormitory building.
 
-学校外部风景各位可以上网搜一搜，基本一致。教学楼应该是因为没翻新几年目前还很干净。大家可以在访校期间观赏一下，我觉得这些环境还是做得很好了。
+You can search for the external scenery of the school on the Internet, which is basically consistent. The teaching building should be very clean because it has been renovated for a few years. You can take a look during the school visit. I think these environments are still very well done.
 
-> Ps: 20中的桌椅腿是斜的，桌子有两批（新旧，通过桌子颜色和"岁月的痕迹"可以很容易辨认出来），但抽屉比较窄且左右两侧没有遮拦（除桌腿）。若你将要进入20中请记得买好桌边带之类的扩容工具。不过也请注意，桌边带应该会配一根绕桌子一圈的固定绳，但是20中的桌子能拿来卡绳子的区域很窄，绳子很容易掉，所以还是建议买桌边书柜（不过如果你遇到了某位年级主任，那还是先用着桌边带吧，下文会详细介绍）
+> Ps: The table and chair legs in No. 20 Middle School are slanted. There are two batches of tables (new and old, which can be easily identified by the color of the table and "traces of time"), but the drawers are relatively narrow and there are no barriers on the left and right sides (except for the table legs). If you are about to enter No. 20 Middle School, please remember to buy expansion tools such as desk side straps. However, please also note that the desk side strap should be equipped with a fixing rope around the table, but the area of the table in No. 20 Middle School that can be used to hold the rope is very narrow, and the rope falls off easily, so it is recommended to buy a desk side bookcase (but if you meet a certain grade director, then use the desk side strap first, which will be introduced in detail below).
 
-其他的都还好说，接下来着重说一下寝室情况。我相信各位看到的二十中给你宣传的寝室非常干净，一寝三床，每个床上床下桌，看着就非常舒适。是的，这确实是二十中的寝室，**但是**仅限于女生寝室长这样。
+Everything else is easy to say. Next, I will focus on the dormitory situation. I believe that the dormitory promoted to you by No. 20 Middle School is very clean, with three beds per room, and a desk under the bed for each bed, which looks very comfortable. Yes, this is indeed the dormitory of No. 20 Middle School, **BUT** it is limited to the girls' dormitory.
 
-![女寝图样·图源二十中微信公众号发文](/school/img-1.jpg)
+![Girls' Dormitory Layout · Source: No. 20 Middle School WeChat Official Account Article](/school/img-1.jpg)
 
-以下是经个人亲身体验 & 咨询班上同学并整理的对比表。保证下述信息客观公正。
+The following is a comparison table compiled based on personal experience & consultation with classmates. Ensure that the following information is objective and fair.
 
-## 二十中寝室特点对照表
+## Comparison Table of Dormitory Characteristics of No. 20 Middle School
 
-|对比事项|男寝 & 教师寝|女寝|
+| Comparison Item | Boys' Dormitory & Teachers' Dormitory | Girls' Dormitory |
 | :---: | :---: | :---: |
-|同寝人数|最多可住6人，实际应该会少一两个|3人|
-|整体外观|有~~亿~~点破旧|干净整洁|
-|床铺类型|上下铺，一人一床，且破损有点严重|上床下桌|
-|卫生间类型|左右两个寝室共用一个卫生间，一个卫生间共3个坑淋一体位按行排列，若不自费加装（或继承上届遗产）还无帘子；洗漱台处有一面镜子；有排气扇之类的设施（无法确定能不能开以及是否开启）；上层地板漏水；有些淋浴头有点问题，如漏水、水小等|每个寝室一个卫生间一个浴室一个阳台；都有排气扇，熄灯后断电；洗漱台处有一面镜子，旁边还有一个小水池（用来洗拖把）|
-|饮水机|有|有|
-|桌子类型|一**寝**一桌两**凳子**|一**床**一桌一**椅子**（有些寝室是一寝一个圆凳子）|
-|洗衣相关|无洗衣机；卫生间有挂帕子等小物件的地方，晾衣服需到寝室尽头晾衣杆处|无洗衣机；晾衣服、挂帕子均可在卫生间里完成|
-|其它|(静待补充)|(静待补充)|
+| Number of people in the same room | Up to 6 people, actually one or two less | 3 people |
+| Overall appearance | A ~~billion~~ bit shabby | Clean and tidy |
+| Bed type | Bunk beds, one bed per person, and the damage is a bit serious | Bed on top, desk below |
+| Toilet type | Two dormitories on the left and right share one toilet. One toilet has 3 pits and showers arranged in rows. If you don't install it at your own expense (or inherit the legacy of the previous session), there is no curtain; there is a mirror at the washstand; there are facilities such as exhaust fans (not sure if they can be turned on or if they are turned on); the upper floor leaks; some shower heads have problems, such as water leakage, low water pressure, etc. | Each dormitory has a toilet, a bathroom and a balcony; all have exhaust fans, power off after lights out; there is a mirror at the washstand, and there is a small sink next to it (used to wash mops) |
+| Water dispenser | Yes | Yes |
+| Desk type | One desk and two **stools** per **room** | One desk and one **chair** per **bed** (some dormitories have a round stool per room) |
+| Laundry related | No washing machine; there are places to hang towels and other small items in the toilet, clothes need to be hung on the clothes rail at the end of the dormitory | No washing machine; drying clothes and hanging towels can be done in the toilet |
+| Others | (Waiting to be added) | (Waiting to be added) |
 
-寝室作息时间（高一&高二，高三未知, 24.5.26）: 20:00，走读生回家，住校生留下上二晚（20:10 ~ 21:40），晚上21:40放学回寝，22:20左右熄灯（这个得看你的宿管是否准时），次日6:30开灯。每晚熄灯后除空调外的任何用电器均不可工作，空调的三孔插座是修改过的，比正常三孔插座略宽 ~~（别问我怎么知道的）~~ 。
+Dormitory schedule (Senior 1 & Senior 2, Senior 3 unknown, 24.5.26): 20:00, day students go home, boarding students stay for the second evening self-study (20:10 ~ 21:40), school ends at 21:40 and return to the dormitory, lights out around 22:20 (this depends on whether your dorm manager is on time), lights on at 6:30 the next day. After lights out every night, no electrical appliances other than air conditioners can work. The three-hole socket of the air conditioner has been modified and is slightly wider than the normal three-hole socket ~~(Don't ask me how I know)~~.
 
-另外，手机可选择交给班主任/宿管，若交给宿管，则周五早上即可找宿管要回（交给班主任就需要等到18:40放学）
+In addition, mobile phones can be handed over to the head teacher/dorm manager. If handed over to the dorm manager, you can ask the dorm manager for it on Friday morning (if handed over to the head teacher, you need to wait until school ends at 18:40).
 
-# 作息介绍
+# Schedule Introduction
 
-寝室作息已在上述文本中介绍。下为高2023级的高一~高三每日作息（本人纯手敲版，截止 25.2.2，高二&高三作息未知）
+The dormitory schedule has been introduced in the text above. The following is the daily schedule for Senior 1 ~ Senior 3 of Grade 2023 (my purely hand-typed version, as of Feb 2, 2025, Senior 2 & Senior 3 schedule unknown).
 
-## 高一 & 高二时间安排
+## Senior 1 & Senior 2 Schedule
 
-|时间段|课程|
+| Time Period | Course |
 | :---: | :---: |
-|~ 7:25|上学|
-|7:25 ~ 7:50|早读|
-|7:50 ~ 8:30|第1节课|
-|8:30 ~ 8:40|课间(含预备铃)|
-|8:40 ~ 9:20|第2节课|
-|9:20 ~ 9:30|课间(含预备铃)|
-|9:30 ~ 10:10|第3节课|
-|10:10 ~ 10:50|大课间(含预备铃)|
-|10:50 ~ 11:20|第4节课|
-|11:20 ~ 11:35|课间(含眼保健操、预备铃)|
-|11:35 ~ 12:25|第5节课|
-|12:25 ~ 13:00|午饭(一般会要求早一点到)|
-|13:00 ~ 13:50|午休|
-|13:50 ~ 14:00|课间(含眼保健操、预备铃)|
-|14:00 ~ 14:40|第6节课|
-|14:40 ~ 14:50|课间(含预备铃)|
-|14:50 ~ 15:30|第7节课|
-|15:30 ~ 15:40|课间(含预备铃)|
-|15:40 ~ 16:20|第8节课|
-|16:20 ~ 16:30|课间(含预备铃)|
-|16:30 ~ 17:10|第9节课|
-|17:10 ~ 17:50|午饭(一般会要求早一点到)|
-|17:50 ~ 18:00|课间(含预备铃)|
-|18:00 ~ 18:40|第10节课|
-|18:40 ~ 18:50|课间(含预备铃)|
-|18:50 ~ 20:00|一晚|
-|20:00 ~ 20:10|课间(不含预备铃)|
-|20:10 ~ 21:40|二晚|
-|21:40 ~ |放学|
+| ~ 7:25 | School |
+| 7:25 ~ 7:50 | Morning Reading |
+| 7:50 ~ 8:30 | 1st Period |
+| 8:30 ~ 8:40 | Break (including preparatory bell) |
+| 8:40 ~ 9:20 | 2nd Period |
+| 9:20 ~ 9:30 | Break (including preparatory bell) |
+| 9:30 ~ 10:10 | 3rd Period |
+| 10:10 ~ 10:50 | Big Break (including preparatory bell) |
+| 10:50 ~ 11:20 | 4th Period |
+| 11:20 ~ 11:35 | Break (including eye exercises, preparatory bell) |
+| 11:35 ~ 12:25 | 5th Period |
+| 12:25 ~ 13:00 | Lunch (usually required to arrive early) |
+| 13:00 ~ 13:50 | Nap |
+| 13:50 ~ 14:00 | Break (including eye exercises, preparatory bell) |
+| 14:00 ~ 14:40 | 6th Period |
+| 14:40 ~ 14:50 | Break (including preparatory bell) |
+| 14:50 ~ 15:30 | 7th Period |
+| 15:30 ~ 15:40 | Break (including preparatory bell) |
+| 15:40 ~ 16:20 | 8th Period |
+| 16:20 ~ 16:30 | Break (including preparatory bell) |
+| 16:30 ~ 17:10 | 9th Period |
+| 17:10 ~ 17:50 | Dinner (usually required to arrive early) |
+| 17:50 ~ 18:00 | Break (including preparatory bell) |
+| 18:00 ~ 18:40 | 10th Period |
+| 18:40 ~ 18:50 | Break (including preparatory bell) |
+| 18:50 ~ 20:00 | First Evening Self-study |
+| 20:00 ~ 20:10 | Break (excluding preparatory bell) |
+| 20:10 ~ 21:40 | Second Evening Self-study |
+| 21:40 ~ | School Ends |
 
-> 24.5.26 作者已经敲累了……作者一直想尽快进入教师环节，但是似乎还有很多其他内容要跟你们交代……
+> 24.5.26 The author is tired of typing... The author has always wanted to enter the teacher segment as soon as possible, but it seems that there are still many other contents to explain to you...
 
-# 食堂
+# Canteen
 
-关于食堂，我相信各位也应该有所耳闻，说二十中食堂非常好吃。本人在此声明我的态度：不能全不信，也不能全部信。
+Regarding the canteen, I believe you should have heard that the canteen of No. 20 Middle School is very delicious. I declare my attitude here: You can't disbelieve it all, nor can you believe it all.
 
-说好吃，也确实好吃。二十中的食堂菜品还是很多样的。像作者本人就喜欢吃冒菜、米线、老鸭汤面和套餐里的某些菜等等。不过这里要事先说明一点：菜品会有重复，冒菜窗口和面窗口甚至可以找到规律。一周5天，作者没记错的话每天都会有一顿是冒菜，另一顿是各种盖饭/炒河粉/意面/...几样菜里的一样。冒菜吃多了其实都是一个味，里面的菜永恒不变，肉类大部分是冷冻食品(如虾饺)，还有一部分是冒鸭子；蔬菜类基本上就是0.7cm厚的土豆、藕、花菜等。盖饭炒粉因人而异，反正我觉得基本不太好吃，尤其是黑椒猪扒饭，因为作者以前发生的某些事情导致每次我吃这东西都要吐(个人原因，不代表爱吃的那些人)。不过这个窗口打的是非冒菜菜品时，会再给你一个附加菜品 (一根烤肠/半块鸡排/一盒小酸奶)
+It is indeed delicious. The dishes in the canteen of No. 20 Middle School are still very diverse. Like the author himself, I like to eat Mao Cai, rice noodles, old duck soup noodles and some dishes in the set meal. However, one point needs to be explained in advance here: Dishes will be repeated. You can even find patterns in the Mao Cai window and the noodle window. 5 days a week, if the author remembers correctly, there will be one meal of Mao Cai every day, and the other meal is one of several dishes such as various rice bowls/fried river noodles/pasta/... Eating too much Mao Cai actually tastes the same. The vegetables inside are eternally unchanged, most of the meat is frozen food (such as shrimp dumplings), and some are Mao Duck; vegetables are basically 0.7cm thick potatoes, lotus roots, cauliflower, etc. Rice bowls and fried noodles vary from person to person. Anyway, I think they are basically not very delicious, especially the black pepper pork chop rice. Because of some things that happened to the author before, I want to vomit every time I eat this thing (personal reason, does not represent those who love to eat). However, when this window serves non-Mao Cai dishes, it will give you an additional dish (a grilled sausage/half a chicken steak/a box of small yogurt).
 
-> 25.2.2 Ps: 因为以前有2周家里天天早上让我吃¥9.9的牛排，吃多了就吃吐了……
+> 25.2.2 Ps: Because my family made me eat ¥9.9 steak every morning for 2 weeks before, I vomited after eating too much...
 
-面的话我觉得大部分面都挺好吃的。面的安排是中午每天换，周五固定为牛肉面，晚上把中午剩余的汤料用完之后做杂酱面。杂酱面吃多了会吃烦，本身也比较干。打面窗口附近有调料（辣酱，酱油，醋，盐，味精，汤，葱&香菜）供自行调整口味。
+For noodles, I think most noodles are quite delicious. The noodle arrangement is changed every day at noon, fixed as beef noodles on Friday, and Zha Jiang noodles are made at night after the remaining soup at noon is used up. Eating too much Zha Jiang noodles will be annoying, and it is also relatively dry. There are seasonings (chili sauce, soy sauce, vinegar, salt, MSG, soup, green onion & coriander) near the noodle window for you to adjust the taste yourself.
 
-> Ps: 究竟是杂酱面还是炸酱面作者也不知道，毕竟作为四川人──不管是说话人还是听话人──都平翘不分，这现象其实挺正常的啦
+> Ps: The author doesn't know whether it is Zha Jiang Mian (Mixed Sauce Noodles) or Zha Jiang Mian (Fried Sauce Noodles). After all, as a Sichuanese - whether it is the speaker or the listener - we don't distinguish between flat and curled tongues. This phenomenon is actually quite normal.
 
-套餐菜品类型总共有10+种（没具体数过），都能吃，每顿套餐3个菜，周四晚上固定有个腿 (卤鸡腿/香辣鸭腿)。有些确实不太好吃，每顿饭具体咋样也有点难评（有时候三个菜都好吃，有时候都挺一般）。总体上来讲，套餐比其它菜种类更多，口味更丰富，有些菜也是套餐的"杀手锏"。
+There are 10+ types of set meal dishes in total (haven't counted specifically), all edible. Each set meal has 3 dishes. There is a fixed leg (braised chicken leg/spicy duck leg) on Thursday night. Some are indeed not very delicious, and it is a bit difficult to comment on how each meal is specifically (sometimes all three dishes are delicious, sometimes they are all average). Overall, the set meal has more varieties and richer flavors than other dishes. Some dishes are also the "killer feature" of the set meal.
 
-~~人有五名，~~ 食堂有三个——老食堂、新食堂、教师食堂；前一个建在男寝楼下，后两个都在女寝楼下。新食堂比较小，轮到我们吃饭的时候基本已经坐满。老食堂大一些，但也比较难找到一组空位（指4个及以上且挨着。
+~~There are five people,~~ There are three canteens - the old canteen, the new canteen, and the teacher canteen; the former is built downstairs in the boys' dormitory, and the latter two are downstairs in the girls' dormitory. The new canteen is relatively small, and it is basically full when it is our turn to eat. The old canteen is larger, but it is also difficult to find a group of empty seats (referring to 4 or more and adjacent).
 
-# 活动
+# Activities
 
-二十中活动也是挺多的。有些活动我不一定记得清楚了，有机会再去补充。以下是从入学到文章修改时间前我们参加过的活动：
+There are also many activities in No. 20 Middle School. I may not remember some activities clearly. I will add them when I have a chance. The following are the activities we have participated in from enrollment to before the article modification time:
 
-志愿投报后2周内的夏令营 入学培训(~~不知道这个算不算~~) 运动会 合唱比赛(仅高一上有) 大大小小的讲座(最隆重的一次是在24.5.24请过戚发轫院士前来开讲座) 毕业歌舞晚会 2024.8北京7日游 2024上学期秋游(物理类去电子科大清水河校区，历史类去成都郊区爬山) etc.
+Summer camp within 2 weeks after volunteering reporting; Entrance training (~~don't know if this counts~~); Sports meeting; Choir competition (only in the first semester of Senior 1); Large and small lectures (the most grand one was inviting Academician Qi Faren to give a lecture on 24.5.24); Graduation song and dance party; 7-day tour in Beijing in 2024.8; Autumn outing in the first semester of 2024 (Physics class went to UESTC Qingshuihe Campus, History class went to climb mountains in the suburbs of Chengdu) etc.
 
-> 25.2.2 Patch: 以上活动全为高2023级年级参加过的（北京7日游那个是自愿报名参加，可以不去）
+> 25.2.2 Patch: All the above activities were participated by Grade 2023 (the 7-day tour in Beijing was voluntary participation, you can choose not to go).
 >
-> 根据老班口述，有这么多活动的前提是有一个善良的、愿意为年级发展付出许多心血的年级主任(翔哥)
+> According to the head teacher, the premise of having so many activities is to have a kind grade director (Brother Xiang) who is willing to pay a lot of effort for the development of the grade.
 
-# 其它事项
+# Other Matters
 
-> 就等作者慢慢补充吧……
-> 人
-> 若有要补充的可以评论哦，作者会坚持不定期查看评论，并不定期更新的
+> Just wait for the author to add slowly...
+>
+> If you have anything to add, you can comment. The author will persist in checking comments irregularly and updating irregularly.
 
 ---------
 
-接下来便是作者最期待的，也是本文的核心部分所在——介绍教师资源。仅适用于高2026届与高2029届学生，其他年级的童鞋看个乐子就行。
+Next is what the author looks forward to most, and it is also the core part of this article - introducing teacher resources. Only applicable to students of Class of 2026 and Class of 2029. Students of other grades can just watch for fun.
 
-# 教师介绍
+# Teacher Introduction
 
-我在网上看过有关二十中的介绍，对各个老师的详细介绍基本没有。经深思熟虑 ~~突发恶疾~~ 后决定自己着重写下这一part。
+I have seen introductions about No. 20 Middle School on the Internet, and there are basically no detailed introductions to each teacher. After careful consideration ~~sudden illness~~, I decided to focus on writing this part myself.
 
-我将对我较熟悉的各科老师进行较详细的、尽量客观的介绍。如果哪天这一part全没了，那请记得给我烧点纸钱 (bushi
+I will give a more detailed and as objective as possible introduction to the teachers of each subject I am familiar with. If this part is gone one day, please remember to burn some paper money for me (bushi).
 
-> 经典语录大部分也是各科老师的口头禅，第一个学期下来可能每次听到关键词就会忍不住笑，但是过久了一般大家就习惯了，也不会笑了(当然你在模仿老师的经典语录时其他人可能会笑)
+> Most of the classic quotes are also the catchphrases of teachers of various subjects. After the first semester, you may not help laughing every time you hear the keywords, but after a long time, everyone generally gets used to it and won't laugh (of course, others may laugh when you imitate the teacher's classic quotes).
 >
-> 经典语录这东西我知道你看了可能内心也没啥感觉，但是如果你带着对ta们经典语录的了解进入二十中校园，那你就会有与我写下经典语录时相同的感受了 /doge
+> I know you may not feel anything in your heart when you read these classic quotes, but if you enter the campus of No. 20 Middle School with an understanding of their classic quotes, you will have the same feeling as when I wrote down the classic quotes /doge.
 >
-> 照片等高三了(或拍到了且作者有空了)再放，过于俗气、不雅的称呼我就电报处理了
+> Photos will be posted when I get to Senior 3 (or taken and the author has time). I will telegram handle overly tacky and indecent titles.
 
-## 语文：罗秀玲 ♀
+## Chinese: Luo Xiuling ♀
 
-> 称呼：\*\*\*（may be 我们班上特有的）
+> Title: \*\*\* (may be unique to our class)
 
-> 经典语录：句末语气词"哈"，重复一遍刚说的最后一句话
+> Classic Quotes: Sentence-final particle "Ha", repeating the last sentence just said.
 
-> （于2026年退休，所以不进行详细阐述）
+> (Retiring in 2026, so no detailed elaboration)
 
-## **<font color="SandyBrown">数学、班主任、年级主任：陶翔</font> ♂**
+## **<font color="SandyBrown">Mathematics, Head Teacher, Grade Director: Tao Xiang</font> ♂**
 
-> 称呼：翔子，翔哥，翔老师(from Mr.Li below)，tx，~~腾讯，桃香~~
+> Title: Xiang Zi, Brother Xiang, Teacher Xiang (from Mr. Li below), tx, ~~Tencent, Tao Xiang~~
 
-> 经典语录："我们说"/"怎么说"，"AABB"型词语（标标准准，清清楚楚明明白白，放放心心），"琢磨琢磨"，"对不对"，"瓜迷瓜眼(鬼迷鬼眼，瓜中之瓜)"
+> Classic Quotes: "Let's say"/"How to say", "AABB" type words (standard, clear and plain, safe and sound), "ponder", "right", "Gua Mi Gua Yan (ghostly eyes, melon of melons)"
 
-> 为年级开展很多活动做出过巨大（e.g.申请秋游，申请用礼乐厅给年级放电影，申请北京7日游等等），他的班级高二时会有年级独一无二的"集体生日会"（某个月过生日的同学要在班上做演讲，说自己的生日感言和亲人的感想）
+> He has made huge contributions to carrying out many activities for the grade (e.g. applying for autumn outing, applying to use the Liyue Hall to show movies for the grade, applying for a 7-day tour in Beijing, etc.). His class will have a unique "collective birthday party" in the grade when in Senior 2 (students who have birthdays in a certain month have to make a speech in the class, talking about their birthday feelings and relatives' feelings).
 
-> 总的来说就是不太好说，十几年班主任经历使其确实能"预判"行为（比如我们班有人中午趁乱出去打球，回来发现他守在班门口就等着那几个，班会课上他给我们说他"早就知道有人要出去打球，我专门舒舒服服地睡了个午觉再过来逮你们的"），手上的信息源比较多，"审讯"手法也是有的，人有时候挺好有时候挺爆，私底下我可以说他甚至有点"皮"（~~一股老顽童的味道~~）。
+> Generally speaking, it is hard to say. More than ten years of experience as a head teacher makes him indeed able to "predict" behavior (for example, someone in our class went out to play ball in the chaos at noon, and when he came back, he found him guarding the class door waiting for those few. In the class meeting, he told us that he "knew someone was going out to play ball long ago, I specially took a comfortable nap before coming to catch you"). He has a lot of information sources, and he also has "interrogation" techniques. Sometimes he is very good, sometimes he is very explosive. Privately, I can say that he is even a bit "naughty" (~~a taste of an old urchin~~).
 >
-> 曾经刷到过有人（估计是2020级的）在知乎上说"珍爱生命，远离tx"之类的话，我的看法就是如果这轻飘飘一句话就能左右你对一个人的看法的话，那我建议你回炉重造。人性永远是立体的、多面的，将其优缺点都看到才能说你刚开始了解这个人。如果就因为这一句话而逃避二十中逃避tx的话，你会丢失很多独有的机会，且这之间大概率有你非常看中的。
+> I once swiped that someone (probably from Grade 2020) said on Zhihu "Cherish life, stay away from tx". My opinion is that if this light sentence can influence your opinion of a person, then I suggest you go back to the furnace to rebuild. Human nature is always three-dimensional and multi-faceted. Only by seeing its advantages and disadvantages can you say that you are just starting to understand this person. If you avoid No. 20 Middle School and avoid tx just because of this sentence, you will lose many unique opportunities, and there is a high probability that there are ones you value very much.
 
-## 英语：王顺昌 ♂
+## English: Wang Shunchang ♂
 
-> 称呼：昌哥(from Mr.Tao, 建哥, etc.)，\*\*（也是班上独有……吧？）
+> Title: Brother Chang (from Mr. Tao, Brother Jian, etc.), \*\* (also unique to the class... right?)
 
-> 经典语录：comma(s)，"你这个动作[有点/点儿都不]帅哦"，"快↗点哦"
+> Classic Quotes: comma(s), "Your action is [a bit/not at all] handsome", "Quick ↗ point"
 
-> 最温柔和蔼的老师，常被我们"欺负"；活的最开的老师(from 建哥)；曾在重庆八中（好像是？）教书
+> The gentlest and kindest teacher, often "bullied" by us; the teacher who lives the most openly (from Brother Jian); once taught at Chongqing No. 8 Middle School (seems like it?)
 
-## 物理：韩菊 ♀
+## Physics: Han Ju ♀
 
-> 称呼：菊菊，菊桑，小菊
+> Title: Ju Ju, Ju Sang, Xiao Ju
 
-> 身高170的女人，你怕么？
+> A woman with a height of 170, are you afraid?
 
-> 经典语录："老演员了"，"就是咯"，"只有一种病──叫懒病"，"这个宇宙唯一不变的就是它一直在变"，"我只渡有缘人"，"hou头"（里面的意思）
+> Classic Quotes: "Old actor", "That's it", "There is only one disease ── called laziness", "The only constant in this universe is that it is always changing", "I only save those who are destined", "hou tou" (meaning inside)
 
-## 化学：王雅敏 ♀
+## Chemistry: Wang Yamin ♀
 
-> 称呼：雅敏，敏姐(from 建哥)
+> Title: Yamin, Sister Min (from Brother Jian)
 
-> 经典语录："我有一滴……，但是我有一大盆……"，"水(suǐ)"，"醇(cún)"，"叔(shú)"，"容量瓶不带容量就是裸奔"，"原配的才是最好的"
+> Classic Quotes: "I have a drop..., but I have a big basin...", "Water (suǐ)", "Alcohol (cún)", "Tertiary (shú)", "Volumetric flask without capacity is streaking", "Original is the best"
 
-## 生物：郑建 ♂
+## Biology: Zheng Jian ♂
 
-> 称呼：建哥(from himself)
+> Title: Brother Jian (from himself)
 
-> 经典语录："那么问题来了"/"你没有问题我就有问题了"，"如果以后你非要 (此处有省略)，请你记到戴淘(此处有1谐音)"
+> Classic Quotes: "So the question comes"/"If you have no problem, I have a problem", "If you insist on (omitted here) in the future, please remember to wear Tao (there is a homophone here)"
 
-> 常自称我们班的"副班主任"；有老师喊他郑老师我们还差点没反应过来是谁
+> Often calls himself the "deputy head teacher" of our class; some teachers called him Teacher Zheng and we almost didn't react who it was.
 
-## 政治：(前)周京书 ♀ (后)李雪梅 ♀
+## Politics: (Former) Zhou Jingshu ♀ (Latter) Li Xuemei ♀
 
-> 称呼：京书/暂无
+> Title: Jingshu/None for now
 
-> 两个人的教学都很有特色，不过Mrs.Zhou被调到其它年级去了，可能不会教2026届/etc.
+> Both people's teaching has its own characteristics, but Mrs. Zhou was transferred to another grade, and may not teach the Class of 2026/etc.
 
-## **<font color="SandyBrown">地理、（副）年级主任：李佳伟</font> ♂**
+## **<font color="SandyBrown">Geography, (Deputy) Grade Director: Li Jiawei</font> ♂**
 
-> 称呼：佳伟（建议你别这么叫，至少在他的听力范围内别这么叫）
+> Title: Jiawei (suggest you don't call him that, at least not within his hearing range)
 
-> 经典语录："好了 × m + 对了 × n"(m, n∈N*)（接触不多，就俩学期时间）
+> Classic Quotes: "Okay × m + Right × n" (m, n∈N*) (Not much contact, just two semesters)
 
-> 年级上出了名的狠人，脾气~~很~~不~~太~~好敢说敢上手，训人很有一套，打人的话一般人对上无胜算）
+> A famous tough guy in the grade, temper is ~~very~~ not ~~too~~ good, dare to speak and dare to start, very good at training people, ordinary people have no chance of winning against him if fighting)
 
-## 历史：代诗艺 ♀
+## History: Dai Shiyi ♀
 
-> 称呼：Daisy(from herself)，\*\*
+> Title: Daisy (from herself), \*\*

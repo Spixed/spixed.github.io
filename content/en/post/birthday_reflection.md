@@ -1,18 +1,15 @@
 ---
-title: "Birthday"
-date: 2025-01-27T20:00:00+08:00
+title: Birthday
+date: 2025-01-27 20:00:00+08:00
 draft: false
-author: "spixed"
+author: spixed
 featured: true
-keywords: ["birthday", "reflection"]
-categories: ["birthday"]
-tags: ["birthday"]
-noclick: true
-status: true
-statusCate: "17 years old! "
-categoryLink: "https://webstatic.mihoyo.com/payment/sr/index.html?utm_source=official_web#/"
-weight: 1
+categories: [birthday]
+tags: [birthday]
+description: ''
 ---
+
+
 
 "吹灭蜡烛时，光速逃逸成记忆的星座——黑暗不是终点，是光的另类永生。"
 

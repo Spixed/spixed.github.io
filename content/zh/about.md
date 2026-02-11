@@ -1,11 +1,9 @@
 ---
-title: "About"
-date: 2024-02-19T22:18:54+08:00
-draft: false
-keywords: ["关于"]
-categories: ["about"]
-tags: ["about"]
+title: "关于"
+layout: "about"
 ---
+
+
 
 # 关于我
 
@@ -126,4 +124,4 @@ TTS也老是读错（_AI：单词结尾没有e怎么会读/aɪ/呢？不是读/�
 ## 自己的项目  
 [Spixed's Blog](https://github.com/Spixed/Spixed.github.io)：这个网站的Repo（_点击收获量子叠加态页面_）  
 
-[hugo-theme-tony(mod)](https://github.com/Spixed/hugo-theme-tony)：这个blog使用的主题。从ThemeTony版本修改而来。（_只加了亮暗切换&i18n切换，文档甚至原封不动_）  
+[Polymer](https://github.com/Spixed/polymer)：这个blog使用的主题。

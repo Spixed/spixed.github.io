@@ -1,0 +1,103 @@
+{
+  "explore.html": "explore.html",
+  "demo": {
+    "englearn": {
+      "index.html": "demo/englearn/index.html",
+      "README.md": "demo/englearn/README.md",
+      "index.html.bak": "demo/englearn/index.html.bak",
+      "css": {
+        "styles.css": "demo/englearn/css/styles.css"
+      },
+      "js": {
+        "app.js": "demo/englearn/js/app.js"
+      },
+      "data": {
+        "vocabulary.json": "demo/englearn/data/vocabulary.json"
+      }
+    },
+    "intro": {
+      "index.html": "demo/intro/index.html",
+      "404.html": "demo/intro/404.html",
+      "logo.webp": "demo/intro/logo.webp",
+      "_redirects": "demo/intro/_redirects",
+      "cover.jpg": "demo/intro/cover.jpg",
+      "4.jpg": "demo/intro/4.jpg",
+      "2.jpg": "demo/intro/2.jpg",
+      "3.jpg": "demo/intro/3.jpg",
+      "1.jpg": "demo/intro/1.jpg",
+      "assets": {
+        "404-BOQ5DqLh.css": "demo/intro/assets/404-BOQ5DqLh.css",
+        "DrawingControls-Cxk9a9ub.css": "demo/intro/assets/DrawingControls-Cxk9a9ub.css",
+        "md-DW60I5rQ.css": "demo/intro/assets/md-DW60I5rQ.css",
+        "play-D_7yfuao.css": "demo/intro/assets/play-D_7yfuao.css",
+        "shortcuts-CJYENGCy.css": "demo/intro/assets/shortcuts-CJYENGCy.css",
+        "SlideWrapper-BZrtFc9e.css": "demo/intro/assets/SlideWrapper-BZrtFc9e.css",
+        "index-2yzn34Rj.js": "demo/intro/assets/index-2yzn34Rj.js",
+        "NoteDisplay-7WUxlAob.css": "demo/intro/assets/NoteDisplay-7WUxlAob.css",
+        "md-yGxl7Ykq.css": "demo/intro/assets/md-yGxl7Ykq.css",
+        "logo-BYkHSa_O.png": "demo/intro/assets/logo-BYkHSa_O.png",
+        "md-BG7ZpKl4.js": "demo/intro/assets/md-BG7ZpKl4.js",
+        "entry-Dt-cfT18.css": "demo/intro/assets/entry-Dt-cfT18.css",
+        "md-DzivqjQ9.js": "demo/intro/assets/md-DzivqjQ9.js",
+        "presenter-dhkLgEC9.css": "demo/intro/assets/presenter-dhkLgEC9.css",
+        "md-DXov4rSE.js": "demo/intro/assets/md-DXov4rSE.js",
+        "index-Bf8R8ZZR.css": "demo/intro/assets/index-Bf8R8ZZR.css",
+        "md-BT43noU3.js": "demo/intro/assets/md-BT43noU3.js",
+        "md-aSVD-saD.js": "demo/intro/assets/md-aSVD-saD.js",
+        "md-CdRdQMJ3.js": "demo/intro/assets/md-CdRdQMJ3.js",
+        "modules": {
+          "shiki-CozCpemh.css": "demo/intro/assets/modules/shiki-CozCpemh.css",
+          "shiki-Dx033hS9.js": "demo/intro/assets/modules/shiki-Dx033hS9.js",
+          "vue-CbzP6Bx8.js": "demo/intro/assets/modules/vue-CbzP6Bx8.js",
+          "file-saver-DKWcVV7Q.js": "demo/intro/assets/modules/file-saver-DKWcVV7Q.js",
+          "unplugin-icons-DhbkUBxe.js": "demo/intro/assets/modules/unplugin-icons-DhbkUBxe.js"
+        },
+        "slidev": {
+          "DrawingLayer-Ctpv7U_l.js": "demo/intro/assets/slidev/DrawingLayer-Ctpv7U_l.js",
+          "cover.vue_vue_type_script_setup_true_lang-ChMDYWDB.js": "demo/intro/assets/slidev/cover.vue_vue_type_script_setup_true_lang-ChMDYWDB.js",
+          "404-CMI_T86z.js": "demo/intro/assets/slidev/404-CMI_T86z.js",
+          "md-l7_bTQ-Z.js": "demo/intro/assets/slidev/md-l7_bTQ-Z.js",
+          "entry-B8diB4BA.js": "demo/intro/assets/slidev/entry-B8diB4BA.js",
+          "md-Bfyj0rLE.js": "demo/intro/assets/slidev/md-Bfyj0rLE.js",
+          "presenter-DIIlHfGd.js": "demo/intro/assets/slidev/presenter-DIIlHfGd.js",
+          "notes-DakH9euT.js": "demo/intro/assets/slidev/notes-DakH9euT.js",
+          "two-cols.vue_vue_type_script_setup_true_lang-Cx56wNCx.js": "demo/intro/assets/slidev/two-cols.vue_vue_type_script_setup_true_lang-Cx56wNCx.js",
+          "shortcuts-BV60Grv3.js": "demo/intro/assets/slidev/shortcuts-BV60Grv3.js",
+          "NoteDisplay.vue_vue_type_style_index_0_lang-3PJsqkIL.js": "demo/intro/assets/slidev/NoteDisplay.vue_vue_type_style_index_0_lang-3PJsqkIL.js",
+          "context-DAHleHnh.js": "demo/intro/assets/slidev/context-DAHleHnh.js",
+          "DrawingControls-DaSgXLTK.js": "demo/intro/assets/slidev/DrawingControls-DaSgXLTK.js",
+          "IconButton.vue_vue_type_script_setup_true_lang-B35IGB3o.js": "demo/intro/assets/slidev/IconButton.vue_vue_type_script_setup_true_lang-B35IGB3o.js",
+          "md-BwhXoinv.js": "demo/intro/assets/slidev/md-BwhXoinv.js",
+          "SlideWrapper-D1KmHcvC.js": "demo/intro/assets/slidev/SlideWrapper-D1KmHcvC.js",
+          "overview-DiLBpF2G.js": "demo/intro/assets/slidev/overview-DiLBpF2G.js",
+          "play-Cn674JUx.js": "demo/intro/assets/slidev/play-Cn674JUx.js",
+          "DrawingControls.vue_vue_type_style_index_0_lang-DvEuZIIg.js": "demo/intro/assets/slidev/DrawingControls.vue_vue_type_style_index_0_lang-DvEuZIIg.js"
+        }
+      }
+    },
+    "test": {
+      "index.html": "demo/test/index.html",
+      "test.md": "demo/test/test.md"
+    },
+    "hp-design": {
+      "index.html": "demo/hp-design/index.html",
+      "article.html": "demo/hp-design/article.html"
+    }
+  },
+  "site": {
+    "spixed.png": "site/spixed.png",
+    "hetx.jpg": "site/hetx.jpg",
+    "logo.png": "site/logo.png"
+  },
+  "school": {
+    "img-1.jpg": "school/img-1.jpg"
+  },
+  "process": {
+    "img-3.png": "process/img-3.png",
+    "img-2.png": "process/img-2.png",
+    "img-1.png": "process/img-1.png",
+    "img-5.png": "process/img-5.png",
+    "img-4.png": "process/img-4.png",
+    "img-6.png": "process/img-6.png"
+  }
+}

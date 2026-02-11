@@ -1,14 +1,15 @@
 ---
-title: "Chengdu No.20 Middle School"
-date: 2024-04-03T21:49:06+08:00
+title: Chengdu No.20 Middle School
+date: 2024-04-03 21:49:06+08:00
 draft: false
-author: "spixed"
+author: spixed
 featured: false
-keywords: ["学校", "成都二十中", "校园", "教师"]
-categories: ["school"]
-tags: ["school"]
-weight: 0
+categories: [school]
+tags: [school]
+description: ''
 ---
+
+
 
 > 概要：介绍成都二十中高中部校园，日常生活，教师等信息。
 

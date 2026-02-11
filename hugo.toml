@@ -9,7 +9,7 @@ enableEmoji = true
   description = "A Digital Brutalism Theme"
   math = true
   mathEngine = "mathjax"
-  favicon = "/logo.png"
+  favicon = "/site/logo.png"
 
   [params.waline]
     serverURL = "https://c.spixed.us.kg/"
@@ -30,23 +30,6 @@ enableEmoji = true
     contentDir = 'content/en'
     weight = 2
     languageCode = "en-US"
-
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    identifier = "archives"
-    name = "Archives"
-    url = "/archives/"
-    weight = 10
-  [[menu.main]]
-    identifier = "links"
-    name = "Links"
-    url = "/links/"
-    weight = 20
 
 [markup]
   [markup.goldmark]
