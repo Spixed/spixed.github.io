@@ -17,7 +17,8 @@ Polymer supports QQ-style emojis (Qmoji) via shortcodes. These add a fun, expres
 Use the `qq-emoji` shortcode followed by the emoji name.
 
 ```markdown
-\{\{< qq-emoji "smile" >\}\}
+\{\{< qq-emoji "微笑" >\}\}
+\{\{< qq-emoji "菜汪" "block" >\}\}
 ```
 
 ## Examples
@@ -48,7 +49,12 @@ High-quality vector animations (if supported).
 
 You can also use the `/` prefix common in chat apps.
 
-- Color: {{< qq-emoji "/色" >}}
+- Sex: {{< qq-emoji "/色" >}}
+
+### Block Qmoji
+
+- Smile: {{< qq-emoji "微笑" "block" >}}
+- Vegetable Dog: {{< qq-emoji "菜汪" "block" >}}
 
 ## Full List
 

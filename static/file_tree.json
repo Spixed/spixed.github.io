@@ -84,6 +84,9 @@
       "article.html": "demo/hp-design/article.html"
     }
   },
+  "birthday_spixed": {
+    "meme.png": "birthday_spixed/meme.png"
+  },
   "site": {
     "spixed.png": "site/spixed.png",
     "hetx.jpg": "site/hetx.jpg",
