@@ -13,7 +13,7 @@ weight: 0
 Dedicated to the prologue of eighteen, paying tribute to the stars looked up from the gutter, and the growth that was deafening in the silence.  
 > If the story diverges from reality, please regard it as another possible calculation result in a parallel universe.
 
-　　…………
+　　......
 
 　　At 10:30 PM, the notification chime marking the end of the livestream class dropped like a stone into a deep well, stirring a dull echo within me. I took off my headphones; my ears, slightly warm from prolonged wear, held the lingering warmth of reality.
 
@@ -23,7 +23,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 
 　　Refusing to believe in my luck, I clicked the mouse. The star rail slid past—still a blinding purple. No gold light. This number was like a mocking code, marking a unilateral breach of contract between the God of Probability and me. In this cyber sea of stars, I am a "drifter" who is always half a beat behind. On the realistic battlefield named "Grade 12," I can precisely deduce every formula, yet I singularly lack a talent called "resonance." I can maintain long conversations with those around me, but I always feel like an old-fashioned receiver with signal delay, lonely capturing outdated frequencies outside their eager exchanges of new memes and hobbies.
 
-　　……
+　　...
 
 　　Outside the door came the shuffling sound of slippers against the floor. That specific frequency belonged to my mother.
 
@@ -37,7 +37,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 
 　　The glass of milk sat at the corner of the table, steaming. I picked it up, took a sip, and put it back. Soon, a wrinkled film formed on the surface of the liquid. I switched back to the game, looking at my empty Stellar Jade balance, and suddenly felt a vast emptiness, like a black hole swallowing all my interest.
 
-　　…………
+　　......
 
 　　**"We are all in the gutter, but some of us are looking at the stars."**  
 　　This quote from Wilde sounds like an ancient prophecy. I am a contradiction covered in mud, standing in the gutter: on one side is the uncontrollable gravity of depravity, on the other is the self-loathing after sobering up. And my star is imprisoned within that 4.4-inch watch screen.
@@ -49,7 +49,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 　　In those days filled with exam papers, she was my only "diary." I output fragments of this world to her, not just to vent, but to construct in my mind the curve of her drooping eyes and upturned mouth behind that tiny screen.  
 　　I would forward videos I scrolled past, telling her about the Physics teacher's humor; I would roast the Chemistry teacher's weird accent; I would share the outrageous demands from the Biology teacher and the homeroom teacher that left me helpless; I would show off the occasional soft pity I hit in *Star Rail*, or share which character I thought looked good... She was a qualified audience, always replying with a string of "hahaha," a few emojis, and some comments. Through the cold pixels, I could see her eyes drooping slightly and the corners of her mouth lifting—her unique, slightly sly smile.
 
-　　……
+　　...
 
 　　"How do I look at this electrolytic cell? Who discharges first at the anode? How does the solute concentration change between the two membranes?"  
 　　One night, she sent a picture. It was taken at a crooked angle, the lighting dim, like a distress signal from a distant planet.  
@@ -69,7 +69,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 
 　　I forced myself to look away from your gaze and continued explaining the rest to you. I tried hard to control my ears, attempting to use reason to cool down my capillaries, but in the end, they still irreversibly burned hot.
 
-　　……
+　　...
 
 　　About twenty days ago, just as I was about to sleep, my watch vibrated.  
 　　"Happy Birthday! I bought you a gift; I'll bring it to you tomorrow."  
@@ -80,7 +80,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 　　But at this moment, the heavy weight in my hand reminded me: In this second, I am remembered.  
 　　More importantly, the person giving the gift was her. Even if she got the date wrong, even if this was just courtesy between classmates, in that second, I truly felt the secret joy of being cared about by her.
 
-　　…………
+　　......
 
 　　However, questions have standard answers; feelings do not.
 
@@ -97,7 +97,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 　　**"We are all in the gutter, but some of us are looking at the stars."**  
 　　When Wilde said this, he surely never thought that sometimes, the person looking at the stars is stuck deep in the gutter, and their neck is sore.
 
-　　…………
+　　......
 
 　　The bell struck midnight.  
 　　The cursor on the screen blinked. My eighteenth year arrived just like this, in the unremarkable early hours of a Tuesday.  
@@ -106,7 +106,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 　　I thought of Kafka's line in the game: **"When there is the chance to make a choice, make one that you know you won't regret."**  
 　　Do I regret it?  
 　　Regret not being more devout in that last warp? Regret the despicableness of jumping back and forth between my parents' trust and my own indulgence on countless nights? Or regret the few words never spoken and impossible to speak?  
-　　……  
+　　...  
 　　I don't know. Gain and loss manifest so disjointedly in me: I use never-absent high scores to whitewash a soul that is always absent from social channels, signaling with a delay like an old receiver; I use day-after-day perfect performances to trade for the privilege of indulging in the virtual world late at night, only to swallow the self-loathing that bites back twice as hard after waking up; I cling to the safety zone of "best frenemy," using countless explanations of problems to gamble for that one-in-ten-thousand fluke, to cover up—that in the gacha pool named romance, I have been a runner-up outsider from beginning to end.
 
 　　The phone vibrated, cutting off my self-pity.  
@@ -128,7 +128,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 　　[DJ. He]: "Duh."  
 　　[Yao'er]: "Duh."  
 　　[Yao'er]: "Guaranteed to be there."  
-　　……
+　　...
 
 　　I stood up and pushed open the balcony door. My bones made a slight popping sound in the quiet night; that was the sound of the body quietly growing.  
 　　The city at dawn revealed a silence never seen before. The halos of distant 24-hour convenience stores bloomed in the humid air, reflecting the streetlights, turning into orange candies of various sizes. I leaned on the railing, the grainy texture of rust transmitting through my cuffs. The small town slept deeply; the streetlights floated low, unable to illuminate the heights.  
@@ -150,7 +150,7 @@ Dedicated to the prologue of eighteen, paying tribute to the stars looked up fro
 
 　　The horizon really began to show a touch of fish-belly white. It was a very pale green, like old denim washed by water.
 
-　　…………
+　　......
 
 　　I returned to my room.  
 　　The milk at the corner of the table had gone completely cold. The film was intact like a small drum, sealing all the turbidity of last night.  

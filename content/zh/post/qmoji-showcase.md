@@ -17,8 +17,8 @@ Polymer 主题通过短代码支持 QQ 风格的表情（Qmoji）。这为您的
 使用 `qq-emoji` 短代码，后跟表情名称。
 
 ```markdown
-\{\{< qq-emoji "微笑" >\}\}
-\{\{< qq-emoji "block" "菜汪" >\}\}
+{{< qq-emoji "微笑" >}}
+{{< qq-emoji "block" "菜汪" >}}
 ```
 
 ## 示例
