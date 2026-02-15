@@ -65,7 +65,7 @@ description: ''
 
    下载好后打开安装包，无脑下一步即可。
 
-   > **<font color="#dd0000">Author's Warm Reminder: 千万不要乱改安装路径，以上安装包不支持使用管理员的身份运行，所以请不要妄图用上面提供的安装包将 VSCode 安装在 C:\Program Files 等文件夹里，不要问我怎么知道的，千万别问，问了我也绝对不会告诉你作者因为此安装了 10min 的 VSCode……</font>**
+   > **{{< hl "orange" >}}Author's Warm Reminder: 千万不要乱改安装路径，以上安装包不支持使用管理员的身份运行，所以请不要妄图用上面提供的安装包将 VSCode 安装在 C:\Program Files 等文件夹里，不要问我怎么知道的，千万别问，问了我也绝对不会告诉你作者因为此安装了 10min 的 VSCode……{{< /hl >}}**
 
    安装好后打开 VSCode，对其进行一定配置。
 
@@ -106,7 +106,7 @@ description: ''
 
 ### 3. hugo
 
-   > **<font color="#dd00000">Author's Warm Reminder: 一定要下载 hugo_extended 版本，不然接下来你的 hugo 很多功能无法实现！这个地方作者还是做对了的，标红只是为了提醒各位。</font>**
+   > **{{< hl "orange" >}}Author's Warm Reminder: 一定要下载 hugo_extended 版本，不然接下来你的 hugo 很多功能无法实现！这个地方作者还是做对了的，标红只是为了提醒各位。{{< /hl >}}**
 >
    > 还有，下列操作涉及访问 GitHub，请根据本地网络情况考虑是否 " 外出学习 " 或者开启 GitHub 加速器
 
@@ -181,7 +181,7 @@ description: ''
 >
    > 其实这一步已经可以在 VSCode 里进行了，右键文件夹选择在 VSCode 中打开，或打开 VSCode，左上角文件 > 打开文件夹，或打开 VSCode，按下快捷键 Ctrl + K，等程序加载完毕按下 Ctrl + Shift + \`召唤终端（默认为 powershell，或者是新版的 pwsh）
 
-   <font color="#dd0000">
+  {{< hl "orange" >}}
    **Author's Warm Reminder: 如果要开代理，请一定先按以下内容操作！！！**（以 Win10+ 为例，若使用 Clash 系列且没改过系统代理地址则可跳过步骤 1）：
 
    1. 打开设置 -网络和 Internet-代理，找到手动使用代理 -使用代理服务器，点击右方编辑，复制 IP 和端口
@@ -202,7 +202,7 @@ description: ''
 
    不要问作者怎么又来红色爱心提醒，问就是别问。。。
 
-   </font>
+   {{< /hl >}}
 
    然后就正式地需要 VSCode 帮忙了。打开 VSCode 至 blog 文件夹，找到根目录里的 hugo.toml，按如下内容配置（直接复制，修改 [your_balabala]对应内容即可）：
 
