@@ -69,9 +69,15 @@ The following is a comparison table compiled based on personal experience & cons
 | Laundry related | No washing machine; there are places to hang towels and other small items in the toilet, clothes need to be hung on the clothes rail at the end of the dormitory | No washing machine; drying clothes and hanging towels can be done in the toilet |
 | Others | (Waiting to be added) | (Waiting to be added) |
 
-Dormitory schedule (Senior 1 & Senior 2, Senior 3 unknown, 24.5.26): 20:00, day students go home, boarding students stay for the second evening self-study (20:10 ~ 21:40), school ends at 21:40 and return to the dormitory, lights out around 22:20 (this depends on whether your dorm manager is on time), lights on at 6:30 the next day. After lights out every night, no electrical appliances other than air conditioners can work. The three-hole socket of the air conditioner has been modified and is slightly wider than the normal three-hole socket ~~(Don't ask me how I know)~~.
+Dormitory schedule: 
+- Senior 1 & Senior 2: 20:00, day students go home, boarding students stay for the second evening self-study (20:10 ~ 21:40), school ends at 21:40 and return to the dormitory, lights out around 22:20 (this depends on whether your dorm manager is on time), lights on at 6:30 the next day.
+- Senior 3: 22:00, day students go home, boarding students return to dormitory, lights out at 22:30, lights on at 6:30 the next day.
+
+After lights out every night, no electrical appliances other than air conditioners can work. The three-hole socket of the air conditioner has been modified and is slightly wider than the normal three-hole socket ~~(Don't ask me how I know)~~.
 
 In addition, mobile phones can be handed over to the head teacher/dorm manager. If handed over to the dorm manager, you can ask the dorm manager for it on Friday morning (if handed over to the head teacher, you need to wait until school ends at 18:40).
+
+During the make-up classes before the start of Senior 3, it was heard that the beds in the boys' dormitory would be replaced. In September, a brave warrior asked the vice principal who said it would be replaced within 2 months, but as of the start of the winter vacation (26.2.5), it has not been replaced yet.
 
 # Schedule Introduction
 
@@ -110,6 +116,42 @@ The dormitory schedule has been introduced in the text above. The following is t
 | 20:00 ~ 20:10 | Break (excluding preparatory bell) |
 | 20:10 ~ 21:40 | Second Evening Self-study |
 | 21:40 ~ | School Ends |
+
+## Senior 3 Schedule
+
+| Time Period | Course |
+| :---: | :---: |
+| ~ 7:25 | School |
+| 7:25 ~ 7:50 | Morning Reading |
+| 7:50 ~ 8:30 | 1st Period |
+| 8:30 ~ 8:40 | Break (including preparatory bell) |
+| 8:40 ~ 9:20 | 2nd Period |
+| 9:20 ~ 9:30 | Break (including preparatory bell) |
+| 9:30 ~ 10:10 | 3rd Period |
+| 10:10 ~ 10:40 | Big Break 1 (including preparatory bell) |
+| 10:40 ~ 11:20 | 4th Period |
+| 11:20 ~ 11:30 | Break (including preparatory bell) |
+| 11:30 ~ 12:10 | 5th Period |
+| 12:10 ~ 12:50 | Lunch (usually required to arrive early) |
+| 13:00 ~ 13:50 | Nap |
+| 13:50 ~ 14:00 | Break (including eye exercises, preparatory bell) |
+| 14:00 ~ 14:40 | 6th Period |
+| 14:40 ~ 14:50 | Break (including preparatory bell) |
+| 14:50 ~ 15:30 | 7th Period |
+| 15:30 ~ 15:55 | Big Break 2 (including preparatory bell) |
+| 15:55 ~ 16:35 | 8th Period |
+| 16:35 ~ 16:45 | Break (including preparatory bell) |
+| 16:45 ~ 17:25 | 9th Period |
+| 17:25 ~ 17:55 | Dinner |
+| 17:55 ~ 18:00 | Break (including preparatory bell) |
+| 18:00 ~ 18:40 | 10th Period |
+| 18:40 ~ 18:50 | Break (including preparatory bell) |
+| 18:50 ~ 19:30 | First Evening Self-study |
+| 19:30 ~ 19:50 | Big Break 2 (including preparatory bell) |
+| 19:50 ~ 21:10 | Second Evening Self-study |
+| 21:10 ~ 21:20 | Break (including preparatory bell) |
+| 21:20 ~ 22:00 | Second Evening Self-study |
+| 22:00 ~ | School Ends |
 
 > 24.5.26 The author is tired of typing... The author has always wanted to enter the teacher segment as soon as possible, but it seems that there are still many other contents to explain to you...
 
@@ -179,7 +221,9 @@ I will give a more detailed and as objective as possible introduction to the tea
 
 > Generally speaking, it is hard to say. More than ten years of experience as a head teacher makes him indeed able to "predict" behavior (for example, someone in our class went out to play ball in the chaos at noon, and when he came back, he found him guarding the class door waiting for those few. In the class meeting, he told us that he "knew someone was going out to play ball long ago, I specially took a comfortable nap before coming to catch you"). He has a lot of information sources, and he also has "interrogation" techniques. Sometimes he is very good, sometimes he is very explosive. Privately, I can say that he is even a bit "naughty" (~~a taste of an old urchin~~).
 >
-> I once swiped that someone (probably from Grade 2020) said on Zhihu "Cherish life, stay away from tx". My opinion is that if this light sentence can influence your opinion of a person, then I suggest you go back to the furnace to rebuild. Human nature is always three-dimensional and multi-faceted. Only by seeing its advantages and disadvantages can you say that you are just starting to understand this person. If you avoid No. 20 Middle School and avoid tx just because of this sentence, you will lose many unique opportunities, and there is a high probability that there are ones you value very much.
+> I once swiped that someone (probably from Grade 2020) said on Zhihu "Cherish life, stay away from tx". My opinion is that if this light sentence can influence your opinion of a person, then I suggest you go back to the furnace to rebuild. Human nature is always three-dimensional and multi-faceted. Only by seeing its advantages and disadvantages can you say that you are just starting to understand this person. It is undeniable that tx has done things that win people's hearts, such as applying for various activities and vacations (it is said that they prepared for the 7-day tour in Beijing for more than 3 months, often running to the principal to wear out their lips tirelessly), which can get very good feedback; but there are also very outrageous things, such as the "32nd place incident" after the first diagnostic test in Senior 3[^1]. If you avoid No. 20 Middle School and avoid tx just because of this sentence, you will lose many unique opportunities, and there is a high probability that there are ones you value very much.
+
+[^1]: After the first diagnostic test in Senior 3, the class adjusted seats. The head teacher tx stipulated: students ranked 31st to 60th could not choose their own seats and were arranged by him uniformly. Because students ranked 30th to 32nd had the same score, the 32nd student was dissatisfied with this and argued with tx, and even threatened to jump off the building (attempted). The next day, tx criticized the whole class in class, saying that "the class style is not correct", and cancelled the New Year's Day party, emphasizing that "the whole class problem accumulated and exploded, and the 32nd place incident was just the fuse". Subsequently, tx admitted that this move might "accidentally injure" some students, but did not explain, only saying "only a few people belong to accidental injury, and they know whether they are accidentally injured". When the 32nd student returned to school, we found that tx asked her to write in the self-criticism that "my (32nd place) behavior caused the cancellation of the New Year's Day party".
 
 ## English: Wang Shunchang ♂
 

@@ -17,21 +17,22 @@ description: ''
 
 > 前言：这个更新日志是我写的第二篇 blog，所以从这篇文章开始我将尽量坚持同时用中英文写。
 >
-> Preface: This update log is my second blog post, so I'll stick to writing in Chinese as much as possible from this post on.
->
 > > （中文独有段落：本 blogger 的中文文风偏硬货风，一会儿装正经一会儿扯些有的没的，喜欢中英结合 [具体可见正文第一句]；英文部分时间不急迫大部分会自己写，但一般情况下会开翻译，所以如果你看到的是一堆直白简单的 words 就是本人写的，如果出现了多种高级用法，那不用怀疑就是作者开了（bushi
 > >
 > > 2024.2.18 22.13 补充：由于本文文字实在太多，作者决定本文不再编写英文版本，有兴趣者自行打开翻译。
 > >
-> > 2025.5.3 16:45 补充：现在又想尝试一下了 争取不用 DeepSeek /doge（好吧还是用了）
+> > 2025.5.3 16:45 补充：现在又想尝试一下了 争取不用 DeepSeek /doge
+> > 好吧还是用了（
 
-# 一、背景
+## 一、背景
 
 2023.8，我成功步入高中生活。经历了 2023.Q3 & Q4 的生活体验，我切实地体会到了老师们的***有趣***（当学生这么多年，头一次见到拥有这么多口头禅的老师 [手动/doge]），又在 Q4 的某一天度娘了一番，找到了某乎上本校的新人问话帖，也看到了我的各位老师，但是发现各位学长们对老师的介绍相当地潦草，于是有了为老师们留下一个 " 档案 " 的念头。2024.2.13 14 时左右，本人正在 surfing the Internet，然后就~~脑袋搭错一根筋~~一时兴起，加上之前~~蓄谋已久~~酝酿良久的想法，就准备再次入手一个 blog。
 
 与以往不同，这是我第一次使用静态网站生成器 Hugo（链接见底部），第一次尝试自己修改编写得比较完善的主题（修改版链接见底部，原版链接 [在此](https://github.com/ThemeTony/hugo-theme-tony "ThemeTony/hugo-theme-tony - GitHub")），第一次使用纯手打 Markdown 写文章，第一次使用 GitHub Repo & GitHub Pages 托管 blog 服务，……数不清的第一次也是我决心坚持做下去的动力。
 
-# 二、构建
+> 26.2.15: 由于原来的主题代码太臭太长，维护起来很完蛋，遂放弃Tony主题，同时开始新主题的搭建。下文于今日大改，将详细介绍新主题的搭建过程。
+
+## 二、构建
 
 > （接下来为程序员才敢兴趣的干货内容，无关人士请快速往下滑，这一段内容会很长。若你可以看到文章左侧的目录导航，请点击跳转至下一 part）
 
@@ -45,9 +46,9 @@ description: ''
 
 > 2024.2.18 22:14 补充：今天应该是来不及了，明天再来吧。
 
-## (1.1) 安装 - 传统方法
+### (1.1) 安装 - 传统方法
 
-### 1. VSCode
+#### 1. VSCode
 
    > 之所以选它最主要是因为 VSCode 是真的轻量啊，与隔壁 WebStorm 相比占用磁盘空间，占用内存空间和启动速度根本不是一个级别的；其次，因为有 Hugo 这个静态网页生成器的存在，生成一篇文章实际上不需要我写太多代码，反而对 Markdown 的适配要求要高一点，因此，VSCode 是不二之选。
 
@@ -67,6 +68,8 @@ description: ''
 
    > **{{< hl "orange" >}}Author's Warm Reminder: 千万不要乱改安装路径，以上安装包不支持使用管理员的身份运行，所以请不要妄图用上面提供的安装包将 VSCode 安装在 C:\Program Files 等文件夹里，不要问我怎么知道的，千万别问，问了我也绝对不会告诉你作者因为此安装了 10min 的 VSCode……{{< /hl >}}**
 
+   26.2.15 14:22 补充：如今是AI IDE遍地开花的时代，市面上有很多各种各样的IDE，但90%都是基于VSCode开发的，故可以用其他的IDE，后续步骤基本上完全相同，有些甚至可以找AI帮忙完成。
+
    安装好后打开 VSCode，对其进行一定配置。
 
    按下图所示位置或按下快捷键 Ctrl+Shift+X 进入 VSCode Extensions 界面，
@@ -82,13 +85,15 @@ description: ''
    |Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code|https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans|
    |Markdown All in One|https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one|
    |Markdown Preview Github Styling|https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles|
-   |TOML Language Support|https://marketplace.visualstudio.com/items?itemName=be5invis.toml|
+   |Even Better TOML|https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml|
 
    > 第一个简体中文语言包安装完后会提示你重启 VSCode，建议重启完后再进行下一步安装。
 
+   > 26.2.15 补充：敲下这段文本时，作者在使用Trae，这个编辑器原生支持中文和 Markdown 文件预览，所以只需安装Even Better TOML 插件以获得更好的配置文件编辑体验。
+
    到此，VSCode 安装完毕。
 
-### 2. Git
+#### 2. Git
 
    > 因为作者使用 GitHub 托管，所以要想方便地进行本地 - 云端文件同步还是得配置 Git。Git 本身也是一个比较命令繁多而迷惑的 CLI 程序，所以本文只会涉及部分指令，若遇问题请不要问作者，因为作者本人大概率也不能解决。
 
@@ -104,21 +109,21 @@ description: ''
 
    安装完成，记得把 Launch Git Bash 和 View Release Notes 取消勾选，然后点 Finish 关闭安装窗口。接下来，可以重启电脑（或者召唤任务管理器，选中 Windows 资源管理器，点击重启任务）刷新 path 环境变量。完事后再召唤出 PowerShell，输入 `git --version` 测试 Git 是否被成功加入 path 里。若正确弹出版本号（git version 2.43.0.windows.1）则 Git 安装完毕。
 
-### 3. hugo
+#### 3. hugo
 
    > **{{< hl "orange" >}}Author's Warm Reminder: 一定要下载 hugo_extended 版本，不然接下来你的 hugo 很多功能无法实现！这个地方作者还是做对了的，标红只是为了提醒各位。{{< /hl >}}**
 >
-   > 还有，下列操作涉及访问 GitHub，请根据本地网络情况考虑是否 " 外出学习 " 或者开启 GitHub 加速器
+   > 还有，下列操作涉及访问 GitHub，请根据本地网络情况考虑是否“外出学习”或者开启 GitHub 加速器
 
    GitHub Releases: https://github.com/gohugoio/hugo/releases/
 
-   0.147.0 https://github.com/gohugoio/hugo/releases/download/v0.147.0/hugo_extended_0.147.0_windows-amd64.zip
+   0.155.3 https://github.com/gohugoio/hugo/releases/download/v0.155.3/hugo_extended_0.155.3_windows-amd64.zip
 
-   > 由于作者时间精力有限，目前的修改版主题（截止 2025.5.18）仅能确保 Hugo Extended 0.147.0 能正常使用，若有问题请等待作者随缘/高考完有空再处理。
+   > 由于作者时间精力有限，目前的主题（截止 2026.2.15）仅能确保 Hugo Extended v0.151.0 ~ 0.155.3 能正常使用，若有问题请等待作者随缘/高考完有空再处理。
 
    下载下来之后解压到一个你觉得很舒服的位置，随后将这个位置添加进 path 里，重启电脑或重启资源管理器刷新 path，召唤 PowerShell（后文简写为 ps）运行 `hugo help`，若正常输出帮助内容则安装完毕。
 
-## (1.2) 安装 - 非传统方法
+### (1.2) 安装 - 非传统方法
 
    当我要在 Windows 上使用包管理器时，阁下又该如何应对？手动/doge
 
@@ -144,45 +149,43 @@ description: ''
 
    当然 VSCode 安装后还是要回去进行配置的。
 
-   所以是不是感觉很有一种感觉呢？手动/doge
+   所以是不是感觉很有一种感觉呢？{{< qq-emoji "菜汪" >}}
 
-## (2) 创建 blog
+### (2) （可选）配置评论区
 
-   > 2024.2.16 1:29 写到此处 作者累了，改日再写吧
-   >
-   > 还有，看样子这一片会非常的长……要不我还是分成两个文件写吧，然后再改改主题，让它支持切换语言？
-   >
-   > 真要那样的话，那可又是一堆工作量啊……
-   >
-   > 这个凌晨就先这样吧，commit 去了，886
+  目前 Polymer 主题仅支持 Waline 评论区。
+  
+  [Waline](https://waline.js.org) 是一款简洁、安全的评论系统，其特性包含快速、真·安全、Markdown 语法支持、轻量易用、免费部署、多种部署部署方式和存储服务支持等等。
+  
+  截止26.2.15，服务端和数据库均可以在 Vercel 上免费部署。部署教程请参考[此处](https://waline.js.org/guide/get-started/)或看[bilibili视频](https://www.bilibili.com/video/BV1Ft4y1A73f)，官网写得很详尽了，此处不再赘述。部署完成后，请记住你的评论系统URL(`https://waline.yourdomain.com/`)，后面 blog 的配置文件需要它。
 
-   > 2024.2.16 9:35 满血复活 回来再战
->
-   > 2025.5.10 17:02 补充：好吧，语言切换早已支持（参见 theme commit）。本 blog 目前使用的 i18n 模式为中英两份源文件 + 主题手动切换语言。
+  当然你也可以选择不启用评论区，在后面介绍配置文件时修改一行配置即可。
 
-### 1. 本地构建
+### (3) 创建 blog
 
-   在我已经将主题修改好的情况下，其实工作量没有那么的大。所以，找好一个地方放置你的 blog 文件夹（不用自己新建文件夹），在这里召唤 ps 运行：
+#### 1. 本地构建
+
+   ，找好一个地方放置你的 blog 文件夹（不用自己新建文件夹），在这里召唤 ps 运行：
 
    ```powershell
    hugo new site blog
    ```
 
-   > hugo new site 后接的网站名（官方说法）可以替换，则接下来的 blog 目录全都替换为你输入的名称。
+   > hugo new site 后接的网站名（官方说法）可以替换，则后文所有的`blog`目录全都替换为你输入的名称。
 
    随后不用去管 ps 里面 hugo 输出啥，直接 cd 到 blog 文件夹下并运行：
 
    ```powershell
    git init
-   git submodule add https://github.com/Spixed/hugo-theme-tony.git themes/tony
+   git submodule add https://github.com/Spixed/polymer.git themes/polymer
    ```
 
-   > 这是为该文件夹初始化 Git 并以子模块的形式添加主题 ThemeTony. 该操作涉及访问 GitHub，若访问缓慢或报错请记得开代理。
+   > 这是为该文件夹初始化 Git 并以子模块的形式添加主题 Polymer. 该操作涉及访问 GitHub，若访问缓慢或报错请记得开代理。
 >
-   > 其实这一步已经可以在 VSCode 里进行了，右键文件夹选择在 VSCode 中打开，或打开 VSCode，左上角文件 > 打开文件夹，或打开 VSCode，按下快捷键 Ctrl + K，等程序加载完毕按下 Ctrl + Shift + \`召唤终端（默认为 powershell，或者是新版的 pwsh）
+   > 其实这一步已经可以在 VSCode 里进行了，右键文件夹选择在 VSCode 中打开，或打开 VSCode，左上角文件 > 打开文件夹，或打开 VSCode，按下快捷键`Ctrl + K`，等程序加载完毕按下`Ctrl + Shift + \\`召唤终端（默认为 powershell，或者是新版的 pwsh）
 
   {{< hl "orange" >}}
-   **Author's Warm Reminder: 如果要开代理，请一定先按以下内容操作！！！**（以 Win10+ 为例，若使用 Clash 系列且没改过系统代理地址则可跳过步骤 1）：
+   **Author's Warm Reminder: 如果要开代理，请使用虚拟网卡模式；若使用系统代理，请按以下内容操作**（以 Win10+ 为例，若使用 Clash 系列且没改过系统代理地址则可跳过步骤 1）：
 
    1. 打开设置 -网络和 Internet-代理，找到手动使用代理 -使用代理服务器，点击右方编辑，复制 IP 和端口
 
@@ -193,273 +196,81 @@ description: ''
       git config --global https.proxy http://127.0.0.1:7890
       ```
 
-      > 将后面的那串地址改成 http://your_ip:your_port的形式，如果是 Clash系列且未做更改则直接运行。若要取消代理则运行：
+      > 将后面的那串地址改成 `http://your_ip:your_port` 的形式，如果是 Clash系列且未做更改则直接运行。若要取消代理则运行：
 
       ```powershell
       git config --global --unset http.proxy
       git config --global --unset https.proxy
       ```
 
-   不要问作者怎么又来红色爱心提醒，问就是别问。。。
-
    {{< /hl >}}
 
-   然后就正式地需要 VSCode 帮忙了。打开 VSCode 至 blog 文件夹，找到根目录里的 hugo.toml，按如下内容配置（直接复制，修改 [your_balabala]对应内容即可）：
-
-   > 若你觉得以下全英文内容看着烦，可找到 themes/tony/configI18N/config.zh.toml参照下方 [your_balabala]的位置进行配置。
+   然后就正式地需要 VSCode 帮忙了。打开 VSCode 至 blog 文件夹，找到根目录里的 hugo.toml，按如下内容配置：
 
    ```toml
-########################################
-# Site configuration
-# Icon: https://RemixIcon.com/
+baseURL = "your_blog_url" # 你的 blog 首页访问链接
+languageCode = "en" # blog 使用的语言，"en" / "zh"
+title = "Polymer Grid" # blog 的标题
+theme = "polymer" # 主题，必须填为这个
 
-baseURL = "[your_blog_root_URL]"
-title = "[your_blog_title]"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"
-hasCJKLanguage = false
-
-# Theme selection
-theme = "tony"
-
-# `hugo new` text editor for automatically opening new articles
-newContentEditor = ""
-
-# Summary word limit
-summaryLength = 35
-
-# Whether to enable GitHub style Emoji writing
-enableEmoji = true
-
-# Number of articles per page
-paginate = 39
-
-# author information
-[author]
-    # First name
-    name = "[your_name]"
-    # Mailbox
-    email = "[your_email]"
-    # Motto or introduction
-    motto = "[your_motto]"
-    # Avatar
-    avatar = "/site/avatar.png"
-    # Website (default: baseURL)
-    website = "/"
-    # GitHub
-    github = "[your_github_homepage]"
-
-# Page category
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-
-########################################
-# Menu configuration
-
-# The configuration instructions in the menu are as follows:
-# url link address
-# name text (leave blank ("") no)
-# weight
-
-[menu]
-    # Menu Bar
-    [[menu.main]]
-        url = "/"
-        name = "Home"
-        weight = 1
-    [[menu.main]]
-        url = "/categories"
-        name = "Categories"
-        weight = 2
-    [[menu.main]]
-        url = "/tags"
-        name = "Tags"
-        weight = 3
-    [[menu.main]]
-        url = "/about/"
-        name = "About"
-        weight = 4
-
-[[params.pinned]]
-    title = "[your_homepage_title]"
-    name = "[your(author's)_name]"
-    icon = "ri-code-box-line"
-    url = "/about#about-me"
-
-# Markdown renderer
-[markup]
-    defaultMarkdownHandler = "goldmark"
-    [markup.goldmark]
-        [markup.goldmark.extensions]
-            definitionList = true
-            footnote = true
-            linkify = true
-            strikethrough = true
-            table = true
-            taskList = true
-            typographer = false
-        [markup.goldmark.parser]
-            attribute = true
-            autoHeadingID = true
-            autoHeadingIDType = "github"
-        [markup.goldmark.renderer]
-            hardWraps = true
-            unsafe = true
-            xHTML = false
-    [markup.highlight]
-        codeFences = true
-        guessSyntax = true
-        lineNos = true
-        lineNumbersInTable = false
-        noClasses = true
-        style = "onedark"
-    [markup.tableOfContents]
-        startLevel = 2
-        endLevel = 6
-        ordered = true
-
-# Hugo output control
-[outputs]
-    page = ["HTML"]
-    home = ["HTML", "SectionsRSS", "SectionsAtom"]
-    section = ["HTML"]
-    taxonomy = ["HTML"]
-
-# Atom file format media type
-[mediaTypes."application/atom+xml"]
-    suffixes = ["xml"]
-
-# Tony theme custom Atom template from MemE
-[outputFormats.SectionsAtom]
-    mediaType = "application/atom+xml"
-    baseName = "atom"
-
-# Tony theme customized RSS template from MemE
-[outputFormats.SectionsRSS]
-    mediaType = "application/rss+xml"
-    baseName = "rss"
-
-# RSS & Atom Article limit
-[services.rss]
-    limit = -1
-
-########################################
-# Theme configuration
+[languages] # 多语言配置，非必要无需变动
+  [languages.en]
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 1
+  [languages.zh]
+    languageName = '中文'
+    contentDir = 'content/zh'
+    weight = 2
 
 [params]
+  description = "A Digital Brutalism Theme" # blog 的描述，一般而言不重要
+  math = true # 是否开启对数学公式的支持
+  mathEngine = "mathjax" # 数学公式引擎，"mathjax" / "katex"
+  favicon = "https://api.dicebear.com/7.x/bottts/png?seed=Polymer" # blog 的 favicon，建议使用正方形图片
 
-    #####################################
-    # Site Information
+[params.waline]
+  enable = true # 是否开启 waline 评论系统
+  serverURL = "your_waline_server_url" # 设置 waline 服务器地址，若不启用则无需设置
 
-    # Site LOGO
-    siteLogo = "/site/logo.png"
+[taxonomies]
+  category = "categories" # 分类
+  tag = "tags" # 标签
 
-    # Site description
-    siteDescription = "[your_site_description]"
-
-    #####################################
-    # Copyright Protection
-
-    # Whether to open
-    enableCopyright = true
-
-    copyrightName = "CC BY-NC 4.0"
-    copyrightLink = "https://creativecommons.org/licenses/by-nc/4.0/"
-
-    #####################################
-    # table of Contents
-
-    # Whether to open (global settings)
-    enableToc = true
-
-    #####################################
-    # Reading progress bar
-
-    # Whether to open (global settings)
-    enableReadingBar = true
-
-    #####################################
-    # Article up and down page
-
-    # Whether to open (global settings)
-    enableAdjacentPost = true
-
-    #####################################
-    # Whether to show the link between Hugo and Tony
-
-    displayPoweredBy = true
-
-    #####################################
-    # Markdown Related
-
-    # Open link in new tab page?
-    hrefTargetBlank = true
-
-    #####################################
-    # Comments
-
-    # Whether to open (global settings)
-    enableComments = false
-    # Description: "comments" in the front Matter of the article
-    # Has priority over here
-
-    # ## Valine
-    # enableValine = false
-    # valineVersion = "latest"
-    # valineAppId = ""
-    # valineAppKey = ""
-    # valinePlaceholder = ""
-    # valinePath = ""
-    # valineAvatar = "mm"
-    # valineMeta = ["nick", "mail", "link"]
-    # valinePageSize = 15
-    # valineVisitor = true
-    # valineHighlight = true
-    # avatarForce = true
-    # valineRecordIP = true
-    # valineServerURLs = ""
-    # valineEmojiCDN = ""
-    # valineEmojiMaps = """"""
-    # valineEnableQQ = false
-    # valineRequiredFields = []
-    # Description: https://valine.js.org/
-
-    ## Waline
-    enableWaline = false
-    walineServerURL = ""
-
-    #####################################
-    # Google Analytics
-
-    enableGoogleAnalytics = false
-
-    # Type of tracking code
-    trackingCodeType = ""
-    # Description: gtag or analytics
-
-    trackingID = ""
-
-    #####################################
-    # Google Site Verification
-
-    googleSiteVerification = ""
-
-
-    #####################################
-    # Baidu push
-
-    enableBaiduPush = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # 是否开启对 HTML 标签的渲染，若开启则可能会导致安全问题，不开启则无法渲染 HTML 标签
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough] # 配置 Passthrough 扩展，以在 Markdown 中使用 LaTeX。若开启 math 则必须按照以下方式配置。
+        enable = true # 是否启用 Passthrough 扩展
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\\[', '\\]']] # 块状公式的 delimiter
+          inline = [['$', '$'], ['\\(', '\\)']] # 行内公式的 delimiter
    ```
 
-   改完后 Ctrl + S 保存，按下 Ctrl + Shift + \` 召唤 VSCode 的终端，输入 `hugo server -D` 试运行。打开浏览器访问 localhost:1313(or 127.0.0.1:1313)，出现正常页面（即你觉得十分美观，没有不和谐的地方），则本地构建姑且完毕。
+   随后前往 data/author.toml 文件，编辑作者信息。本 blog 主题支持多作者，每个作者都需要在该文件中配置。
 
-### 2. 上传至 GitHub
+   ```toml
+   [alex] # 作者配置项，alex 为作者 ID，可自定义，有唯一性
+    name = "Alex Bold" # 作者姓名
+    nickname = "Alex" # 作者昵称
+    avatar = "https://api.dicebear.com/7.x/avataaars/png?seed=A&size=128" # 作者头像，建议使用正方形图片
+    bio = { en = "A digital explorer loving brutalist designs.", zh = "热爱粗野主义设计的数字探索者。" } # 作者座右铭，英文和中文各写一个
+    github = "https://github.com/example" # 作者 GitHub 账号
+    website = "https://example.com" # 作者个人网站
+    email = "alex@example.com" # 作者邮箱
+    weight = 1
+   ```
 
-   > 这一步开始可能需要持续 " 外出学习 "，请注意 " 学习费用 " 是否充足
+   改完后 Ctrl + S 保存，按下 `Ctrl + Shift + \\` 召唤 VSCode 的终端，输入 `hugo server -D` 试运行。打开浏览器访问 localhost:1313(or 127.0.0.1:1313)，出现正常页面（即你觉得十分美观，没有不和谐的地方），则本地构建姑且完毕。
+
+#### 2. 上传至 GitHub
+
+   > 这一步开始可能需要持续“外出学习”，请注意“学习费用”是否充足
    > 手动/doge
 
-   打开 [GitHub](https://github.com)，有账号的登录，没账号的参考 [这篇文章](https://zhuanlan.zhihu.com/p/658727572)（过于完善 我就不再重复了/doge）
+   打开 [GitHub](https://github.com)，有账号的登录，没账号的参考 [这篇文章](https://zhuanlan.zhihu.com/p/658727572)（过于完善，我就不再重复了{{< qq-emoji "菜汪" >}}）
 
    新建一个仓库，若准备直接使用 https://[username].github.io 作为博客的 baseURL 则请将该仓库命名为 [username].github.io，将 [username] 整体替换为你的 GitHub 用户名。然后，回到 VSCode，在终端中设置用户签名：
 
@@ -475,8 +286,8 @@ paginate = 39
    按照这个路径新建一个文件：./.github/workflows/hugo.yaml，打开，复制以下文本到该文件，随后保存。
 
    ```yaml
-   # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: My Blog
+  # Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -509,7 +320,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.147.0
+      HUGO_VERSION: 0.155.3
     steps:
       - name: Install Hugo CLI
         run: |
@@ -524,21 +335,21 @@ jobs:
           fetch-depth: 0
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
         env:
-          # For maximum backward compatibility with Hugo modules
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
+          TZ: America/Los_Angeles
         run: |
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
@@ -552,7 +363,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
    ```
 
    然后回到终端运行：
@@ -569,17 +380,21 @@ jobs:
 
    回到 GitHub，打开对应仓库 -Settings-Pages(https://github.com/[username]/[username].github.io/settings/pages)，找到 Build and deployment-Source 一项，将原本的 Deploy form a branch 切换为 Github Actions。然后，你就什么都不需要做了。切到 Actions(https://github.com/[username]/[username].github.io/actions/)，你可以看到有一个 Action 正在运行，待其前面的小点从黄色变成绿色，随后访问 https://[username].github.io，如果出现了前面运行 `hugo server -D` 时出现的页面，那么恭喜你，长征已接近尾声。
 
-### 3. 新建文章
+#### 3. 新建文章
 
-   先说快速上手版本。
+   为了提升 VSCode 写文章的体验，下面需要先修改 archetypes/default.md 文件。其实也简单，用 themes/polymer/archetypes/default.md 文件替换掉当前项目的 archetypes/default.md 文件即可。
 
    回到 VSCode，终端中运行：
 
    ```powershell
-   hugo new content post/[filename].md
+   hugo new content post/[zh, en]/[filename].md
    ```
 
-   记得将 [filename] 改成文章对应 Markdown 文件名。然后就是自由发挥时间。
+   [zh, en] 二选一，并将 [filename] 改成文章对应 Markdown 文件名。然后就是自由发挥时间。
+
+#### 4. 写文章
+
+   Hugo 默认使用 Markdown 语法，在新建的文件中用 Markdown 语法写作即可。写完并保存文件后，`Ctrl + Shift + \\`召唤出 PowerShell 窗口，运行 `hugo server -D`，访问 `http://localhost:1313` / `http://127.0.0.1:1313` 即可预览文章。
 
    屏幕面前的你有可能不认识、不会用 Markdown，善良的作者在此放俩基础教程：
 
@@ -587,7 +402,22 @@ jobs:
 
    国内热心网友版本：https://www.jianshu.com/p/ed47397774c4
 
-   > 不标红的 Author's Warm Reminder: 若要在 GitHub Pages 上看到该文章，记得把 Markdown 文件顶部的 `draft = true` 改成 `draft = false`。
+   然后，在将文章发布之前，请配置好文章的元数据。元数据是文章的一些基本信息，比如标题、作者、发布日期等。你可以在文章的 Markdown 文件顶部找到元数据的位置（又称为Front Matter），按照以下格式填写即可。
+
+   ```yaml
+   ---
+title: "文章标题"
+date: 1111-11-11T11:11:11+08:00 # 文章发布日期，格式为：YYYY-MM-DDTHH:MM:SS+08:00
+draft: true # 是否为草稿，true 为草稿，false 为已发布
+author: "spixed" # 文章作者，填入 data/author.toml 文件中对应作者的 ID
+featured: false # 是否为特色文章，true 为特色，false 为普通；特色文章会挂在首页 Hero 卡片中轮播
+description: "" # 文章描述，没卵用但是可以设置
+categories: [] # 文章分类
+tags: [] # 文章标签
+keywords: [] # 文章关键词，没卵用但是可以设置
+weight: 0 # 文章权重，数值越大越靠前显示，默认值为 0
+---
+   ```
 
    接下来，就是非常常规的操作了。你可以继续使用 CLI 上传文件到 GitHub，但我更推荐使用 VSCode 的源代码管理功能。图形化，非常的简单，每次不需要敲那么多命令就能完成。
 
@@ -603,74 +433,6 @@ jobs:
 
    到此，新手教程彻底结束。
 
-# 三、作者的自由发言时间
+## 三、结尾
 
-> 即作者接下来说的 part 不分主题的那种
-
-其实吧，作者编写程序效率还是挺低的，例如为原版主题添加一个深色模式就花了作者一下午 (过年期间某一天的 17:00 ~ 22:00，当然其中有一坤小时都没在编程 /doge) 的时间，为了一个免费的域名折腾了好几天，一直到写到这里的今天 (2024.2.18 21:22) 申请都还没过……
-
-没几天之前我都还坚信 Netlify 国内不可访问，结果。。。看样子如遥远的前文所说，我准备在 Netlify 上面再建一个备用的访问站，主要是不出我所料的话 Netlify 给的默认域名又臭又长，而我有没有自己的域名。要不哪位看官老爷捐赠我一个？/doge
-
-前些天在申请 js.org 域名的时候我在那用 git rm 准备删除分支里的其他文件，结果忘了 cd 到空目录，直接导致了我的源代码全部销毁。得亏当时没有继续 commit 和 push 上去，所以我的 blog 勉强留住了一命。说到 js.org，我没仔细看文档，申请交上去，结果告诉我现在不能为 blog 注册 js.org 域名了。。。
-
-回到博客本身上，作者针对这个主题还有一点话说。
-
-## 1. 有关文章
-
-其实文章不只是可以在 `content/post` 文件夹里生成，还可以在 `content` 路径下生成其他文章，例如该主题的原作者在本地试运行阶段就推荐我们创建 `content/about/index.md`。
-
-说到 `index.md`，其实各位接触过网页前端的都知道某个目录下放置 `index.html`/`index.php` 文件，web 服务打开后可以直接输入路径名访问该网页，而不用输入 index.html/index.php 文件名。Hugo 也采用了相同的方案（本质是将 md 转成相同名称的 html 嘛，所以肯定也符合上述现象），任何文件夹下新建 index.md 文件，那么可以直接通过文件夹的路径访问到该文章，而不用多输入 index。
-
-话说各位注意到没有，每次通过 hugo new content 生成的.md 文件开头默认有 5 行文本，第一行和第五行各三个 `+` 包裹了 2 ~ 4 行的三行参数。其实，这里的文章参数 (又叫 Front Matter) 不只这三个，还有以下部分 (来源于主题文档)：
-
-|项 | 作用 | 示例|
-| :---: | :---: | :---: |
-|title|文章标题|`title = "Hugo Theme Tony 主题文档 "`|
-|date|文章发布日期|`date = 2020-05-07T09:51:27+08:00`|
-|draft|是否草稿|`draft = false`|
-|keywords|文章关键词，用于 HTML 头部|`keywords = [" 移植主题 "]`|
-|categories|分类|`categories = [" 博客 "]`|
-|tags|标签|`tags = [" 博客 "]`|
-|noclick|不允许点击（类似碎碎念），仅在主页展示|`notclick = false`|
-|categoryLink|分类按钮点击时的链接|`categoryLink = "/"`|
-|toc|是否开启目录|`toc = true`|
-|buy<br/>buyLink<br/>buyName<br/>buyInfo<br/>buyImage<br/>buyButtonText|购物链接|`buyLink = "https://htony.js.org"<br/>buyName = "hugo-theme-tony"<br/>buyInfo = "WP-Theme-Tony 的 hugo 移植版 "<br/>buyImage = "/images/t.jpg"<br/>buyButtonText = " 官网 "`|
-|thumbnail|缩略图|`thumbnail = "https://cdn.jsdelivr.net/gh/FFRaycoder/cdn/imgs/20200507094721.png"`|
-|weight|文章权重|`weight = 2`|
-|adjacentPost|是否显示上下页|`adjacentPost = true`|
-
-你可以每篇文章生成后定制 Front Matters，也可以找到一些大部分文章都需要的部分写进生成.md 文件的模板里。找到/archetypes/default.md，对其进行修改即可。
-
-> 不标红的 Author's Warm Reminder: 不要用 YAML 格式 (`key: value`)，用TOML 格式 (`key = value`) 。
-
-## 2. 有关主题
-
-原作者早在 2022.7.14 就将原仓库 Archive 了，所以相当于这个主题已经 1 年半没更新了。2024.2.13 日，我 fork 了原仓库并很快进行了初步修改。后因为我的误操作我将 fork 来的仓库删除，重新建立了一个仓库并进行了多次修改（原来的什么文档一点没改，后面有时间再改），逐渐的变成了现在这个样子。
-
-改动不多，主要是增添了一点点功能，如：
-
-· 深色模式手动切换（目前暂时先支持手动切换）；
-
-· 在配置文件中增添了对 Waline 的支持并修改了主题中原有的 layouts/partials/third-party/waline.html，使其适应了当前的最新版本，并且通过修改 layouts/partials/head.html 修复了 Waline 在本站出现表情包拉伸不正常的情况；
-
-· 除此之外，我将网站的 logo 和 blogger 的头像文件移到了主题外部，以方便更改。
-
-· 文章页面左侧 ToC 的优化与完善
-
-大概就这么多了。以后有更新我尽量写在某篇文章里。
-
-欢迎屏幕面前的各位前来 Issue & PR 这个仓库，我严格来说也算是 GitHub 新人，不太懂这个圈子的规矩，像什么 Contributors 之类的我可能需要各位大佬们的建议，对于大部分人来说，支持作者以及未来的贡献者继续更新这个主题的动力就是帮点小忙，如帮忙修改文档，issue 里面提建议，有能力者可自愿当 Contributor。
-
-有关主题的内容就差不多这些了。咱们有机会再聊。
-
-## 3. 有关评论区 Waline
-
-说实话这个我没什么想写的，官方文档已经做的十分详尽了，我也没什么想说的。该主题中同时支持了 utterances, valine, 以及 waline。第一个是通过 GitHub Discussions 实现评论功能的。考虑到国内 GitHub 实际访问情况以及作者个人主观意见来说，我不太喜欢这个方案。接下来，我在 valine 与 waline 中选择了 waline，二者最大的区别在于实现方式与配置项目上。前者无需后端，但只允许使用 LeanCloud 做存储端；后者可看作为 Valine 的衍化升级版，需要部署后端，但是可用多种程序存储 (如 LeanCloud, MongoDB, MySQL, etc.)。我比较推荐将 Waline 部署到 Deta.space 上，因为 Deta.space 不需要多配置一次存储端，其本身自带存储且部署在此的 Waline 不需要对存储进行配置即可直接使用。最最重要的是，Deta.space 的存储空间目前看来没有明写，暂时认为是无限大吧。要知道 LeanCloud 免费版也只有 1GB(虽然对于评论区而言已经完全够用了，但是多多益善嘛)
-
->  2025.5.18 补充：很可惜 Deta.space 2024 年就寄了，目前用的是 Vercel + LeanCloud(国际版) + Custom Domain 的方式实现 Waline 评论区的……
-
-# 四、结尾
-
-我是万万没想到这篇 blog 竟然会让我连续写这么多天，这篇文章的字数也是超出了我的想象。多说无益，2024.2.18 22.19，这篇文章彻底写完。感谢各位读到此处的读者们。各位可以多多在下方 Waline 评论区踊跃评论 (也最好注册一个账号支持一下，谢谢各位看官大人)。
-
-> 2024.2.19 8:37 补充：昨晚 23:34，我申请的 is-a.dev 域名已通过验证，现已投入使用。我惊奇地发现通过自定义域名真的解决了中国移动访问不了 GitHub Pages 的情况。看来应该是运营商 DNS 被污染的问题。如果这样的话，Netlify 上我就不太想再部署了。
+我是万万没想到这篇 blog 竟然会让我连续写这么多天，这篇文章的字数也是超出了我的想象。多说无益，2024.2.18 22.19，这篇文章彻底写完；2026.2.15 15:39，改文中文版写完。感谢各位读到此处的读者们。各位可以多多在下方 Waline 评论区踊跃评论 (也可以注册一个账号支持一下，谢谢各位看官大人)。

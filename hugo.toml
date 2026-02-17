@@ -12,6 +12,7 @@ enableEmoji = true
   favicon = "/site/logo.png"
 
   [params.waline]
+    enable = true
     serverURL = "https://c.spixed.us.kg/"
 
 [taxonomies]
