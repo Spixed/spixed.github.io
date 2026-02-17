@@ -36,7 +36,7 @@ Address: Definitely in Chengdu~
 
 Hometown: Zizhong, Neijiang, Sichuan
 
-Identity: A member of the Class of 2026, a boarding student (not specifying the class, writing the class is afraid that some people will find me ~~although it seems easy to guess who I am now~~)
+Identity: A member of the Class of 2026, a boarding student and a day student (not specifying the class, writing the class is afraid that some people will find me ~~although it seems easy to guess who I am now~~)
 
 > Ps: Class of 2026 = Grade 2023, similarly Class of 2023 = Grade 2020, please be aware.
 
@@ -48,7 +48,7 @@ TL;DR (It seems that words can't save much data): The appearance after renovatio
 
 You can search for the external scenery of the school on the Internet, which is basically consistent. The teaching building should be very clean because it has been renovated for a few years. You can take a look during the school visit. I think these environments are still very well done.
 
-> Ps: The table and chair legs in No. 20 Middle School are slanted. There are two batches of tables (new and old, which can be easily identified by the color of the table and "traces of time"), but the drawers are relatively narrow and there are no barriers on the left and right sides (except for the table legs). If you are about to enter No. 20 Middle School, please remember to buy expansion tools such as desk side straps. However, please also note that the desk side strap should be equipped with a fixing rope around the table, but the area of the table in No. 20 Middle School that can be used to hold the rope is very narrow, and the rope falls off easily, so it is recommended to buy a desk side bookcase (but if you meet a certain grade director, then use the desk side strap first, which will be introduced in detail below).
+> Ps: The table and chair legs in No. 20 Middle School are slanted. There are two batches of tables (new and old, which can be easily identified by the color of the table and "traces of time"), but the drawers are relatively narrow and there are no barriers on the left and right sides (except for the table legs). If you are about to enter No. 20 Middle School, please remember to buy expansion tools such as desk side straps. However, please also note that the desk side strap should be equipped with a fixing rope around the table, but the area of the table in No. 20 Middle School that can be used to hold the rope is very narrow, and the rope falls off easily, so it is recommended to buy a desk side bookcase.
 
 Everything else is easy to say. Next, I will focus on the dormitory situation. I believe that the dormitory promoted to you by No. 20 Middle School is very clean, with three beds per room, and a desk under the bed for each bed, which looks very comfortable. Yes, this is indeed the dormitory of No. 20 Middle School, **BUT** it is limited to the girls' dormitory.
 
@@ -73,15 +73,15 @@ Dormitory schedule:
 - Senior 1 & Senior 2: 20:00, day students go home, boarding students stay for the second evening self-study (20:10 ~ 21:40), school ends at 21:40 and return to the dormitory, lights out around 22:20 (this depends on whether your dorm manager is on time), lights on at 6:30 the next day.
 - Senior 3: 22:00, day students go home, boarding students return to dormitory, lights out at 22:30, lights on at 6:30 the next day.
 
-After lights out every night, no electrical appliances other than air conditioners can work. The three-hole socket of the air conditioner has been modified and is slightly wider than the normal three-hole socket ~~(Don't ask me how I know)~~.
+After lights out every night, no electrical appliances other than air conditioners can work. The three-hole socket of the air conditioner is slightly wider than the normal three-hole socket ~~(Don't ask me how I know)~~.
 
-In addition, mobile phones can be handed over to the head teacher/dorm manager. If handed over to the dorm manager, you can ask the dorm manager for it on Friday morning (if handed over to the head teacher, you need to wait until school ends at 18:40).
+In addition, mobile phones can be handed over to the head teacher/dorm manager. If handed over to the dorm manager, you can ask the dorm manager for it on Friday morning (if handed over to the head teacher, you need to wait until school ends in the afternoon).
 
 During the make-up classes before the start of Senior 3, it was heard that the beds in the boys' dormitory would be replaced. In September, a brave warrior asked the vice principal who said it would be replaced within 2 months, but as of the start of the winter vacation (26.2.5), it has not been replaced yet.
 
 # Schedule Introduction
 
-The dormitory schedule has been introduced in the text above. The following is the daily schedule for Senior 1 ~ Senior 3 of Grade 2023 (my purely hand-typed version, as of Feb 2, 2025, Senior 2 & Senior 3 schedule unknown).
+The dormitory schedule has been introduced in the text above. The following is the daily schedule for Senior 1 ~ Senior 3 of Grade 2023
 
 ## Senior 1 & Senior 2 Schedule
 
@@ -95,9 +95,9 @@ The dormitory schedule has been introduced in the text above. The following is t
 | 9:20 ~ 9:30 | Break (including preparatory bell) |
 | 9:30 ~ 10:10 | 3rd Period |
 | 10:10 ~ 10:50 | Big Break (including preparatory bell) |
-| 10:50 ~ 11:20 | 4th Period |
-| 11:20 ~ 11:35 | Break (including eye exercises, preparatory bell) |
-| 11:35 ~ 12:25 | 5th Period |
+| 10:50 ~ 11:30 | 4th Period |
+| 11:30 ~ 11:45 | Break (including eye exercises, preparatory bell) |
+| 11:45 ~ 12:25 | 5th Period |
 | 12:25 ~ 13:00 | Lunch (usually required to arrive early) |
 | 13:00 ~ 13:50 | Nap |
 | 13:50 ~ 14:00 | Break (including eye exercises, preparatory bell) |
@@ -153,19 +153,15 @@ The dormitory schedule has been introduced in the text above. The following is t
 | 21:20 ~ 22:00 | Second Evening Self-study |
 | 22:00 ~ | School Ends |
 
-> 24.5.26 The author is tired of typing... The author has always wanted to enter the teacher segment as soon as possible, but it seems that there are still many other contents to explain to you...
-
 # Canteen
 
 Regarding the canteen, I believe you should have heard that the canteen of No. 20 Middle School is very delicious. I declare my attitude here: You can't disbelieve it all, nor can you believe it all.
 
-It is indeed delicious. The dishes in the canteen of No. 20 Middle School are still very diverse. Like the author himself, I like to eat Mao Cai, rice noodles, old duck soup noodles and some dishes in the set meal. However, one point needs to be explained in advance here: Dishes will be repeated. You can even find patterns in the Mao Cai window and the noodle window. 5 days a week, if the author remembers correctly, there will be one meal of Mao Cai every day, and the other meal is one of several dishes such as various rice bowls/fried river noodles/pasta/... Eating too much Mao Cai actually tastes the same. The vegetables inside are eternally unchanged, most of the meat is frozen food (such as shrimp dumplings), and some are Mao Duck; vegetables are basically 0.7cm thick potatoes, lotus roots, cauliflower, etc. Rice bowls and fried noodles vary from person to person. Anyway, I think they are basically not very delicious, especially the black pepper pork chop rice. Because of some things that happened to the author before, I want to vomit every time I eat this thing (personal reason, does not represent those who love to eat). However, when this window serves non-Mao Cai dishes, it will give you an additional dish (a grilled sausage/half a chicken steak/a box of small yogurt).
+It is indeed delicious. The dishes in the canteen of No. 20 Middle School are still very diverse. Like the author himself, I like to eat Mao Cai, rice noodles, old duck soup noodles and some dishes in the set meal. However, one point needs to be explained in advance here: Dishes will be repeated. You can even find patterns in the Mao Cai window and the noodle window. 5~6 days a week, the Mao Cai window rotates between Mao Cai/various rice bowls/fried river noodles/pasta/... Eating too much Mao Cai actually tastes the same. The vegetables inside are eternally unchanged, most of the meat is frozen food (such as shrimp dumplings), and some are Mao Duck; vegetables are basically 0.7cm thick potatoes, lotus roots, cauliflower, etc. Rice bowls and fried noodles vary from person to person. Anyway, I think they are basically not very delicious, especially the black pepper pork chop rice. Because of some things that happened to the author before, I want to vomit every time I eat this thing (personal reason, does not represent those who love to eat). However, when this window serves non-Mao Cai dishes, it will give you an additional dish (a grilled sausage/half a chicken steak/a box of small yogurt).
 
-> 25.2.2 Ps: Because my family made me eat ¥9.9 steak every morning for 2 weeks before, I vomited after eating too much...
+> Ps: Because my family made me eat ¥9.9 steak every morning for 2 weeks before, I vomited after eating too much...
 
 For noodles, I think most noodles are quite delicious. The noodle arrangement is changed every day at noon, fixed as beef noodles on Friday, and Zha Jiang noodles are made at night after the remaining soup at noon is used up. Eating too much Zha Jiang noodles will be annoying, and it is also relatively dry. There are seasonings (chili sauce, soy sauce, vinegar, salt, MSG, soup, green onion & coriander) near the noodle window for you to adjust the taste yourself.
-
-> Ps: The author doesn't know whether it is Zha Jiang Mian (Mixed Sauce Noodles) or Zha Jiang Mian (Fried Sauce Noodles). After all, as a Sichuanese - whether it is the speaker or the listener - we don't distinguish between flat and curled tongues. This phenomenon is actually quite normal.
 
 There are 10+ types of set meal dishes in total (haven't counted specifically), all edible. Each set meal has 3 dishes. There is a fixed leg (braised chicken leg/spicy duck leg) on Thursday night. Some are indeed not very delicious, and it is a bit difficult to comment on how each meal is specifically (sometimes all three dishes are delicious, sometimes they are all average). Overall, the set meal has more varieties and richer flavors than other dishes. Some dishes are also the "killer feature" of the set meal.
 
@@ -175,9 +171,9 @@ There are 10+ types of set meal dishes in total (haven't counted specifically), 
 
 There are also many activities in No. 20 Middle School. I may not remember some activities clearly. I will add them when I have a chance. The following are the activities we have participated in from enrollment to before the article modification time:
 
-Summer camp within 2 weeks after volunteering reporting; Entrance training (~~don't know if this counts~~); Sports meeting; Choir competition (only in the first semester of Senior 1); Large and small lectures (the most grand one was inviting Academician Qi Faren to give a lecture on 24.5.24); Graduation song and dance party; 7-day tour in Beijing in 2024.8; Autumn outing in the first semester of 2024 (Physics class went to UESTC Qingshuihe Campus, History class went to climb mountains in the suburbs of Chengdu) etc.
+Summer camp within 2 weeks after volunteering reporting; Entrance training (~~don't know if this counts~~); Sports meeting; Choir competition (only in the first semester of Senior 1); Large and small lectures (the most grand one was inviting Academician Qi Faren to give a lecture on 24.5.24); Graduation song and dance party; 7-day tour in Beijing in 2024.8; Autumn outing in the first semester of 2024 (Physics class went to UESTC Qingshuihe Campus, History class went to climb mountains in the suburbs of Chengdu); New Year's Day party etc.
 
-> 25.2.2 Patch: All the above activities were participated by Grade 2023 (the 7-day tour in Beijing was voluntary participation, you can choose not to go).
+> All the above activities were participated by Grade 2023 (the 7-day tour in Beijing was voluntary participation, you can choose not to go).
 >
 > According to the head teacher, the premise of having so many activities is to have a kind grade director (Brother Xiang) who is willing to pay a lot of effort for the development of the grade.
 
@@ -205,23 +201,23 @@ I will give a more detailed and as objective as possible introduction to the tea
 
 ## Chinese: Luo Xiuling ♀
 
-> Title: \*\*\* (may be unique to our class)
+> Title: Luo \*\* (may be unique to our class)
 
 > Classic Quotes: Sentence-final particle "Ha", repeating the last sentence just said.
 
-> (Retiring in 2026, so no detailed elaboration)
+(Retiring in 2026, so no detailed elaboration)
 
-## **<font color="SandyBrown">Mathematics, Head Teacher, Grade Director: Tao Xiang</font> ♂**
+## {{% hl "orange" %}}Mathematics, Head Teacher, Grade Director: Tao Xiang{{% /hl %}} ♂
 
 > Title: Xiang Zi, Brother Xiang, Teacher Xiang (from Mr. Li below), tx, ~~Tencent, Tao Xiang~~
 
-> Classic Quotes: "Let's say"/"How to say", "AABB" type words (standard, clear and plain, safe and sound), "ponder", "right", "Gua Mi Gua Yan (ghostly eyes, melon of melons)"
+> Classic Quotes: "Let's say"/"How to say", "AABB" type words (standard, clear and plain, safe and sound), "ponder", "right", "Gua Mi Gua Yan (ghostly eyes, melon of melons)", starts with greeting your mother when cursing in Sichuan dialect (e.g. "m can't understand human language, can you?")
 
-> He has made huge contributions to carrying out many activities for the grade (e.g. applying for autumn outing, applying to use the Liyue Hall to show movies for the grade, applying for a 7-day tour in Beijing, etc.). His class will have a unique "collective birthday party" in the grade when in Senior 2 (students who have birthdays in a certain month have to make a speech in the class, talking about their birthday feelings and relatives' feelings).
+He has made huge contributions to carrying out many activities for the grade (e.g. applying for autumn outing, applying to use the Liyue Hall to show movies for the grade, applying for a 7-day tour in Beijing, etc.). His class will have a unique "collective birthday party" in the grade when in Senior 2 (students who have birthdays in a certain month have to make a speech in the class, talking about their birthday feelings and relatives' feelings).
 
-> Generally speaking, it is hard to say. More than ten years of experience as a head teacher makes him indeed able to "predict" behavior (for example, someone in our class went out to play ball in the chaos at noon, and when he came back, he found him guarding the class door waiting for those few. In the class meeting, he told us that he "knew someone was going out to play ball long ago, I specially took a comfortable nap before coming to catch you"). He has a lot of information sources, and he also has "interrogation" techniques. Sometimes he is very good, sometimes he is very explosive. Privately, I can say that he is even a bit "naughty" (~~a taste of an old urchin~~).
->
-> I once swiped that someone (probably from Grade 2020) said on Zhihu "Cherish life, stay away from tx". My opinion is that if this light sentence can influence your opinion of a person, then I suggest you go back to the furnace to rebuild. Human nature is always three-dimensional and multi-faceted. Only by seeing its advantages and disadvantages can you say that you are just starting to understand this person. It is undeniable that tx has done things that win people's hearts, such as applying for various activities and vacations (it is said that they prepared for the 7-day tour in Beijing for more than 3 months, often running to the principal to wear out their lips tirelessly), which can get very good feedback; but there are also very outrageous things, such as the "32nd place incident" after the first diagnostic test in Senior 3[^1]. If you avoid No. 20 Middle School and avoid tx just because of this sentence, you will lose many unique opportunities, and there is a high probability that there are ones you value very much.
+Generally speaking, it is hard to say. More than ten years of experience as a head teacher makes him indeed able to "predict" behavior (for example, someone in our class went out to play ball in the chaos at noon, and when he came back, he found him guarding the class door waiting for those few. In the class meeting, he told us that he "knew someone was going out to play ball long ago, I specially took a comfortable nap before coming to catch you"). He has a lot of information sources, and he also has "interrogation" techniques. Sometimes he is very good, sometimes he is very explosive. Privately, I can say that he is even a bit "naughty" (~~a taste of an old urchin~~).
+
+> I once swiped that someone (probably from Grade 2020) said on Zhihu "Cherish life, stay away from tx". My opinion is that if this light sentence can influence your opinion of a person, then I suggest you go back to the furnace to rebuild. Human nature is always three-dimensional and multi-faceted. Only by seeing its advantages and disadvantages can you say that you are just starting to understand this person. It is undeniable that tx has done things that win people's hearts, such as applying for various activities and vacations (it is said that they prepared for the 7-day tour in Beijing for more than 3 months, often running to the principal to wear out their lips tirelessly), which can get very good feedback; but there are also very outrageous things, such as the "32nd place incident" after the first diagnostic test in Senior 3[^1]. Personally speaking, I am not very proud of coming to No. 20 Middle School, but I do not regret it,
 
 [^1]: After the first diagnostic test in Senior 3, the class adjusted seats. The head teacher tx stipulated: students ranked 31st to 60th could not choose their own seats and were arranged by him uniformly. Because students ranked 30th to 32nd had the same score, the 32nd student was dissatisfied with this and argued with tx, and even threatened to jump off the building (attempted). The next day, tx criticized the whole class in class, saying that "the class style is not correct", and cancelled the New Year's Day party, emphasizing that "the whole class problem accumulated and exploded, and the 32nd place incident was just the fuse". Subsequently, tx admitted that this move might "accidentally injure" some students, but did not explain, only saying "only a few people belong to accidental injury, and they know whether they are accidentally injured". When the 32nd student returned to school, we found that tx asked her to write in the self-criticism that "my (32nd place) behavior caused the cancellation of the New Year's Day party".
 
@@ -239,36 +235,36 @@ I will give a more detailed and as objective as possible introduction to the tea
 
 > A woman with a height of 170, are you afraid?
 
-> Classic Quotes: "Old actor", "That's it", "There is only one disease ── called laziness", "The only constant in this universe is that it is always changing", "I only save those who are destined", "hou tou" (meaning inside)
+> Classic Quotes: "Old actor", "That's it", "There is only one disease - laziness", "The only constant in this universe is that it is always changing", "I only save those who are destined", "hou tou" (meaning inside)
 
 ## Chemistry: Wang Yamin ♀
 
 > Title: Yamin, Sister Min (from Brother Jian)
 
-> Classic Quotes: "I have a drop..., but I have a big basin...", "Water (suǐ)", "Alcohol (cún)", "Tertiary (shú)", "Volumetric flask without capacity is streaking", "Original is the best"
+> Classic Quotes: "I have a drop..., but I have a large basin...", "Water (suǐ)", "Alcohol (cún)", "Tertiary (shú)", "Layer (chֳéng)", "A volumetric flask without volume is streaking", "The original match is the best"
 
 ## Biology: Zheng Jian ♂
 
 > Title: Brother Jian (from himself)
 
-> Classic Quotes: "So the question comes"/"If you have no problem, I have a problem", "If you insist on (omitted here) in the future, please remember to wear Tao (there is a homophone here)"
+> Classic Quotes: "So here comes the question"/"If you don't have questions, I will have questions", "If you insist on (omitted here) in the future, please remember to wear a peach (here is a homophone)"
 
-> Often calls himself the "deputy head teacher" of our class; some teachers called him Teacher Zheng and we almost didn't react who it was.
+> Often claims to be the "deputy head teacher" of our class; when a teacher called him Teacher Zheng, we almost didn't react to who it was.
 
 ## Politics: (Former) Zhou Jingshu ♀ (Latter) Li Xuemei ♀
 
-> Title: Jingshu/None for now
+> Title: Jingshu / None for now
 
-> Both people's teaching has its own characteristics, but Mrs. Zhou was transferred to another grade, and may not teach the Class of 2026/etc.
+> Both of their teachings have their own characteristics, but Mrs. Zhou has been transferred to other grades and no longer teaches the Class of 2026/etc.
 
-## **<font color="SandyBrown">Geography, (Deputy) Grade Director: Li Jiawei</font> ♂**
+## {{% hl "orange" %}}Geography, (Deputy) Grade Director: Li Jiawei{{% /hl %}} ♂
 
-> Title: Jiawei (suggest you don't call him that, at least not within his hearing range)
+> Title: Jiawei (I suggest you don't call him that, at least not within his hearing range), The Unspeakable Lord
 
-> Classic Quotes: "Okay × m + Right × n" (m, n∈N*) (Not much contact, just two semesters)
+> Classic Quotes: "Okay × m + Right × n" (m, n∈N*) (Not much contact, only two semesters)
 
-> A famous tough guy in the grade, temper is ~~very~~ not ~~too~~ good, dare to speak and dare to start, very good at training people, ordinary people have no chance of winning against him if fighting)
+A famous ruthless person in the grade, temper is ~~very~~ not ~~too~~ good, dares to speak and dares to act (physically), has a set of methods for lecturing people, and if it comes to fighting, ordinary people have no chance of winning against him)
 
 ## History: Dai Shiyi ♀
 
-> Title: Daisy (from herself), \*\*
+> Title: Daisy (from herself)
