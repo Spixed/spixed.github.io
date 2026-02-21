@@ -10,7 +10,6 @@ description: ''
 ---
 
 
-
 > Brief Introduction: Construction, renovation and some pieces of experience of this blog.
 
 <!--more-->
@@ -19,15 +18,18 @@ description: ''
 >
 > > 2024.2.18 22.13 补充：由于本文文字实在太多，作者决定本文不再编写英文版本，有兴趣者自行打开翻译。
 > >
-> > 25.5.3 16:45 update：Now I want to try again, and I'll do my utmost not to use DeepSeek /doge (well I used it at last)
+> > 2025.5.3 16:45 Update: Now I want to try again, striving not to use DeepSeek /doge
+> > Well, I used it anyway (
 
-# Ⅰ. Background
+## I. Background
 
 2023.8, I successfully stepped into high school life. After experiencing life in 2023.Q3 & Q4, I genuinely felt the teachers' ***interesting*** qualities (in all my years as a student, this was the first time I encountered teachers with so many catchphrases [manual/doge]). Then one day in Q4, I searched on Baidu and found a newcomer Q&A post about our school on Zhihu, where I also saw mentions of my teachers. However, I noticed that seniors' introductions of the teachers were quite perfunctory, thus sprouting the idea to create an "archive" for them. Around 14:00 on February 13, 2024, while surfing the Internet, I suddenly ~~had a momentary lapse of reason~~ got inspired, combined with my previously ~~long-cherished~~ well-brewed idea, and decided to start another blog.
 
 Unlike before, this marks my **first time** using the static site generator Hugo (link at bottom), my **first attempt** at modifying a relatively well-developed theme (modified version link at bottom, original version link [here](https://github.com/ThemeTony/hugo-theme-tony "ThemeTony/hugo-theme-tony - GitHub")), my **first time** writing articles with purely hand-coded Markdown, my **first time** hosting blog services via GitHub Repo & GitHub Pages... These countless "firsts" also became the driving force behind my determination to persist with this endeavor.
 
-# Ⅱ. Building
+> 26.2.15: Due to the original theme code being too smelly and long, maintenance was a disaster, so I abandoned the Tony theme and started building a new theme. The following text was heavily revised today to detail the construction process of the new theme.
+
+## II. Building
 
 > (The following section contains technical details only programmers would care about. Non-techies please scroll down quickly – this part will be lengthy. If you see the table of contents navigation on the left, click to jump to the next part)
 
@@ -41,97 +43,104 @@ Initially, considering that Vercel and Netlify-built sites are currently inacces
 
 > 2024.2.18 22:14 update: Probably won't make it today. Try again tomorrow.
 
-## (1.1) Installation - Traditional Method
+### (1.1) Installation - Traditional Method
 
-### 1. VSCode
+#### 1. VSCode
 
-> The main reasons for choosing it are: VS Code is truly lightweight – its disk space usage, memory consumption, and startup speed are on a completely different level compared to WebStorm. Secondly, since Hugo (the static site generator) handles most heavy lifting, writing articles doesn't require much coding but demands better Markdown support. Hence, VS Code is the optimal choice.
+   > The main reasons for choosing it are: VS Code is truly lightweight – its disk space usage, memory consumption, and startup speed are on a completely different level compared to WebStorm. Secondly, since Hugo (the static site generator) handles most heavy lifting, writing articles doesn't require much coding but demands better Markdown support. Hence, VS Code is the optimal choice.
 
-Official site: https://code.visualstudio.com
+   Official site: https://code.visualstudio.com
 
-Stable Windows 64-bit Admin-unsupported: https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
+   Stable Windows 64-bit Admin-unsupported: https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user
 
-Insiders official site: https://code.visualstudio.com/insiders/
+   Insiders official site: https://code.visualstudio.com/insiders/
 
-Insiders Windows 64-bit Admin-unsupported: https://code.visualstudio.com/sha/download?build=insider&os=win32-x64-user
+   Insiders Windows 64-bit Admin-unsupported: https://code.visualstudio.com/sha/download?build=insider&os=win32-x64-user
 
-> Rest assured to open – 1200% official latest version links.
->
-> Avoid Baidu searches – a single page of Baidu results is full of fake links. Unless you have my eagle-eyed discernment, better not use Baidu.
+   > Rest assured to open – 1200% official latest version links.
+   >
+   > Avoid Baidu searches – a single page of Baidu results is full of fake links. Unless you have my eagle-eyed discernment, better not use Baidu.
 
-After downloading, open the installer and just click Next mindlessly.
+   After downloading, open the installer and just click Next mindlessly.
 
-> **<font color="#dd0000">Author's Warm Reminder: NEVER modify the installation path! The provided installers don't support admin privileges, so don't even think about installing VS Code in C:\Program Files etc. Don't ask how I know – and even if you do, I'll never tell you I spent 10 minutes installing VSCode because of this...</font>**
+   > **{{< hl "orange" >}}Author's Warm Reminder: NEVER modify the installation path! The provided installers don't support admin privileges, so don't even think about installing VS Code in C:\Program Files etc. Don't ask how I know – and even if you do, I'll never tell you I spent 10 minutes installing VSCode because of this...{{< /hl >}}**
 
-After installation, launch VS Code and configure it.
+   26.2.15 14:22 Update: Nowadays, AI IDEs are blossoming everywhere. There are many kinds of IDEs on the market, but 90% are based on VSCode, so you can use other IDEs. The subsequent steps are basically the same, and some can even be done with AI help.
 
-Enter Extensions interface via the position shown below or using Ctrl+Shift+X shortcut:
+   After installation, launch VS Code and configure it.
 
-![The 5th button from top to bottom in the leftest activity bar of VSCode](/process/img-1.png)
+   Enter Extensions interface via the position shown below or using Ctrl+Shift+X shortcut:
 
-Install these extensions (copy-paste extension names into search box, or open links to install via official site):
+   ![The 5th button from top to bottom in the leftest activity bar of VSCode](/process/img-1.png)
 
-> Not including extension icons here. Recommend installing directly through links. Verify VS Code official domain: visualstudio.com
+   Install these extensions (copy-paste extension names into search box, or open links to install via official site):
 
-| Extension Name | Link |
-|-----|-----|
-|Markdown All in One|https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one|
-|Markdown Preview Github Styling|https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles|
-|TOML Language Support|https://marketplace.visualstudio.com/items?itemName=be5invis.toml|
+   > Not including extension icons here. Recommend installing directly through links. Verify VS Code official domain: visualstudio.com
 
-VSCode installation complete.
+   | Extension Name | Link |
+   |-----|-----|
+   |Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code|https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans|
+   |Markdown All in One|https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one|
+   |Markdown Preview Github Styling|https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles|
+   |Even Better TOML|https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml|
 
-### 2. Git
+   > After installing the first Simplified Chinese Language Pack, you will be prompted to restart VSCode. It is recommended to restart before proceeding with the next installation.
+
+   > 26.2.15 Update: When typing this text, the author is using Trae, an editor that natively supports Chinese and Markdown file preview, so only the Even Better TOML plugin needs to be installed for a better configuration file editing experience.
+
+   VSCode installation complete.
+
+#### 2. Git
 
    > Since I'm using GitHub for hosting, configuring Git is essential for convenient local-cloud file synchronization. Git itself is a command-heavy and bewildering CLI program, so this article will only cover partial commands. If issues arise, please don't ask me – chances are I can't solve them either.
 
-This guide is for Windows only. [macOS](https://git-scm.com/download/mac) & [Linux/Unix](https://git-scm.com/download/linux) users click respective links for official installation guides.
+   This guide is for Windows only. [macOS](https://git-scm.com/download/mac) & [Linux/Unix](https://git-scm.com/download/linux) users click respective links for official installation guides.
 
-Git official site: https://git-scm.com/
+   Git official site: https://git-scm.com/
 
-Windows download page: https://git-scm.com/download/win
+   Windows download page: https://git-scm.com/download/win
 
-Windows v2.43.0 64-bit: https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-64-bit.exe
+   Windows v2.43.0 64-bit: https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-64-bit.exe
 
-After downloading, click Next once to accept the license, choose installation path, then follow recommended settings shown in images below (you can also keep defaults except for the first image). Continue clicking Next. ![img-2](/process/img-2.png)![img-3](/process/img-3.png)![img-4](/process/img-4.png)
+   After downloading, click Next once to accept the license, choose installation path, then follow recommended settings shown in images below (you can also keep defaults except for the first image). Continue clicking Next. ![img-2](/process/img-2.png)![img-3](/process/img-3.png)![img-4](/process/img-4.png)
 
-When installation completes, remember to uncheck both "Launch Git Bash" and "View Release Notes", then click Finish. Next steps:
+   When installation completes, remember to uncheck both "Launch Git Bash" and "View Release Notes", then click Finish. Next steps:
 
-1. Reboot your PC (or restart "Windows Explorer" via Task Manager) to refresh PATH environment variable
-2. Open PowerShell and run `git --version`
-3. If version info appears (git version 2.43.0.windows.1), Git is successfully installed.
+   1. Reboot your PC (or restart "Windows Explorer" via Task Manager) to refresh PATH environment variable
+   2. Open PowerShell and run `git --version`
+   3. If version info appears (git version 2.43.0.windows.1), Git is successfully installed.
 
-### 3. hugo
+#### 3. hugo
 
-> **<font color="#dd0000">Author's Warm Reminder: MUST download hugo_extended version, otherwise many Hugo features will be unavailable! I actually got this right, the red text is just to warn you all.</font>**
+   > **{{< hl "orange" >}}Author's Warm Reminder: MUST download hugo_extended version, otherwise many Hugo features will be unavailable! I actually got this right, the red text is just to warn you all.{{< /hl >}}**
+   >
+   > Also, the following operations involve accessing GitHub. Consider "scientific internet access" based on your local network conditions.
 
-> Also, the following operations involve accessing GitHub. Consider "scientific internet access" based on your local network conditions.
+   GitHub Releases: https://github.com/gohugoio/hugo/releases/
 
-GitHub Releases: https://github.com/gohugoio/hugo/releases/
+   0.155.3 https://github.com/gohugoio/hugo/releases/download/v0.155.3/hugo_extended_0.155.3_windows-amd64.zip
 
-0.147.0 https://github.com/gohugoio/hugo/releases/download/v0.147.0/hugo_extended_0.147.0_windows-amd64.zip
+   > Due to limited time/energy, my current theme (as of 2026.2.15) only guarantees compatibility with Hugo Extended v0.151.0 ~ 0.155.3. For issues, wait for my random free time/post-college-entrance-exam availability.
 
-> Due to limited time/energy, my modified theme (as of 25.5.18) only guarantees compatibility with Hugo Extended 0.147.0. For issues, wait for my random free time/post-college-entrance-exam availability.
+   After downloading, unzip to a comfortable location. Add this path to system PATH, reboot or restart Explorer to refresh PATH. Open PowerShell (abbreviated as ps later) and run `hugo help`. If help content displays normally, installation succeeds.
 
-After downloading, unzip to a comfortable location. Add this path to system PATH, reboot or restart Explorer to refresh PATH. Open PowerShell (abbreviated as PS later) and run `hugo help`. If help content displays normally, installation succeeds.
+### (1.2) Installation - Non-Traditional Method
 
-## (1.2) Installation - Non-Traditional Method
+   When I want to use a package manager on Windows, how would you respond, dear reader? [manual/doge]
 
-When I want to use a package manager on Windows, how would you respond, dear reader? [manual/doge]
+   Here we'll use Chocolatey as an example. While winget and scoop are similar, based on official documentation, I personally find Chocolatey the most fragrant option.
 
-Here we'll use Chocolatey as an example. While winget and scoop are similar, based on official documentation, I personally find Chocolatey the most fragrant option.
-
-Open PowerShell **as Administrator** and run:
+   Open PowerShell **as Administrator** and run:
 
    > The following operations involve accessing overseas services. If commands hang, prepare for "scientific internet access".
 
    ```powershell
-   Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+      Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
    ```
 
-After execution, verify installation with `choco -V` (may need to reopen PowerShell).
+   After execution, verify installation with `choco -V` (may need to reopen PowerShell).
 
-Proceed with:
+   Proceed with:
 
    ```powershell
    choco install -y vscode git hugo-extended
@@ -139,341 +148,147 @@ Proceed with:
 
    Wait for completion.
 
- Well, VS Code still requires manual configuration post-installation.
+   Of course, VS Code still requires manual configuration post-installation.
 
-So... does this approach give you *that* particular feeling? [manual/doge]
+   So... does this approach give you *that* particular feeling? {{< qq-emoji "菜汪" >}}
 
-## (2) Creating the Blog
+### (2) (Optional) Configure Comment Section
 
-   > 2024.2.16 1:29: Having written here, author's tired, will continue another day
-   >
-   > Also, looks like this section's going to be ridiculously long... Maybe I should split it into two files, then modify the theme to support language switching?
-   >
-   > If I really do that, that'd be another mountain of work...
-   >
-   > Calling it a night for now, time to commit. 886
+  Currently, the Polymer theme only supports the Waline comment system.
+  
+  [Waline](https://waline.js.org) is a concise, safe comment system. Its features include fast, truly safe, Markdown syntax support, lightweight and easy to use, free deployment, multiple deployment methods and storage service support, etc.
+  
+  As of 26.2.15, the server and database can be deployed for free on Vercel. Please refer to [here](https://waline.js.org/guide/get-started/) for deployment tutorials or watch [bilibili video](https://www.bilibili.com/video/BV1Ft4y1A73f). The official website is very detailed, so I won't repeat it here. After deployment is complete, please remember your comment system URL (`https://waline.yourdomain.com/`), which will be needed for the blog configuration file later.
 
-   > 2024.2.16 9:35: Fully recharged and back in battle
->
-   > 2025.5.10 17:02 update: Well, language switching has long been supported (see theme commit). The current i18n mode used by this blog consists of separate Chinese and English source files, combined with manual language switching via the theme.
+  Of course, you can also choose not to enable the comment section, just modify one line of configuration when introducing the configuration file later.
 
-### 1. Local Setup
+### (3) Create blog
 
-With the theme already modified, the workload isn't that heavy. Find a location for your blog folder (no need to create it manually), then run in PowerShell:
+#### 1. Local Build
 
-```powershell
-hugo new site blog
-```
+   Find a location for your blog folder (no need to create it manually), then run in ps:
 
-> The site name after `hugo new site` (official term) can be replaced, and all subsequent "blog" directories will be replaced with your input.
-
-Then ignore Hugo's output in PS, directly cd into the blog folder and run:
-
-```powershell
-git init
-git submodule add https://github.com/Spixed/hugo-theme-tony.git themes/tony
-```
-
-> This initializes Git for the folder and adds theme ThemeTony as a submodule. This operation involves accessing GitHub - if it's slow or errors occur, remember to enable proxy.
-
-> Actually, this step can already be done in VSCode. Right-click the folder and select "Open with VSCode", or open VSCode, File > Open Folder, or open VSCode, press Ctrl + K, wait for loading, then Ctrl+Shift + \` to summon the terminal (default is PowerShell, or the newer pwsh)
-
-   <font color="#dd0000">
-**Author's Warm Reminder: If enabling proxy, MUST follow these steps first!!!** (Win10+ example, can skip step 1 if using Clash series without changing system proxy address):
-
-1. Open Settings > Network & Internet > Proxy, find "Use a proxy server" under Manual proxy, click Edit on the right, copy IP and port
-
-2. Summon PS, run:
-
-    ```powershell
-    git config --global http.proxy http://127.0.0.1:7890
-    git config --global https.proxy http://127.0.0.1:7890
-    ```
-
-    > Change the address to http://your_ip:your_port. If using Clash series without modifications, run directly. To disable proxy:
-
-    ```powershell
-    git config --global --unset http.proxy
-    git config --global --unset https.proxy
-    ```
-
-Don't ask why I'm giving red heart warnings again, just don't ask...
-
-   </font>
-
-Now we officially need VSCode's assistance. Open VSCode to the blog folder, locate `hugo.toml` in the root directory, and configure it as follows (just copy-paste and modify the [your_balabala] placeholders):
-
-> If the following all-English content bothers you, you can refer to `themes/tony/configI18N/config.zh.toml` for corresponding [your_balabala] positions.
-
-   ```toml
-########################################
-# Site configuration
-# Icon: https://RemixIcon.com/
-
-baseURL = "[your_blog_root_URL]"
-title = "[your_blog_title]"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"
-hasCJKLanguage = false
-
-# Theme selection
-theme = "tony"
-
-# `hugo new` text editor for automatically opening new articles
-newContentEditor = ""
-
-# Summary word limit
-summaryLength = 35
-
-# Whether to enable GitHub style Emoji writing
-enableEmoji = true
-
-# Number of articles per page
-paginate = 39
-
-# author information
-[author]
-    # First name
-    name = "[your_name]"
-    # Mailbox
-    email = "[your_email]"
-    # Motto or introduction
-    motto = "[your_motto]"
-    # Avatar
-    avatar = "/site/avatar.png"
-    # Website (default: baseURL)
-    website = "/"
-    # GitHub
-    github = "[your_github_homepage]"
-
-# Page category
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-
-########################################
-# Menu configuration
-
-# The configuration instructions in the menu are as follows:
-# url link address
-# name text (leave blank ("") no)
-# weight
-
-[menu]
-    # Menu Bar
-    [[menu.main]]
-        url = "/"
-        name = "Home"
-        weight = 1
-    [[menu.main]]
-        url = "/categories"
-        name = "Categories"
-        weight = 2
-    [[menu.main]]
-        url = "/tags"
-        name = "Tags"
-        weight = 3
-    [[menu.main]]
-        url = "/about/"
-        name = "About"
-        weight = 4
-
-[[params.pinned]]
-    title = "[your_homepage_title]"
-    name = "[your(author's)_name]"
-    icon = "ri-code-box-line"
-    url = "/about#about-me"
-
-# Markdown renderer
-[markup]
-    defaultMarkdownHandler = "goldmark"
-    [markup.goldmark]
-        [markup.goldmark.extensions]
-            definitionList = true
-            footnote = true
-            linkify = true
-            strikethrough = true
-            table = true
-            taskList = true
-            typographer = false
-        [markup.goldmark.parser]
-            attribute = true
-            autoHeadingID = true
-            autoHeadingIDType = "github"
-        [markup.goldmark.renderer]
-            hardWraps = true
-            unsafe = true
-            xHTML = false
-    [markup.highlight]
-        codeFences = true
-        guessSyntax = true
-        lineNos = true
-        lineNumbersInTable = false
-        noClasses = true
-        style = "onedark"
-    [markup.tableOfContents]
-        startLevel = 2
-        endLevel = 6
-        ordered = true
-
-# Hugo output control
-[outputs]
-    page = ["HTML"]
-    home = ["HTML", "SectionsRSS", "SectionsAtom"]
-    section = ["HTML"]
-    taxonomy = ["HTML"]
-
-# Atom file format media type
-[mediaTypes."application/atom+xml"]
-    suffixes = ["xml"]
-
-# Tony theme custom Atom template from MemE
-[outputFormats.SectionsAtom]
-    mediaType = "application/atom+xml"
-    baseName = "atom"
-
-# Tony theme customized RSS template from MemE
-[outputFormats.SectionsRSS]
-    mediaType = "application/rss+xml"
-    baseName = "rss"
-
-# RSS & Atom Article limit
-[services.rss]
-    limit = -1
-
-########################################
-# Theme configuration
-
-[params]
-
-    #####################################
-    # Site Information
-
-    # Site LOGO
-    siteLogo = "/site/logo.png"
-
-    # Site description
-    siteDescription = "[your_site_description]"
-
-    #####################################
-    # Copyright Protection
-
-    # Whether to open
-    enableCopyright = true
-
-    copyrightName = "CC BY-NC 4.0"
-    copyrightLink = "https://creativecommons.org/licenses/by-nc/4.0/"
-
-    #####################################
-    # table of Contents
-
-    # Whether to open (global settings)
-    enableToc = true
-
-    #####################################
-    # Reading progress bar
-
-    # Whether to open (global settings)
-    enableReadingBar = true
-
-    #####################################
-    # Article up and down page
-
-    # Whether to open (global settings)
-    enableAdjacentPost = true
-
-    #####################################
-    # Whether to show the link between Hugo and Tony
-
-    displayPoweredBy = true
-
-    #####################################
-    # Markdown Related
-
-    # Open link in new tab page?
-    hrefTargetBlank = true
-
-    #####################################
-    # Comments
-
-    # Whether to open (global settings)
-    enableComments = false
-    # Description: "comments" in the front Matter of the article
-    # Has priority over here
-
-    # ## Valine
-    # enableValine = false
-    # valineVersion = "latest"
-    # valineAppId = ""
-    # valineAppKey = ""
-    # valinePlaceholder = ""
-    # valinePath = ""
-    # valineAvatar = "mm"
-    # valineMeta = ["nick", "mail", "link"]
-    # valinePageSize = 15
-    # valineVisitor = true
-    # valineHighlight = true
-    # avatarForce = true
-    # valineRecordIP = true
-    # valineServerURLs = ""
-    # valineEmojiCDN = ""
-    # valineEmojiMaps = """"""
-    # valineEnableQQ = false
-    # valineRequiredFields = []
-    # Description: https://valine.js.org/
-
-    ## Waline
-    enableWaline = false
-    walineServerURL = ""
-
-    #####################################
-    # Google Analytics
-
-    enableGoogleAnalytics = false
-
-    # Type of tracking code
-    trackingCodeType = ""
-    # Description: gtag or analytics
-
-    trackingID = ""
-
-    #####################################
-    # Google Site Verification
-
-    googleSiteVerification = ""
-
-
-    #####################################
-    # Baidu push
-
-    enableBaiduPush = true
+   ```powershell
+   hugo new site blog
    ```
 
-   After saving with Ctrl+S, press Ctrl+Shift+\` to open VSCode's terminal, run `hugo server -D` for a test. Open your browser to localhost:1313 (or 127.0.0.1:1313) - if the page displays properly (meaning you find it aesthetically pleasing with no visual inconsistencies), then your local setup is complete.
+   > The site name after `hugo new site` (official term) can be replaced, and all subsequent `blog` directories will be replaced with your input.
 
-### 2. Uploading to GitHub
+   Then ignore Hugo's output in ps, directly cd into the blog folder and run:
 
-> From this step onward, you might need to engage in "extracurricular learning" - make sure your "learning budget" is sufficient
-> manual/doge
+   ```powershell
+   git init
+   git submodule add https://github.com/Spixed/polymer.git themes/polymer
+   ```
 
-  Visit [GitHub](https://github.com). If you have an account, log in. Otherwise, refer to [this guide](https://zhuanlan.zhihu.com/p/658727572) (it's too comprehensive for me to repeat/doge).
+   > This initializes Git for the folder and adds theme Polymer as a submodule. This operation involves accessing GitHub - if it's slow or errors occur, remember to enable proxy.
+   >
+   > Actually, this step can already be done in VSCode. Right-click the folder and select "Open with VSCode", or open VSCode, File > Open Folder, or open VSCode, press `Ctrl + K`, wait for loading, then `Ctrl + Shift + \\` to summon the terminal (default is powershell, or the newer pwsh)
 
-  Create a new repository. If you plan to use https://[username].github.io as your blog's baseURL, name the repository [username].github.io (replace [username] with your GitHub username). Then return to VSCode and set your user signature in the terminal:
+  {{< hl "orange" >}}
+   **Author's Warm Reminder: If enabling proxy, please use virtual network card mode; if using system proxy, please follow these steps** (Win10+ example, can skip step 1 if using Clash series without changing system proxy address):
+
+   1. Open Settings > Network & Internet > Proxy, find "Use a proxy server" under Manual proxy, click Edit on the right, copy IP and port
+
+   2. Summon ps, run:
+
+      ```powershell
+      git config --global http.proxy http://127.0.0.1:7890
+      git config --global https.proxy http://127.0.0.1:7890
+      ```
+
+      > Change the address to `http://your_ip:your_port`. If using Clash series without modifications, run directly. To disable proxy:
+
+      ```powershell
+      git config --global --unset http.proxy
+      git config --global --unset https.proxy
+      ```
+
+   {{< /hl >}}
+
+   Now we officially need VSCode's assistance. Open VSCode to the blog folder, locate `hugo.toml` in the root directory, and configure it as follows:
+
+   ```toml
+baseURL = "your_blog_url" # Your blog homepage URL
+languageCode = "en" # Language used by the blog, "en" / "zh"
+title = "Polymer Grid" # Blog title
+theme = "polymer" # Theme, must be set to this
+
+[languages] # Multi-language configuration, no need to change if not necessary
+  [languages.en]
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 1
+  [languages.zh]
+    languageName = '中文'
+    contentDir = 'content/zh'
+    weight = 2
+
+[params]
+  description = "A Digital Brutalism Theme" # Blog description, generally not important
+  math = true # Whether to enable support for mathematical formulas
+  mathEngine = "mathjax" # Math formula engine, "mathjax" / "katex"
+  favicon = "https://api.dicebear.com/7.x/bottts/png?seed=Polymer" # Blog favicon, square image recommended
+
+[params.waline]
+  enable = true # Whether to enable waline comment system
+  serverURL = "your_waline_server_url" # Set waline server address, no need to set if not enabled
+
+[taxonomies]
+  category = "categories" # Category
+  tag = "tags" # Tag
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Whether to enable HTML tag rendering. Enabling may cause security issues, not enabling prevents HTML tag rendering
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough] # Configure Passthrough extension to use LaTeX in Markdown. Must be configured as follows if math is enabled.
+        enable = true # Whether to enable Passthrough extension
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\\[', '\\]']] # Block formula delimiter
+          inline = [['$', '$'], ['\\(', '\\)']] # Inline formula delimiter
+   ```
+
+   Then go to `data/author.toml` file and edit author information. This blog theme supports multiple authors, and each author needs to be configured in this file.
+
+   ```toml
+   [alex] # Author configuration item, alex is Author ID, customizable, unique
+    name = "Alex Bold" # Author name
+    nickname = "Alex" # Author nickname
+    avatar = "https://api.dicebear.com/7.x/avataaars/png?seed=A&size=128" # Author avatar, square image recommended
+    bio = { en = "A digital explorer loving brutalist designs.", zh = "热爱粗野主义设计的数字探索者。" } # Author motto, write one for English and one for Chinese
+    github = "https://github.com/example" # Author GitHub account
+    website = "https://example.com" # Author personal website
+    email = "alex@example.com" # Author email
+    weight = 1
+   ```
+
+   After saving with Ctrl + S, press `Ctrl + Shift + \\` to summon VSCode's terminal, run `hugo server -D` for a test. Open your browser to localhost:1313 (or 127.0.0.1:1313) - if the page displays properly (meaning you find it aesthetically pleasing with no visual inconsistencies), then your local setup is complete.
+
+#### 2. Uploading to GitHub
+
+   > From this step onward, you might need to engage in "extracurricular learning" - make sure your "learning budget" is sufficient
+   > manual/doge
+
+   Visit [GitHub](https://github.com). If you have an account, log in. Otherwise, refer to [this guide](https://zhuanlan.zhihu.com/p/658727572) (it's too comprehensive for me to repeat {{< qq-emoji "菜汪" >}})
+
+   Create a new repository. If you plan to use https://[username].github.io as your blog's baseURL, name the repository [username].github.io (replace [username] with your GitHub username). Then return to VSCode and set your user signature in the terminal:
 
    ```powershell
    git config --global user.name [username]
    git config --global user.email [email]
    ```
 
-  While the username and email set here don't directly affect git push operations, the author still recommends keeping them consistent with your GitHub account.
+   While the username and email set here don't directly affect git push operations, the author still recommends keeping them consistent with your GitHub account.
 
-  Then return to the hugo.toml file editor, replace [your_blog_root_URL] with [username].spixed.io and [your_github_homepage] with https://github.com/[username], then save.
+   Then return to the hugo.toml file editor, replace [your_blog_root_URL] and [your_github_homepage] with [username].spixed.io and https://github.com/[username], then save.
 
-  Create a new file at this path: ./.github/workflows/hugo.yaml, open it, copy the following text into the file, and save:
+   Create a new file at this path: ./.github/workflows/hugo.yaml, open it, copy the following text into the file, and save.
 
    ```yaml
-   # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: My Blog
+  # Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -506,7 +321,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.147.0
+      HUGO_VERSION: 0.155.3
     steps:
       - name: Install Hugo CLI
         run: |
@@ -521,21 +336,21 @@ jobs:
           fetch-depth: 0
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
         env:
-          # For maximum backward compatibility with Hugo modules
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
+          TZ: America/Los_Angeles
         run: |
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
@@ -549,10 +364,10 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
    ```
 
-   Then turn back to the terminal to run:
+   Then return to the terminal and run:
 
    ```powershell
    git add .
@@ -562,115 +377,4 @@ jobs:
    git push -u origin main
    ```
 
-> When running the final command for the first time, you'll be prompted for login credentials. Enter the **username** and **password** you set when registering your GitHub account, then confirm. Subsequent git push commands won't require login.
-
-  Return to GitHub, open your repository settings (https://github.com/[username]/[username].github.io/settings/pages), locate the Build and deployment > Source section, and switch from "Deploy from a branch" to "GitHub Actions". Nothing else required. Navigate to Actions (https://github.com/[username]/[username].github.io/actions/) where you'll see a workflow running. When the yellow dot turns green, visit https://[username].github.io. If you see the same page as when running `hugo server -D`, congratulations - your long journey is nearly complete.
-
-<!-- ... existing content ... -->
-
-### 3. Creating New Posts
-
-For the quick-start version:
-
-Return to VSCode and run in terminal:
-
-```powershell
-hugo new content post/[filename].md
-```
-
-Replace [filename] with your desired Markdown filename. Now comes free-form writing time.
-
-For readers unfamiliar with Markdown, here are two basic tutorials:
-
-- **(Recommended) GitHub Flavored Markdown (GFM) Chinese tutorial:** https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-- Friendly domestic netizen version: https://www.jianshu.com/p/ed47397774c4
-
-> Author's Warm Reminder without marking in red: To make posts visible on GitHub Pages, remember to change `draft = true` to `draft = false` in the front matter.
-
-Next, regular operations apply. While you can use CLI to upload files to GitHub, I recommend using VSCode's source control functionality. This graphical approach simplifies the process - no need to type commands every time.
-
-Find the source control icon (3rd from top in left activity bar) or press Ctrl + Shift + G. When we previously used Git to upload our local source codes to GitHub, VSCode itself has already completed all the preparation. You'll see 2 Git projects with 2 Commit buttons like this:
-
-![img-5](/process/img-5.png)
-
-   Only use the first (blog) project for post uploads. The theme project (from previous `git submodule add`) can indeed be modified, but modifying it is useless for generating articles and you have no access to commit your changes directly to this repo on GitHub.
-
-After saving your post, open the Git interface, press Commit, and you'll see this pop-up window:
-
-   ![img-6](/process/img-6.png)
-
-   Click "Yes" if there are no special circumstances. (Why don't choose "Always" is that you can't control it well when meeting something wrong. Otherwise, select "Always" if you're feeling adventurous.) After that, the local Git project is committed. Click the sync button to push changes to GitHub.
-
-Tutorial complete!
-
-# III. Author's Free Discussion
-
-> Casual talk about the blog's development
-
-Creating the dark mode theme actually took me an entire afternoon (17:00-22:00 during Spring Festival, though \_one and a half\_ hours weren't coding /doge). Obtaining a free domain has been another challenge - still pending as of 2024.2.18 21:22.
-
-Recently learned Netlify is actually accessible in China. Planning to create a backup mirror there, though Netlify-generated domains are quite cumbersome. Any domain donations welcome? /doge
-
-During js.org domain application, I accidentally wiped source code using `git rm` without checking directory. Luckily hadn't pushed changes - close call!
-
-Now about the theme itself...
-
-## 1. About Articles
-
-In reality, articles can be generated not only in the `content/post` directory, but also in other locations in the `content/`. For instance, the original theme author recommends creating `content/about/index.md` during local testing.
-
-Speaking of `index.md`, those familiar with web development know that placing `index.html`/`index.php` in a directory allows direct access via the path without specifying the filename. Hugo adopts the same approach (essentially converting MD to HTML with matching names, so as the same above). Creating `index.md` in any folder makes the article accessible through the folder path directly.
-
-You might have noticed that `.md` files generated via `hugo new content` start with five lines - three `+` symbols enclosing Front Matter parameters. Beyond the basic three parameters (title, date, draft), several others exist:
-
-| Item | Function | Example |
-| :--- | :--- | :--- |
-| title | Article title | `title = "Hugo Theme Tony Documentation"` |
-| date | Publish date | `date = 2020-05-07T09:51:27+08:00` |
-| draft | Draft status | `draft = false` |
-| keywords | SEO keywords | `keywords = ["theme migration"]` |
-| categories | Categories | `categories = ["blog"]` |
-| tags | Tags | `tags = ["blog"]` |
-| noclick | Disable clicking (mini-notes) | `notclick = false` |
-| categoryLink | Category link | `categoryLink = "/"` |
-| toc | Table of Contents | `toc = true` |
-| buy<br/>buyLink<br/>buyName<br/>buyInfo<br/>buyImage<br/>buyButtonText | Purchase links | `buyLink = "https://htony.js.org"<br/>buyName = "hugo-theme-tony"<br/>buyInfo = "The Hugo version of WP-Theme-Tony"<br/>buyImage = "/images/t.jpg"<br/>buyButtonText = " Official Site "` |
-| thumbnail | Thumbnail | `thumbnail = "https://cdn.jsdelivr.net/img.jpg"` |
-| weight | Sorting weight | `weight = 2` |
-| adjacentPost | Previous/Next navigation | `adjacentPost = true` |
-
-You can customize Front Matter per article, or modify the template in `/archetypes/default.md` for global settings.
-
-> Author's Warm Reminder without marking in red: Use TOML syntax (`key = value`) instead of YAML (`key: value`) in Front Matter.
-
-## 2. Theme Modifications
-
-The original theme was archived on 2022.07.14, remaining unmaintained for 1.5 years. On 2024.2.13, I forked the original repo and quickly made some initial modifications. After accidentally deleting the repository, I re-forked one and made more modifications, gradually changing to what it is now.
-
-I rebuilt it with key modifications:
-
-- Added dark mode manual toggle
-
-- Updated Waline integration with latest version support and fixed emoji scaling in Waline via layout adjustments
-
-- Externalized logo/avatar paths for easier customization
-
-- Optimized the ToC on the left area of article pages
-
-Feel free to contribute via Issues/PRs! As a GitHub newbie, I welcome suggestions on maintaining contributors list and community standards.
-
-## 3. Waline Comment System
-
-The theme supports three comment systems:
-
-1. **Utterances**: GitHub Discussions-based (limited in China)
-2. **Valine**: No backend needed (LeanCloud storage only)
-3. **Waline** (chosen): Feature-rich successor supporting multiple databases
-
-I originally deployed on Deta.space (with built-in storage). But later I migrated to Vercel + LeanCloud International + Custom Domain after Deta.space's `sunset` in 2024.
-
-## 4. Epilogue
-
-I never anticipated spending so many days writing this post! Finalized at 22:19 on 2024.02.18. Special thanks to readers making it this far - feel free to comment below (account registration appreciated!).
-
-> 2024.2.19 8:37 update: Successfully registered is-a.dev domain last night at 23:34. Surprisingly bypassed China Mobile's GitHub Pages blocking via custom domain, likely resolving DNS pollution issues. Probably won't deploy on Netlify after all.
+   > When running the last command above for the first time, you will be prompted to enter your account and password. Please enter the **username** and **password** you set when registering your GitHub account, then confirm. You will not be asked to log in again when running git push in the future.

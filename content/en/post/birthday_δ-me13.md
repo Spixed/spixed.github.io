@@ -104,7 +104,7 @@ I heard countless questions, interrogations, rhetorical questions, and doubts: W
 
 Just because life always returns to death—that final ending that life cannot shake—does that mean life has no meaning...? Someone desperately wanted to end a meaningless life; he was unwilling to fail again, a failure of not reaching the goal. Even if the destination he reached with smooth sailing was merely a lonely island of sorrow and regret.
 
-But every life shares a common ending. Therefore, all the complex choices in the process of life can be counted as meaning. Finding a goal in life counts as a meaning. Resisting meaning is the conspiracy under the umbrella of "meaninglessness." Moreover, this meaning is not about mere interest or benefit.
+But every life shares a common ending. Therefore, all the complex choices in the process of life can be counted as meaning. Finding a goal in life counts as a meaning. Resisting meaning is the conspiracy under the umbrella of "meaninglessness." Furthermore, this import is not of semantics or lucre.
 
 No matter how mythology and science discuss life—the meaning of life lies in— δ-me13, in the process of solving for the self.
 
