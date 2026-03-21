@@ -87,6 +87,46 @@
   "birthday_spixed": {
     "meme.png": "birthday_spixed/meme.png"
   },
+  "sudoku": {
+    "__next._tree.txt": "sudoku/__next._tree.txt",
+    "__next._head.txt": "sudoku/__next._head.txt",
+    "index.html": "sudoku/index.html",
+    "__next._full.txt": "sudoku/__next._full.txt",
+    "__next._index.txt": "sudoku/__next._index.txt",
+    "index.txt": "sudoku/index.txt",
+    "404.html": "sudoku/404.html",
+    "__next.__PAGE__.txt": "sudoku/__next.__PAGE__.txt",
+    "_not-found.html": "sudoku/_not-found.html",
+    "_not-found.txt": "sudoku/_not-found.txt",
+    "_next": {
+      "EzfpG-nQHRMXJvNleh88F": {},
+      "static": {
+        "chunks": {
+          "03~yq9q893hmn.js": "sudoku/_next/static/chunks/03~yq9q893hmn.js",
+          "0-fh9o9gccksm.js": "sudoku/_next/static/chunks/0-fh9o9gccksm.js",
+          "11js82n9r446..js": "sudoku/_next/static/chunks/11js82n9r446..js",
+          "turbopack-16d~k_1nust0u.js": "sudoku/_next/static/chunks/turbopack-16d~k_1nust0u.js",
+          "0-c~h0x1r6mjt.css": "sudoku/_next/static/chunks/0-c~h0x1r6mjt.css",
+          "0~exgko749cmf.js": "sudoku/_next/static/chunks/0~exgko749cmf.js",
+          "0aes2sftof9ah.js": "sudoku/_next/static/chunks/0aes2sftof9ah.js",
+          "15epe4q82g0kx.js": "sudoku/_next/static/chunks/15epe4q82g0kx.js"
+        },
+        "EzfpG-nQHRMXJvNleh88F": {
+          "_ssgManifest.js": "sudoku/_next/static/EzfpG-nQHRMXJvNleh88F/_ssgManifest.js",
+          "_clientMiddlewareManifest.js": "sudoku/_next/static/EzfpG-nQHRMXJvNleh88F/_clientMiddlewareManifest.js",
+          "_buildManifest.js": "sudoku/_next/static/EzfpG-nQHRMXJvNleh88F/_buildManifest.js"
+        }
+      }
+    },
+    "_not-found": {
+      "__next._tree.txt": "sudoku/_not-found/__next._tree.txt",
+      "__next._head.txt": "sudoku/_not-found/__next._head.txt",
+      "__next._full.txt": "sudoku/_not-found/__next._full.txt",
+      "__next._index.txt": "sudoku/_not-found/__next._index.txt",
+      "__next._not-found.txt": "sudoku/_not-found/__next._not-found.txt",
+      "__next._not-found.__PAGE__.txt": "sudoku/_not-found/__next._not-found.__PAGE__.txt"
+    }
+  },
   "site": {
     "spixed.png": "site/spixed.png",
     "hetx.jpg": "site/hetx.jpg",
