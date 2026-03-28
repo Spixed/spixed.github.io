@@ -99,22 +99,22 @@
     "_not-found.html": "sudoku/_not-found.html",
     "_not-found.txt": "sudoku/_not-found.txt",
     "_next": {
-      "66lWRsSA3YmPYCYUcqUR6": {},
+      "urxVzjpdVrlFOOsCJWT82": {},
       "static": {
-        "66lWRsSA3YmPYCYUcqUR6": {
-          "_ssgManifest.js": "sudoku/_next/static/66lWRsSA3YmPYCYUcqUR6/_ssgManifest.js",
-          "_clientMiddlewareManifest.js": "sudoku/_next/static/66lWRsSA3YmPYCYUcqUR6/_clientMiddlewareManifest.js",
-          "_buildManifest.js": "sudoku/_next/static/66lWRsSA3YmPYCYUcqUR6/_buildManifest.js"
+        "urxVzjpdVrlFOOsCJWT82": {
+          "_ssgManifest.js": "sudoku/_next/static/urxVzjpdVrlFOOsCJWT82/_ssgManifest.js",
+          "_clientMiddlewareManifest.js": "sudoku/_next/static/urxVzjpdVrlFOOsCJWT82/_clientMiddlewareManifest.js",
+          "_buildManifest.js": "sudoku/_next/static/urxVzjpdVrlFOOsCJWT82/_buildManifest.js"
         },
         "chunks": {
+          "0~h9q65dbqzqc.js": "sudoku/_next/static/chunks/0~h9q65dbqzqc.js",
           "03~yq9q893hmn.js": "sudoku/_next/static/chunks/03~yq9q893hmn.js",
-          "0-fh9o9gccksm.js": "sudoku/_next/static/chunks/0-fh9o9gccksm.js",
-          "0ntivxff7nvw~.js": "sudoku/_next/static/chunks/0ntivxff7nvw~.js",
-          "11js82n9r446..js": "sudoku/_next/static/chunks/11js82n9r446..js",
-          "0-c~h0x1r6mjt.css": "sudoku/_next/static/chunks/0-c~h0x1r6mjt.css",
-          "0aes2sftof9ah.js": "sudoku/_next/static/chunks/0aes2sftof9ah.js",
-          "15epe4q82g0kx.js": "sudoku/_next/static/chunks/15epe4q82g0kx.js",
-          "turbopack-14yroy_fl5fd2.js": "sudoku/_next/static/chunks/turbopack-14yroy_fl5fd2.js"
+          "0kotb5.~0c~gd.js": "sudoku/_next/static/chunks/0kotb5.~0c~gd.js",
+          "turbopack-11ghd6rq1odff.js": "sudoku/_next/static/chunks/turbopack-11ghd6rq1odff.js",
+          "12uk8s4e05d8h.css": "sudoku/_next/static/chunks/12uk8s4e05d8h.css",
+          "14xt2d7u.xwn~.js": "sudoku/_next/static/chunks/14xt2d7u.xwn~.js",
+          "07zcbvsmc.dg4.js": "sudoku/_next/static/chunks/07zcbvsmc.dg4.js",
+          "0sjsdo_j~3~~-.js": "sudoku/_next/static/chunks/0sjsdo_j~3~~-.js"
         }
       }
     },
@@ -142,5 +142,45 @@
     "img-5.png": "process/img-5.png",
     "img-4.png": "process/img-4.png",
     "img-6.png": "process/img-6.png"
+  },
+  "sudoku-old": {
+    "__next._tree.txt": "sudoku-old/__next._tree.txt",
+    "__next._head.txt": "sudoku-old/__next._head.txt",
+    "index.html": "sudoku-old/index.html",
+    "__next._full.txt": "sudoku-old/__next._full.txt",
+    "__next._index.txt": "sudoku-old/__next._index.txt",
+    "index.txt": "sudoku-old/index.txt",
+    "404.html": "sudoku-old/404.html",
+    "__next.__PAGE__.txt": "sudoku-old/__next.__PAGE__.txt",
+    "_not-found.html": "sudoku-old/_not-found.html",
+    "_not-found.txt": "sudoku-old/_not-found.txt",
+    "_next": {
+      "66lWRsSA3YmPYCYUcqUR6": {},
+      "static": {
+        "66lWRsSA3YmPYCYUcqUR6": {
+          "_ssgManifest.js": "sudoku-old/_next/static/66lWRsSA3YmPYCYUcqUR6/_ssgManifest.js",
+          "_clientMiddlewareManifest.js": "sudoku-old/_next/static/66lWRsSA3YmPYCYUcqUR6/_clientMiddlewareManifest.js",
+          "_buildManifest.js": "sudoku-old/_next/static/66lWRsSA3YmPYCYUcqUR6/_buildManifest.js"
+        },
+        "chunks": {
+          "03~yq9q893hmn.js": "sudoku-old/_next/static/chunks/03~yq9q893hmn.js",
+          "0-fh9o9gccksm.js": "sudoku-old/_next/static/chunks/0-fh9o9gccksm.js",
+          "0ntivxff7nvw~.js": "sudoku-old/_next/static/chunks/0ntivxff7nvw~.js",
+          "11js82n9r446..js": "sudoku-old/_next/static/chunks/11js82n9r446..js",
+          "0-c~h0x1r6mjt.css": "sudoku-old/_next/static/chunks/0-c~h0x1r6mjt.css",
+          "0aes2sftof9ah.js": "sudoku-old/_next/static/chunks/0aes2sftof9ah.js",
+          "15epe4q82g0kx.js": "sudoku-old/_next/static/chunks/15epe4q82g0kx.js",
+          "turbopack-14yroy_fl5fd2.js": "sudoku-old/_next/static/chunks/turbopack-14yroy_fl5fd2.js"
+        }
+      }
+    },
+    "_not-found": {
+      "__next._tree.txt": "sudoku-old/_not-found/__next._tree.txt",
+      "__next._head.txt": "sudoku-old/_not-found/__next._head.txt",
+      "__next._full.txt": "sudoku-old/_not-found/__next._full.txt",
+      "__next._index.txt": "sudoku-old/_not-found/__next._index.txt",
+      "__next._not-found.txt": "sudoku-old/_not-found/__next._not-found.txt",
+      "__next._not-found.__PAGE__.txt": "sudoku-old/_not-found/__next._not-found.__PAGE__.txt"
+    }
   }
 }
