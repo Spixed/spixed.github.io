@@ -1,19 +1,15 @@
 ---
-title: "一环"
-date: 2026-02-17T09:30:00+08:00
+title: 一环
+date: 2026-02-17 09:30:00+08:00
 draft: false
-author: "spixed"
+author: spixed
 featured: true
-description: ""
-categories: ["Spixed的故事"]
-tags: ["梦后记", "一环", "外婆"]
-keywords: []
+categories: [Spixed的故事]
+tags: [梦后记, 一环, 外婆]
+description: ''
 weight: 0
 ---
-
 > 这是今早梦到的一篇文章。醒来时，情节还有些恍惚，像是走在一场大梦的边缘。我及时记下梗概，借AI之手，将其补全成篇。
-
-<!--more-->
 
 ## 一
 

@@ -1,12 +1,16 @@
 ---
 title: Qmoji 表情展示
-date: 2024-05-23 15:00:00+08:00
+date: '2024-05-23 15:00:00+08:00'
 draft: false
 author: spixed
 featured: false
-categories: [功能]
-tags: [Qmoji, Shortcodes]
 description: 展示 Qmoji 短代码集成效果。
+categories:
+  - 功能
+tags:
+  - Qmoji
+  - Shortcodes
+weight: 0
 ---
 
 

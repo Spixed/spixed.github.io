@@ -1,12 +1,18 @@
 ---
 title: Blog Detail Log
-date: 2024-02-15 22:50:11+08:00
+date: '2024-02-15 22:50:11+08:00'
 draft: false
 author: spixed
 featured: true
-categories: [blog]
-tags: [blog, hugo, github, git, theme]
 description: ''
+categories:
+  - blog
+tags:
+  - blog
+  - hugo
+  - github
+  - git
+  - theme
 ---
 
 
@@ -118,9 +124,9 @@ Initially, considering that Vercel and Netlify-built sites are currently inacces
 
    GitHub Releases: https://github.com/gohugoio/hugo/releases/
 
-   0.155.3 https://github.com/gohugoio/hugo/releases/download/v0.155.3/hugo_extended_0.155.3_windows-amd64.zip
+   0.166.0 https://github.com/gohugoio/hugo/releases/download/v0.166.0/hugo_extended_0.166.0_windows-amd64.zip
 
-   > Due to limited time/energy, my current theme (as of 2026.2.15) only guarantees compatibility with Hugo Extended v0.151.0 ~ 0.155.3. For issues, wait for my random free time/post-college-entrance-exam availability.
+   > Due to limited time/energy, my current theme (as of 2026.9.26) requires Hugo Extended v0.166.0 or later: older versions don't recognize the new `locale` / `label` config keys and the build will fail outright. For issues, wait for my random free time.
 
    After downloading, unzip to a comfortable location. Add this path to system PATH, reboot or restart Explorer to refresh PATH. Open PowerShell (abbreviated as ps later) and run `hugo help`. If help content displays normally, installation succeeds.
 
@@ -210,23 +216,24 @@ Initially, considering that Vercel and Netlify-built sites are currently inacces
 
    ```toml
 baseURL = "your_blog_url" # Your blog homepage URL
-languageCode = "en" # Language used by the blog, "en" / "zh"
 title = "Polymer Grid" # Blog title
 theme = "polymer" # Theme, must be set to this
 
 [languages] # Multi-language configuration, no need to change if not necessary
   [languages.en]
-    languageName = 'English'
+    label = 'English' # Language display name (renamed from languageName since Hugo v0.158.0)
+    locale = "en-US" # Language code (renamed from languageCode since Hugo v0.158.0)
     contentDir = 'content/en'
     weight = 1
   [languages.zh]
-    languageName = '中文'
+    label = '中文'
+    locale = "zh-CN"
     contentDir = 'content/zh'
     weight = 2
 
 [params]
   description = "A Digital Brutalism Theme" # Blog description, generally not important
-  math = true # Whether to enable support for mathematical formulas
+  # math is now a per-post switch: set math = true in the front matter of posts that need formulas. No site-wide switch anymore (it used to pull MathJax into every page)
   mathEngine = "mathjax" # Math formula engine, "mathjax" / "katex"
   favicon = "https://api.dicebear.com/7.x/bottts/png?seed=Polymer" # Blog favicon, square image recommended
 
@@ -321,7 +328,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.155.3
+      HUGO_VERSION: 0.166.0
     steps:
       - name: Install Hugo CLI
         run: |

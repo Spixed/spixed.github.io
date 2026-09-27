@@ -7,8 +7,8 @@ featured: false
 categories: [Features]
 tags: [Qmoji, Shortcodes]
 description: Demonstrating the Qmoji shortcode integration.
+weight: 0
 ---
-
 
 Polymer supports QQ-style emojis (Qmoji) via shortcodes. These add a fun, expressive layer to your content.
 

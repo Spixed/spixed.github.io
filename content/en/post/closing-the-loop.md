@@ -1,19 +1,16 @@
 ---
-title: "Closing the Loop"
-date: 2026-02-17T09:30:00+08:00
+title: Closing the Loop
+date: 2026-02-17 09:30:00+08:00
 draft: false
-author: "spixed"
+author: spixed
 featured: true
-description: ""
-categories: ["Spixed's Story"]
-tags: ["Dream Recap", "The Loop", "Grandmother"]
-keywords: []
+categories: [Spixed's Story]
+tags: [Dream Recap, The Loop, Grandmother]
+description: ''
 weight: 0
 ---
 
 > This is a story I dreamed of this morning. When I awoke, the plot was still hazy, as if I were walking along the edge of a grand dream. I jotted down the outline immediately and, with the help of AI, fleshed it out into this piece.
-
-<!--more-->
 
 ## I
 
@@ -95,7 +92,7 @@ I quickened my pace to walk beside her. She didn't look at me; her eyes were fix
 
 "The Loop," she said. "A mountain path that circles these peaks to deliver supplies to various stations. A full circuit took three or four days if you were fast, five or six if you were slow. That was the line we walked back then."
 
-I lowered my head to look at that list. The yellowed paper, the frayed edges, the blurred ink. A-Chun’s name was somewhat fading, like a shadow dissolving in water, yet it remained recognizable.  Grain, cloth, medicine, quantities for each, and scrawled signatures as if written in haste.
+I lowered my head to look at that list. The yellowed paper, the frayed edges, the blurred ink. A-Chun’s name was somewhat fading, like a shadow dissolving in water, yet it remained recognizable. Grain, cloth, medicine, quantities for each, and scrawled signatures as if written in haste.
 
 "A-Chun," I pronounced that name, "what did he do?"
 
@@ -137,7 +134,7 @@ The woods grew denser. Sunlight filtered through the leaves, breaking into jagge
 
 "What did A-Chun look like?" I asked.
 
-She walked ahead, her steps still light, her soles making no sound against the earth.  She didn't turn back, just said, "A very ordinary person. Lean, dark-skinned, a man of few words. But his eyes were very bright. When he looked at you, it felt as if he could see right through to what you were thinking."
+She walked ahead, her steps still light, her soles making no sound against the earth. She didn't turn back, just said, "A very ordinary person. Lean, dark-skinned, a man of few words. But his eyes were very bright. When he looked at you, it felt as if he could see right through to what you were thinking."
 
 "How old was he?"
 
@@ -169,7 +166,7 @@ I reached out, wanting to steady her. My hand was passing through the hem of her
 
 The forest ended, opening up suddenly.
 
-Before us was an expansive hillside. The grass grew knee-high, swaying in one direction with the wind. Far off were rolling ridges; nearby stood a few solitary trees with massive canopies, casting deep shadows. Sunlight leaked through gaps in the clouds, falling on the slope like a thin layer of gold. 
+Before us was an expansive hillside. The grass grew knee-high, swaying in one direction with the wind. Far off were rolling ridges; nearby stood a few solitary trees with massive canopies, casting deep shadows. Sunlight leaked through gaps in the clouds, falling on the slope like a thin layer of gold.
 
 She stood at the edge of the woods, going no further.
 
@@ -237,7 +234,7 @@ I went back to those mountains.
 
 When exactly I went, I can't quite say. Was it later, or was it just now? I'm not sure. I only remember the sunshine was beautiful that day, just like the day we set out. But I can no longer tell which day happened first.
 
-I walked that small path alone.  The woods were still dense, the sunshine still shattered by leaves, falling on the ground and on the grass. 
+I walked that small path alone. The woods were still dense, the sunshine still shattered by leaves, falling on the ground and on the grass.
 
 I finished the back half of that Loop.
 

@@ -27,6 +27,11 @@ Welcome to the source code of [Spixed's Blog](https://spixed.is-a.dev/). This is
 
 ## 🚀 How to Run / 如何运行
 
+0. **Prerequisites / 环境要求**
+
+   [Hugo Extended](https://gohugo.io/installation/) **v0.166.0+** is required — the theme uses the new `locale` / `label` / `(hugo).Data` syntax introduced in Hugo v0.156–0.158, and older versions will fail to build.
+   需要 [Hugo Extended](https://gohugo.io/installation/) **v0.166.0 及以上**——主题已迁移到 Hugo v0.156–0.158 引入的 `locale` / `label` / `(hugo).Data` 新写法，旧版本无法构建。
+
 1. **Clone the repository / 克隆仓库**
 
    ```bash

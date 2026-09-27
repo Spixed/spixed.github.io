@@ -27,6 +27,9 @@ node_modules/
 # AI Agent files
 .augment/
 .roo/
+.workbuddy/
+.tmp-render/
+.tmp-render-verify/
 
 # Obsidian configuration
 content/.obsidian/
