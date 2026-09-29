@@ -23,6 +23,8 @@ This article is specifically for testing the Blog Writer. It contains various Ma
 
 This is the in-article summary. As the first line of non-quote content, the dropcap is correct
 
+This is the text modified on another computer
+
 Below is a horizontal rule
 
 <!--more-->
