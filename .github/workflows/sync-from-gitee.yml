@@ -1,0 +1,49 @@
+name: Sync from Gitee
+
+# 备用方案：仅当 Gitee 的原生 Push 镜像不可用（或频繁失败）时才启用。
+# 启用方法：解开 schedule 的注释（每 15 分钟自动同步一次）。
+# 需要在 GitHub 仓库 Secrets 中配置：
+#   GITEE_USERNAME — Gitee 用户名
+#   GITEE_TOKEN    — Gitee 私人令牌（需要该仓库读写权限）
+#   GITEE_REPO     — Gitee 仓库路径，例如 Spixed/blog
+# 主方案下此文件也可用作手动"立即同步"按钮（Actions 页面 Run workflow）。
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '*/15 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-from-gitee
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Fetch Gitee
+        env:
+          GITEE_USERNAME: ${{ secrets.GITEE_USERNAME }}
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+          GITEE_REPO: ${{ secrets.GITEE_REPO }}
+        run: |
+          git remote add gitee "https://${GITEE_USERNAME}:${GITEE_TOKEN}@gitee.com/${GITEE_REPO}.git"
+          git fetch gitee main || echo "Gitee main 尚不存在（Gitee 仓库还是空的）"
+
+      # 合并策略：普通 merge，绝不 force——即使 Gitee 缺你本地的提交，
+      # 也只会产生合并提交，不会覆盖丢失 GitHub 上的内容。
+      # 合并冲突时此 job 会失败：在本地 `git pull origin main` 解冲突后推送即可。
+      - name: Merge Gitee main and push to both remotes
+        run: |
+          if git rev-parse --verify --quiet gitee/main; then
+            git merge --no-edit gitee/main
+          fi
+          git push origin main
+          git push gitee main
