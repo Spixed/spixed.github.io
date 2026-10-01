@@ -25,6 +25,8 @@ This is the in-article summary. As the first line of non-quote content, the drop
 
 This is the text modified on another computer
 
+This is the text modified on Blog Writer v0.2.0
+
 Below is a horizontal rule
 
 <!--more-->
